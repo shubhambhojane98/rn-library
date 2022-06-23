@@ -1,0 +1,2 @@
+export var consoleLog=function consoleLog(){var _console;(_console=console).log.apply(_console,arguments);};export var consoleWarn=function consoleWarn(){var _console2;(_console2=console).warn.apply(_console2,arguments);};export var consoleInfo=function consoleInfo(){var _console3;(_console3=console).info.apply(_console3,arguments);};
+//# sourceMappingURL=Log.js.map

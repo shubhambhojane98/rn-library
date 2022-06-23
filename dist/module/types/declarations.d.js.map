@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["declarations.d.ts"],"sourcesContent":["declare module '*.svg' {\n  import {SvgProps} from 'react-native-svg';\n  const content: React.FC<SvgProps>;\n  export default content;\n}\n"],"mappings":""}
