@@ -1,0 +1,2 @@
+export var TextAlignment;(function(TextAlignment){TextAlignment["Auto"]="auto";TextAlignment["Left"]="left";TextAlignment["Right"]="right";TextAlignment["Center"]="center";TextAlignment["Justify"]="justify";})(TextAlignment||(TextAlignment={}));
+//# sourceMappingURL=ATypographyEnum.js.map

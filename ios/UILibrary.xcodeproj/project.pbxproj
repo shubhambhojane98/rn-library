@@ -12,8 +12,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		35BD10EDA9244D19A3D4F328 /* Mulish-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC174502652849F78517E27E /* Mulish-Regular.otf */; };
+		485B3B9B6CFA497BAE209FCC /* AvenirNextLTPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1AC737C924654596BB10EC50 /* AvenirNextLTPro-Regular.otf */; };
 		7699B88040F8A987B510C191 /* libPods-UILibrary-UILibraryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-UILibrary-UILibraryTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9F5EFC25248940CF80FF2FED /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A2FC972D28C48AC8B7F1CA5 /* Mulish-SemiBold.ttf */; };
+		9FDF6C9DA14D4CAE903265D1 /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D52FA36AE9F443A841C552A /* Mulish-Bold.ttf */; };
+		D2CDF0DBF523466993505190 /* AvenirNextLTPro-Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 248443213C1C4F5C9C04D989 /* AvenirNextLTPro-Demi.otf */; };
+		D6093C6AE0C34318A65F5ACA /* AvenirNextLTPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD4ACDEC13A648A48988DF1E /* AvenirNextLTPro-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +43,18 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = UILibrary/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = UILibrary/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-UILibrary-UILibraryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UILibrary-UILibraryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC737C924654596BB10EC50 /* AvenirNextLTPro-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextLTPro-Regular.otf"; path = "../src/assets/fonts/AvenirNextLTPro-Regular.otf"; sourceTree = "<group>"; };
+		248443213C1C4F5C9C04D989 /* AvenirNextLTPro-Demi.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextLTPro-Demi.otf"; path = "../src/assets/fonts/AvenirNextLTPro-Demi.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-UILibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary.debug.xcconfig"; path = "Target Support Files/Pods-UILibrary/Pods-UILibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		3D52FA36AE9F443A841C552A /* Mulish-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mulish-Bold.ttf"; path = "../src/assets/fonts/Mulish-Bold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-UILibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary.release.xcconfig"; path = "Target Support Files/Pods-UILibrary/Pods-UILibrary.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-UILibrary-UILibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary-UILibraryTests.debug.xcconfig"; path = "Target Support Files/Pods-UILibrary-UILibraryTests/Pods-UILibrary-UILibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-UILibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UILibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UILibrary/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-UILibrary-UILibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UILibrary-UILibraryTests.release.xcconfig"; path = "Target Support Files/Pods-UILibrary-UILibraryTests/Pods-UILibrary-UILibraryTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A2FC972D28C48AC8B7F1CA5 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mulish-SemiBold.ttf"; path = "../src/assets/fonts/Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
+		AC174502652849F78517E27E /* Mulish-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mulish-Regular.otf"; path = "../src/assets/fonts/Mulish-Regular.otf"; sourceTree = "<group>"; };
+		AD4ACDEC13A648A48988DF1E /* AvenirNextLTPro-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextLTPro-Bold.otf"; path = "../src/assets/fonts/AvenirNextLTPro-Bold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,6 +108,20 @@
 			name = UILibrary;
 			sourceTree = "<group>";
 		};
+		18B281CE1B234DB7B2D24DDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD4ACDEC13A648A48988DF1E /* AvenirNextLTPro-Bold.otf */,
+				248443213C1C4F5C9C04D989 /* AvenirNextLTPro-Demi.otf */,
+				1AC737C924654596BB10EC50 /* AvenirNextLTPro-Regular.otf */,
+				3D52FA36AE9F443A841C552A /* Mulish-Bold.ttf */,
+				AC174502652849F78517E27E /* Mulish-Regular.otf */,
+				9A2FC972D28C48AC8B7F1CA5 /* Mulish-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				18B281CE1B234DB7B2D24DDD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +271,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D6093C6AE0C34318A65F5ACA /* AvenirNextLTPro-Bold.otf in Resources */,
+				D2CDF0DBF523466993505190 /* AvenirNextLTPro-Demi.otf in Resources */,
+				485B3B9B6CFA497BAE209FCC /* AvenirNextLTPro-Regular.otf in Resources */,
+				9FDF6C9DA14D4CAE903265D1 /* Mulish-Bold.ttf in Resources */,
+				35BD10EDA9244D19A3D4F328 /* Mulish-Regular.otf in Resources */,
+				9F5EFC25248940CF80FF2FED /* Mulish-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,1 @@
+{"version":3,"names":["TextAlignment"],"sources":["ATypographyEnum.ts"],"sourcesContent":["export enum TextAlignment {\n  Auto = 'auto',\n  Left = 'left',\n  Right = 'right',\n  Center = 'center',\n  Justify = 'justify',\n}\n"],"mappings":"AAAA,UAAYA,cAAZ,C,UAAYA,a,EAAAA,a,gBAAAA,a,gBAAAA,a,kBAAAA,a,oBAAAA,a,yBAAAA,a,GAAAA,a"}
