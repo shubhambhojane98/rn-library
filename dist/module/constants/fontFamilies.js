@@ -1,0 +1,2 @@
+import _createClass from"@babel/runtime/helpers/createClass";import _classCallCheck from"@babel/runtime/helpers/classCallCheck";export var fontFamilies=_createClass(function fontFamilies(){_classCallCheck(this,fontFamilies);});fontFamilies.Fonts={primary:'Mulish',secondary:'AvenirNextLTPro'};
+//# sourceMappingURL=fontFamilies.js.map
