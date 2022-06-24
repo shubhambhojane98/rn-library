@@ -20,6 +20,7 @@ interface colors {
   background: string;
   textColor: string;
   placeholderTextColor: string;
+  backgroundColor: string;
   switchBackgroundColor: string;
   paginationDotColor: string;
   paginationDotBgColor: string;
@@ -36,6 +37,7 @@ interface colors {
   switchActiveBgColor: string;
   switchInActiveBgColor: string;
   switchKnobColor: string;
+  transparent: string;
 }
 
 const primaryColors = {
@@ -85,12 +87,14 @@ if (colorScheme === 'dark') {
     background: primaryColors.black,
     textColor: primaryColors.white,
     placeholderTextColor: '#5D5D5D',
+    backgroundColor: primaryColors.white,
     switchBackgroundColor: primaryColors.white,
     paginationDotColor: primaryColors.white,
     paginationDotBgColor: primaryColors.darkGrey,
     switchActiveBgColor: primaryColors.yellow,
     switchInActiveBgColor: primaryColors.white,
     switchKnobColor: primaryColors.black,
+    transparent: 'transparent',
   };
 } else {
   // Use light color scheme
@@ -101,12 +105,14 @@ if (colorScheme === 'dark') {
     background: primaryColors.yellow,
     textColor: primaryColors.black,
     placeholderTextColor: '#5D5D5D',
+    backgroundColor: primaryColors.black,
     switchBackgroundColor: primaryColors.lightgrey,
     paginationDotColor: primaryColors.white,
     paginationDotBgColor: primaryColors.darkGrey,
     switchActiveBgColor: primaryColors.yellow,
     switchInActiveBgColor: primaryColors.white,
     switchKnobColor: primaryColors.black,
+    transparent: 'transparent',
   };
 }
 
