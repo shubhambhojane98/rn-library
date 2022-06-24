@@ -9,6 +9,7 @@ exports[`renders correctly with image URL 1`] = `
       },
       Object {
         "backgroundColor": "transparent",
+        "borderRadius": 0,
         "height": 78.62857142857143,
         "marginBottom": 0,
         "marginLeft": 0,

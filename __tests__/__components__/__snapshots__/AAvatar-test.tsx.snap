@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with label 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Mulish-Regular",
+        "fontSize": 21.13142857142857,
+        "fontWeight": "normal",
+      },
+      Object {
+        "color": "#231F20",
+      },
+      Object {
+        "textAlign": "center",
+      },
+      Object {
+        "backgroundColor": "#D7D7D7",
+        "borderRadius": 32,
+        "height": 64,
+        "lineHeight": 64,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "overflow": "hidden",
+        "width": 64,
+      },
+    ]
+  }
+>
+  AA
+</Text>
+`;
+
+exports[`renders correctly with label, fontSize & radius 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Mulish-Regular",
+        "fontSize": 29.485714285714288,
+        "fontWeight": "normal",
+      },
+      Object {
+        "color": "#231F20",
+      },
+      Object {
+        "textAlign": "center",
+      },
+      Object {
+        "backgroundColor": "#D7D7D7",
+        "borderRadius": 36,
+        "height": 72,
+        "lineHeight": 72,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "overflow": "hidden",
+        "width": 72,
+      },
+    ]
+  }
+>
+  AA
+</Text>
+`;
+
+exports[`renders correctly with sourceUri 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "backgroundColor": "transparent",
+        "borderRadius": 32,
+        "height": 78.62857142857143,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "width": 78.62857142857143,
+      },
+    ]
+  }
+>
+  <FastImageView
+    resizeMode="cover"
+    source={
+      Object {
+        "cache": undefined,
+        "priority": "normal",
+        "uri": "https://unsplash.it/400/400?image=1",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly with sourceUri, bgColor, size, radius & cache 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "backgroundColor": "red",
+        "borderRadius": 100,
+        "height": 245.71428571428572,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "width": 245.71428571428572,
+      },
+    ]
+  }
+>
+  <FastImageView
+    resizeMode="cover"
+    source={
+      Object {
+        "cache": "web",
+        "priority": "normal",
+        "uri": "https://unsplash.it/400/400?image=9",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+</View>
+`;
