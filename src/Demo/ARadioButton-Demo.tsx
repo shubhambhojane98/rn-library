@@ -1,6 +1,7 @@
 import {SafeAreaView, ScrollView} from 'react-native';
 import React, {useState} from 'react';
 import ARadioButtonGroup from '../components/ARadioButtonGroup/ARadioButtonGroup';
+import ATypography from '../components/ATypography/ATypography';
 
 const ARadioButtonDemo = () => {
   const RadioData = [
@@ -16,6 +17,7 @@ const ARadioButtonDemo = () => {
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <ScrollView>
+        <ATypography children="RadioButton Examples" />
         <ARadioButtonGroup
           onSelectValue={value => setRadio(value)}
           data={RadioData}
