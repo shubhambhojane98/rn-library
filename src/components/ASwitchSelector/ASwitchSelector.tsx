@@ -4,6 +4,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {Color} from '../../theme';
 import ATypography from '../ATypography/ATypography';
 import {defaultScale} from '../../utils/Common';
+import {TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Props {
   option1: string;
@@ -38,7 +39,7 @@ const ASwitchSelector: FC<Props> = ({
         <ATypography
           children={option1}
           fontSize={16}
-          variant={'primaryBold'}
+          variant={TypographyVariant.PRIMARY_BOLD}
           style={{...styles.text}}
         />
       </TouchableOpacity>
@@ -53,7 +54,7 @@ const ASwitchSelector: FC<Props> = ({
         <ATypography
           children={option2}
           fontSize={16}
-          variant={'primaryBold'}
+          variant={TypographyVariant.PRIMARY_BOLD}
           style={{...styles.text}}
         />
       </TouchableOpacity>
