@@ -7,15 +7,16 @@ import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
 
 const AToastDemo = () => {
   return (
-    <SafeAreaView
-      style={{marginHorizontal: 20, backgroundColor: 'red', flex: 1}}>
+    <SafeAreaView style={{flex: 1}}>
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
         Toast Demo
       </ATypography>
       <AToast
-        iconName={'checkboxfilled'}
+        iconName={'fullstar'}
+        iconHeight={20}
+        iconWidth={20}
         label={'Successfully verified your phone number'}
         toastTime={1000}
         backgroundColor={Color.black}

@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with all props 1`] = `
+<View
+  style={
+    Object {
+      "bottom": 24.57142857142857,
+      "left": 12.285714285714285,
+      "position": "absolute",
+      "right": 12.285714285714285,
+      "zIndex": 1,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#231F20",
+        "borderRadius": 4.914285714285715,
+        "flexDirection": "row",
+        "height": 78.62857142857143,
+        "justifyContent": "center",
+        "opacity": 0,
+        "padding": 12.285714285714285,
+        "transform": Array [
+          Object {
+            "translateY": -20,
+          },
+        ],
+        "width": 393.1428571428571,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "AvenirNextLTPro-Regular",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "normal",
+          },
+          Object {
+            "color": "#fff",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "paddingHorizontal": 12.285714285714285,
+          },
+        ]
+      }
+    >
+      Successfully verified your phone number
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with label 1`] = `
+<View
+  style={
+    Object {
+      "bottom": 24.57142857142857,
+      "left": 12.285714285714285,
+      "position": "absolute",
+      "right": 12.285714285714285,
+      "zIndex": 1,
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#231F20",
+        "borderRadius": 4.914285714285715,
+        "flexDirection": "row",
+        "height": 78.62857142857143,
+        "justifyContent": "center",
+        "opacity": 0,
+        "padding": 12.285714285714285,
+        "transform": Array [
+          Object {
+            "translateY": -20,
+          },
+        ],
+        "width": 393.1428571428571,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "AvenirNextLTPro-Regular",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "normal",
+          },
+          Object {
+            "color": "#fff",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "paddingHorizontal": 12.285714285714285,
+          },
+        ]
+      }
+    >
+      Successfully verified your phone number
+    </Text>
+  </View>
+</View>
+`;
