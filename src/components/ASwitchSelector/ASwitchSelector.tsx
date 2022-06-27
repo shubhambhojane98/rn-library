@@ -20,7 +20,7 @@ const ASwitchSelector: FC<Props> = ({
 }) => {
   const [getSelectionMode, setSelectionMode] = useState(2);
 
-  const toggleSwitch = val => {
+  const toggleSwitch = (val: any) => {
     setSelectionMode(val);
     onSelectSwitch(val);
   };

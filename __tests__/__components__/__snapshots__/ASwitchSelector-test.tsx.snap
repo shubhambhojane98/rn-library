@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly default prop 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#D7D7D7",
+      "borderRadius": 25,
+      "flexDirection": "row",
+      "height": 63.885714285714286,
+      "justifyContent": "center",
+      "padding": 2.4571428571428573,
+      "width": undefined,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#D7D7D7",
+        "borderRadius": 25,
+        "flex": 1,
+        "height": 49.14285714285714,
+        "justifyContent": "center",
+        "margin": 6.142857142857142,
+        "opacity": 1,
+        "width": 133.9142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 19.65714285714286,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#231F20",
+          },
+        ]
+      }
+    >
+      one
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FAD000",
+        "borderRadius": 25,
+        "flex": 1,
+        "height": 49.14285714285714,
+        "justifyContent": "center",
+        "margin": 6.142857142857142,
+        "opacity": 1,
+        "width": 133.9142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 19.65714285714286,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#231F20",
+          },
+        ]
+      }
+    >
+      2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with width prop 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#D7D7D7",
+      "borderRadius": 25,
+      "flexDirection": "row",
+      "height": 63.885714285714286,
+      "justifyContent": "center",
+      "padding": 2.4571428571428573,
+      "width": 200,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#D7D7D7",
+        "borderRadius": 25,
+        "flex": 1,
+        "height": 49.14285714285714,
+        "justifyContent": "center",
+        "margin": 6.142857142857142,
+        "opacity": 1,
+        "width": 133.9142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 19.65714285714286,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#231F20",
+          },
+        ]
+      }
+    >
+      one
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FAD000",
+        "borderRadius": 25,
+        "flex": 1,
+        "height": 49.14285714285714,
+        "justifyContent": "center",
+        "margin": 6.142857142857142,
+        "opacity": 1,
+        "width": 133.9142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 19.65714285714286,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#231F20",
+          },
+        ]
+      }
+    >
+      2
+    </Text>
+  </View>
+</View>
+`;
