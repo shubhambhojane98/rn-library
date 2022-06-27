@@ -13,6 +13,7 @@ import {Color} from '../../theme';
 import {TextAlignVertical, AutoCapitalize} from './ATextInputEnum';
 import ATypography from '../ATypography/ATypography';
 import MaskInput from 'react-native-mask-input';
+import {TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Props {
   placeholder?: string;
@@ -27,7 +28,7 @@ interface Props {
   autoFocus?: boolean;
   keyboardType?: KeyboardTypeOptions;
   textContentType?: string | any;
-  onChangeText?: (Name: string) => void;
+  onChangeText?: (Name: any, masked?: any, unmasked?: any) => void;
   autoCorrect?: boolean;
   returnKeyType?: ReturnKeyTypeOptions | undefined;
   textAlignVertical?: TextAlignVertical;
@@ -245,7 +246,7 @@ const ATextInput: FC<Props> = ({
         {errorText && !disable && !isFocused ? (
           <ATypography
             children={errorText}
-            variant={'primary'}
+            variant={TypographyVariant.PRIMARY}
             color={Color.red}
             fontSize={14}
           />

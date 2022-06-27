@@ -4,22 +4,27 @@ import {moderateScale} from 'react-native-size-matters';
 import {CreditCard} from '../components/ATextInput/AMask';
 import ATextInput from '../components/ATextInput/ATextInput';
 import ATypography from '../components/ATypography/ATypography';
+import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
 import {Color} from '../theme';
 
 const ATextInputDemo = () => {
   const [credit, setCredit] = useState('');
 
-  const onChangeText = (masked, unmasked) => {
+  const onChangeText = (masked: any, unmasked: any) => {
     setCredit(masked); // you can use the unmasked value as well
   };
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <ScrollView>
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           TextInput with disable prop
         </ATypography>
         <ATextInput placeholder="placeholder" marginTop={10} disable={true} />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           TextInput with error message
         </ATypography>
         <ATextInput
@@ -27,7 +32,9 @@ const ATextInputDemo = () => {
           placeholder="Placeholder"
           marginTop={10}
         />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           TextInput with password field
         </ATypography>
         <ATextInput
@@ -36,7 +43,9 @@ const ATextInputDemo = () => {
           isPassword={true}
           secureTextEntry={true}
         />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           TextInput with rightIcon && iconHeight && iconWidth && borderColor
         </ATypography>
         <ATextInput
@@ -48,7 +57,9 @@ const ATextInputDemo = () => {
           iconWidth={35}
           borderColor={Color.blue}
         />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           Mask TextInput
         </ATypography>
         <ATextInput
