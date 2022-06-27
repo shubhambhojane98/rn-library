@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with label 1`] = `
+<Text
+  numberOfLines={1}
+  style={
+    Object {
+      "backgroundColor": "#A81E23",
+      "borderRadius": 12.285714285714285,
+      "bottom": undefined,
+      "color": undefined,
+      "fontSize": 12.285714285714285,
+      "height": 24.57142857142857,
+      "left": undefined,
+      "lineHeight": 24.57142857142857,
+      "minWidth": 24.57142857142857,
+      "overflow": "hidden",
+      "paddingHorizontal": 4.914285714285715,
+      "position": "absolute",
+      "right": undefined,
+      "textAlign": "center",
+      "textAlignVertical": "center",
+      "top": undefined,
+    }
+  }
+>
+  10
+</Text>
+`;
+
+exports[`renders correctly with visible false 1`] = `null`;
