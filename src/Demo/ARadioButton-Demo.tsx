@@ -12,7 +12,7 @@ const ARadioButtonDemo = () => {
     {id: 5, value: 'Five'},
   ];
 
-  const [radio, setRadio] = useState('');
+  const [radio, setRadio] = useState(RadioData[0]);
   console.log(radio);
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
