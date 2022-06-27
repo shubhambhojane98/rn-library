@@ -5,3 +5,12 @@ export enum TextAlignment {
   Center = 'center',
   Justify = 'justify',
 }
+
+export enum TypographyVariant {
+  PRIMARY = 'primary',
+  PRIMARY_SEMI_BOLD = 'primarySemiBold',
+  PRIMARY_BOLD = 'primaryBold',
+  SECONDARY = 'secondary',
+  SECONDARY_DEMI = 'secondaryDemi',
+  SECONDARY_BOLD = 'secondaryBold',
+}

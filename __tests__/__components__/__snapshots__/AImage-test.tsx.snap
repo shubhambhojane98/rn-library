@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with image URL 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "backgroundColor": "transparent",
+        "borderRadius": 0,
+        "height": 78.62857142857143,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "width": 78.62857142857143,
+      },
+    ]
+  }
+>
+  <FastImageView
+    resizeMode="cover"
+    source={
+      Object {
+        "cache": undefined,
+        "priority": "normal",
+        "uri": "https://unsplash.it/400/400?image=1",
+      }
+    }
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+</View>
+`;

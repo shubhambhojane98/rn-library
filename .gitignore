@@ -59,3 +59,12 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
+
+# iOS workspace
+/ios/*.xcworkspace/
+
+/test-coverage/*
+
+dist/
+dist/module/*
+dist/typescript/*
