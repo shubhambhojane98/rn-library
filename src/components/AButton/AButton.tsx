@@ -41,8 +41,9 @@ interface Props {
   fontWeight?: any;
   textDecorationLine?: any;
   hyperlink?: boolean;
+  borderWidth?: number;
+  borderColor?: string;
 }
-
 const AButton = (props: Props) => {
   const {
     title,
@@ -66,9 +67,22 @@ const AButton = (props: Props) => {
     fontWeight,
     textDecorationLine,
     hyperlink,
+    borderWidth,
+    borderColor,
   } = props;
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity
+      onPress={onPress}
+      style={{
+        ...styles.container,
+        height,
+        width,
+        backgroundColor: hyperlink ? Color.background : backgroundColor,
+        margin,
+        borderRadius,
+        borderWidth,
+        borderColor,
+      }}>
       {backgroundSource ? (
         <ImageBackground
           source={backgroundSource}
@@ -126,9 +140,6 @@ const AButton = (props: Props) => {
     </TouchableOpacity>
   );
 };
-
-export default AButton;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -157,3 +168,4 @@ AButton.defaultProps = {
   height: moderateScale(50, defaultScale),
   fontSize: moderateScale(18, defaultScale),
 };
+export default AButton;
