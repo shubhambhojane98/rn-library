@@ -17,17 +17,23 @@ it('renders correctly with defaultRating with fraction value ', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('renders correctly with defaultRating with fraction value & height & width & maxStar Prop ', () => {
+it('renders correctly with height & width & maxStar Prop ', () => {
   const tree = renderer
     .create(
       <AStarRating
-        defaultRating={2}
         height={40}
         width={40}
         maxStar={6}
         onSelectValue={jest.fn()}
       />,
     )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders correctly with defaultRating Prop ', () => {
+  const tree = renderer
+    .create(<AStarRating onSelectValue={jest.fn()} defaultRating={2.5} />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

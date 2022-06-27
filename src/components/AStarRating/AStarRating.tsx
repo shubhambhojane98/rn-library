@@ -64,12 +64,7 @@ const AStarRating: FC<Props> = ({
           </View>
         );
       })}
-      {/* {defaultStarRating !== undefined ? (
-        <ATypography style={styles.ratingCount} fontSize={20}>
-          {`${defaultStarRating + 1} / ${maxRating.length}`}
-        </ATypography>
-      ) : null} */}
-      {defaultStarRating && (
+      {defaultStarRating !== undefined && defaultStarRating !== -1 && (
         <ATypography style={styles.ratingCount} fontSize={20}>
           {`${defaultStarRating + 1} / ${maxRating.length}`}
         </ATypography>

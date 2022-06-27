@@ -9,14 +9,18 @@ const AStarRatingDemo = () => {
     <SafeAreaView style={{marginHorizontal: 20}}>
       <ScrollView>
         <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
-          StarRating Example
+          StarRating with default prop Example
+        </ATypography>
+        <AStarRating onSelectValue={value => setStarRating(value)} />
+        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+          {`StarRating Example with  maxStar && defaultRating && height && width`}
         </ATypography>
         <AStarRating
           height={45}
           width={45}
-          // defaultRating={3}
           onSelectValue={value => setStarRating(value)}
           maxStar={6}
+          defaultRating={3}
         />
       </ScrollView>
     </SafeAreaView>
