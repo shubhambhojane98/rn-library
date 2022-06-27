@@ -15,6 +15,7 @@ import IconSVG from '../../assets/svgs';
 import {fontFamilies} from '../../constants/fontFamilies';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
+import {TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Props {
   backgroundColor?: string;
@@ -40,8 +41,9 @@ interface Props {
   fontWeight?: any;
   textDecorationLine?: any;
   hyperlink?: boolean;
+  borderWidth?: number;
+  borderColor?: string;
 }
-
 const AButton = (props: Props) => {
   const {
     title,
@@ -65,9 +67,22 @@ const AButton = (props: Props) => {
     fontWeight,
     textDecorationLine,
     hyperlink,
+    borderWidth,
+    borderColor,
   } = props;
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity
+      onPress={onPress}
+      style={{
+        ...styles.container,
+        height,
+        width,
+        backgroundColor: hyperlink ? Color.background : backgroundColor,
+        margin,
+        borderRadius,
+        borderWidth,
+        borderColor,
+      }}>
       {backgroundSource ? (
         <ImageBackground
           source={backgroundSource}
@@ -89,7 +104,7 @@ const AButton = (props: Props) => {
       {!hyperlink && (
         <ATypography
           children={title}
-          variant={'primaryBold'}
+          variant={TypographyVariant.PRIMARY_BOLD}
           style={{
             ...styles.text,
             color,
@@ -104,7 +119,7 @@ const AButton = (props: Props) => {
       {hyperlink && (
         <ATypography
           children={title}
-          variant={'secondaryDemi'}
+          variant={TypographyVariant.SECONDARY_DEMI}
           style={{
             ...styles.hyperlinkText,
             textAlign,
@@ -125,9 +140,6 @@ const AButton = (props: Props) => {
     </TouchableOpacity>
   );
 };
-
-export default AButton;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -156,3 +168,4 @@ AButton.defaultProps = {
   height: moderateScale(50, defaultScale),
   fontSize: moderateScale(18, defaultScale),
 };
+export default AButton;
