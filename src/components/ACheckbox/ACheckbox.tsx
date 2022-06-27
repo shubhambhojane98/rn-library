@@ -6,6 +6,7 @@ import {Color} from '../../theme';
 import {CheckboxStatus} from './ACheckboxEnum';
 import Typography from '../../components/ATypography/ATypography';
 import {defaultScale} from '../../utils/Common';
+import {TypographyVariant} from '../../components/ATypography/ATypographyEnum';
 
 interface CheckBoxProps {
   label?: string;
@@ -18,13 +19,13 @@ const ACheckBox: FC<CheckBoxProps> = ({label, status, onPress}) => {
     <TouchableOpacity onPress={onPress} activeOpacity={1}>
       <View style={styles.container}>
         {status === CheckboxStatus.Checked ? (
-          <IconSVG name="CheckboxFilled" />
+          <IconSVG name="checkboxfilled" />
         ) : (
-          <IconSVG name="CheckboxEmpty" />
+          <IconSVG name="checkboxempty" />
         )}
         <Typography
           children={label}
-          variant={'primary'}
+          variant={TypographyVariant.PRIMARY}
           style={styles.checkboxLabel}
         />
       </View>

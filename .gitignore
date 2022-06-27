@@ -64,3 +64,7 @@ buck-out/
 /ios/*.xcworkspace/
 
 /test-coverage/*
+
+dist/
+dist/module/*
+dist/typescript/*

@@ -17,9 +17,11 @@ interface Prop {
   marginBottom?: number;
   marginLeft?: number;
   cache?: any;
+  borderRadius?: number;
 }
 
 const defaultSize = 64;
+const defaultRadius = 0;
 const defaultMargin = 0;
 
 const AImage: FC<Prop> = ({
@@ -34,6 +36,7 @@ const AImage: FC<Prop> = ({
   marginBottom,
   marginLeft,
   cache,
+  borderRadius,
 }) => {
   return (
     <>
@@ -56,6 +59,7 @@ const AImage: FC<Prop> = ({
               marginLeft || defaultMargin,
               defaultScale,
             ),
+            borderRadius: borderRadius || defaultRadius / 2,
           }}
           source={{
             uri: sourceUri,
@@ -85,6 +89,7 @@ const AImage: FC<Prop> = ({
               marginLeft || defaultMargin,
               defaultScale,
             ),
+            borderRadius: borderRadius || defaultRadius / 2,
           }}
           resizeMode={resizeMode}
         />

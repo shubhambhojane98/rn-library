@@ -2,56 +2,68 @@ import React from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
 import {Color} from '../theme';
 import ATypography from '../components/ATypography/ATypography';
-import AImage from '../components/AImage/AImage';
 import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
+import AAvatar from '../components/AAvatar/AAvatar';
 
-const AImageDemo = () => {
+const AAvatarDemo = () => {
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <ScrollView>
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: 20}}>
-          Image from URL with only required props
+          Avatar with Label with default props
         </ATypography>
-        <AImage sourceUri="https://unsplash.it/400/400?image=1" />
+        <AAvatar label="AA" />
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: 20}}>
-          Image from URL with custom width & height & cache policy
+          Avatar with Label with custom font size & size & radius
         </ATypography>
-        <AImage
+        <AAvatar label="AA" fontSize={24} size={72} borderRadius={36} />
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
+          Avatar from URL with default props
+        </ATypography>
+        <AAvatar sourceUri="https://unsplash.it/400/400?image=1" />
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
+          Avatar from URL with custom size & cache policy & radius
+        </ATypography>
+        <AAvatar
           sourceUri="https://unsplash.it/400/400?image=9"
           backgroundColor={Color.grey}
-          width={100}
-          height={100}
+          size={200}
+          borderRadius={100}
           cache="web"
         />
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: 20}}>
-          Image from URL with margin top, bottom, left & right
+          Avatar from URL with margin top, bottom, left & right
         </ATypography>
-        <AImage
+        <AAvatar
           sourceUri="https://unsplash.it/400/400?image=3"
           backgroundColor={Color.red}
-          width={200}
-          height={200}
+          size={200}
           cache="cacheOnly"
           marginTop={10}
           marginBottom={10}
           marginLeft={20}
           marginRight={20}
+          borderRadius={0}
         />
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: 20}}>
-          Image from Local Path
+          Avatar from Local Path
         </ATypography>
-        {/* <AImage source={require('../../assets/images/FullStar.png')} /> */}
+        {/* <AAvatar source={require('../../assets/images/FullStar.png')} /> */}
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-export default AImageDemo;
+export default AAvatarDemo;
