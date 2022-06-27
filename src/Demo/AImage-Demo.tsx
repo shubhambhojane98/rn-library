@@ -3,16 +3,21 @@ import {SafeAreaView, ScrollView} from 'react-native';
 import {Color} from '../theme';
 import ATypography from '../components/ATypography/ATypography';
 import AImage from '../components/AImage/AImage';
+import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
 
 const AImageDemo = () => {
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <ScrollView>
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           Image from URL with only required props
         </ATypography>
         <AImage sourceUri="https://unsplash.it/400/400?image=1" />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           Image from URL with custom width & height & cache policy
         </ATypography>
         <AImage
@@ -22,7 +27,9 @@ const AImageDemo = () => {
           height={100}
           cache="web"
         />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           Image from URL with margin top, bottom, left & right
         </ATypography>
         <AImage
@@ -36,7 +43,9 @@ const AImageDemo = () => {
           marginLeft={20}
           marginRight={20}
         />
-        <ATypography variant={'primaryBold'} style={{marginVertical: 20}}>
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
           Image from Local Path
         </ATypography>
         {/* <AImage source={require('../../assets/images/FullStar.png')} /> */}
