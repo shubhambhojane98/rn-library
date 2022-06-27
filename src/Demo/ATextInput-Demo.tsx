@@ -10,7 +10,7 @@ import {Color} from '../theme';
 const ATextInputDemo = () => {
   const [credit, setCredit] = useState('');
 
-  const onChangeText = (masked: any, unmasked: any) => {
+  const onChangeText = (masked: any) => {
     setCredit(masked); // you can use the unmasked value as well
   };
   return (
@@ -46,7 +46,7 @@ const ATextInputDemo = () => {
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: 20}}>
-          TextInput with rightIcon && iconHeight && iconWidth && borderColor
+          {`TextInput with rightIcon && iconHeight && iconWidth && borderColor`}
         </ATypography>
         <ATextInput
           marginTop={moderateScale(10, 0.1)}
