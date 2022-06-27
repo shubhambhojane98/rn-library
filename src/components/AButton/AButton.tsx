@@ -15,6 +15,7 @@ import IconSVG from '../../assets/svgs';
 import {fontFamilies} from '../../constants/fontFamilies';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
+import {TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Props {
   backgroundColor?: string;
@@ -89,7 +90,7 @@ const AButton = (props: Props) => {
       {!hyperlink && (
         <ATypography
           children={title}
-          variant={'primaryBold'}
+          variant={TypographyVariant.PRIMARY_BOLD}
           style={{
             ...styles.text,
             color,
@@ -104,7 +105,7 @@ const AButton = (props: Props) => {
       {hyperlink && (
         <ATypography
           children={title}
-          variant={'secondaryDemi'}
+          variant={TypographyVariant.SECONDARY_DEMI}
           style={{
             ...styles.hyperlinkText,
             textAlign,

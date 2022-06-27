@@ -5,6 +5,7 @@ import {Color} from '../../theme';
 import {moderateScale} from 'react-native-size-matters';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
+import {TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Prop {
   label: string;
@@ -21,7 +22,7 @@ const ARadioButton: FC<Prop> = ({selected, label}) => {
       )}
       <ATypography
         children={label}
-        variant={'primary'}
+        variant={TypographyVariant.PRIMARY}
         style={styles.radioButtonLabel}
       />
     </View>

@@ -3,10 +3,10 @@ import {StyleProp, StyleSheet, Text, TextProps, TextStyle} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import {fontFamilies} from '../../constants/fontFamilies';
 import {Color} from '../../theme';
-import {TextAlignment} from './ATypographyEnum';
+import {TextAlignment, TypographyVariant} from './ATypographyEnum';
 import {defaultScale} from '../../utils/Common';
 interface OwnProps {
-  variant?: keyof TypographyStyles;
+  variant?: TypographyVariant;
   color?: string;
   style?: StyleProp<TextStyle>;
   textAlign?: TextAlignment;
@@ -17,7 +17,7 @@ const defaultFontSize = moderateScale(14, defaultScale);
 
 type Props = OwnProps & TextProps;
 const Typography: React.FC<Props> = ({
-  variant = 'primary',
+  variant = TypographyVariant.PRIMARY,
   color = Color.black,
   style,
   textAlign = TextAlignment.Left,
@@ -35,15 +35,6 @@ const Typography: React.FC<Props> = ({
 };
 
 export default Typography;
-
-interface TypographyStyles {
-  primary?: StyleProp<TextStyle>;
-  primarySemiBold?: StyleProp<TextStyle>;
-  primaryBold?: StyleProp<TextStyle>;
-  secondary?: StyleProp<TextStyle>;
-  secondaryDemi?: StyleProp<TextStyle>;
-  secondaryBold?: StyleProp<TextStyle>;
-}
 
 const styles = (props: {fontSize: number}) =>
   StyleSheet.create({
