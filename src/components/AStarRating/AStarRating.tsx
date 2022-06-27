@@ -25,7 +25,7 @@ const AStarRating: FC<Props> = ({
   const [defaultStarRating, setDefaultStarRating] = useState(defaultRating - 1);
   const [maxRating, setMaxRating] = useState([...Array(maxStar)]);
 
-  const onStarClick = (item, bool) => {
+  const onStarClick = (item: any, bool: boolean) => {
     if (bool) {
       item = item - 1 + 0.5;
     }
@@ -64,11 +64,16 @@ const AStarRating: FC<Props> = ({
           </View>
         );
       })}
-      {defaultStarRating !== undefined ? (
+      {/* {defaultStarRating !== undefined ? (
         <ATypography style={styles.ratingCount} fontSize={20}>
           {`${defaultStarRating + 1} / ${maxRating.length}`}
         </ATypography>
-      ) : null}
+      ) : null} */}
+      {defaultStarRating && (
+        <ATypography style={styles.ratingCount} fontSize={20}>
+          {`${defaultStarRating + 1} / ${maxRating.length}`}
+        </ATypography>
+      )}
     </View>
   );
 };

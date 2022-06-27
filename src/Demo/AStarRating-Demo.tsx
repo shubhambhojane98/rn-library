@@ -14,7 +14,7 @@ const AStarRatingDemo = () => {
         <AStarRating
           height={45}
           width={45}
-          defaultRating={3}
+          // defaultRating={3}
           onSelectValue={value => setStarRating(value)}
           maxStar={6}
         />
