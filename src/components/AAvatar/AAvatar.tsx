@@ -5,7 +5,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {defaultScale} from '../../utils/Common';
 import AImage from '../AImage/AImage';
 import ATypography from '../ATypography/ATypography';
-import {TextAlignment} from '../ATypography/ATypographyEnum';
+import {TextAlignment, TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Prop {
   source?: object;
@@ -19,7 +19,7 @@ interface Prop {
   marginLeft?: number;
   cache?: any;
   label?: string;
-  textVariant?: string;
+  textVariant?: TypographyVariant;
   fontSize?: number;
   borderRadius?: number;
 }
