@@ -24,8 +24,8 @@ const AToast: React.FC<Props> = ({
   iconName,
   iconHeight,
   iconWidth,
-  color,
-  backgroundColor,
+  color = Color.white,
+  backgroundColor = Color.black,
 }) => {
   const opacity = useRef(new Animated.Value(0)).current;
 
@@ -104,8 +104,3 @@ const styles = StyleSheet.create({
     paddingHorizontal: moderateScale(10, defaultScale),
   },
 });
-
-AToast.defaultProps = {
-  color: Color.white,
-  backgroundColor: Color.black,
-};
