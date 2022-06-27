@@ -8,5 +8,6 @@ export {default as AImage} from './components/AImage/AImage';
 export {default as ARadioButton} from './components/ARadioButton/ARadioButton';
 export {default as ARadioButtonGroup} from './components/ARadioButtonGroup/ARadioButtonGroup';
 export {default as ATextInput} from './components/ATextInput/ATextInput';
+export {default as ASwitch} from './components/ASwitch/ASwitch';
 export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
