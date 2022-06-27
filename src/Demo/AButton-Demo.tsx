@@ -5,13 +5,14 @@ import {Color} from '../theme';
 import ATypography from '../components/ATypography/ATypography';
 import {defaultScale} from '../utils/Common';
 import AButton from '../components/AButton/AButton';
+import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
 
 const AButtonDemo = () => {
   return (
     <SafeAreaView style={{marginHorizontal: moderateScale(20, defaultScale)}}>
       <ScrollView>
         <ATypography
-          variant={'primaryBold'}
+          variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: moderateScale(20, defaultScale)}}>
           Button with title && backgroundColor && height && width && color &&
           borderRadius && borderWidth && borderColor && onPress
@@ -28,7 +29,7 @@ const AButtonDemo = () => {
             backgroundColor={Color.yellow}
           />
           <ATypography
-            variant={'primaryBold'}
+            variant={TypographyVariant.PRIMARY_BOLD}
             style={{marginVertical: moderateScale(20, defaultScale)}}>
             Button with title && backgroundColor && height && width && color &&
             borderRadius && SourceImage && onPress
@@ -44,7 +45,7 @@ const AButtonDemo = () => {
             imageStyle={{height: 20, width: 40}}
           />
           <ATypography
-            variant={'primaryBold'}
+            variant={TypographyVariant.PRIMARY_BOLD}
             style={{marginVertical: moderateScale(20, defaultScale)}}>
             Button with title && backgroundColor && height && width && color &&
             borderRadius && iconName && iconHeight && iconWidth && onPress
@@ -67,7 +68,7 @@ const AButtonDemo = () => {
             />
           </View>
           <ATypography
-            variant={'primaryBold'}
+            variant={TypographyVariant.PRIMARY_BOLD}
             style={{marginVertical: moderateScale(20, defaultScale)}}>
             Button with title && width && hyperlink && fontWeight &&
             textDecorationline && onPress
@@ -96,7 +97,7 @@ const AButtonDemo = () => {
           />
         </View>
         <ATypography
-          variant={'primaryBold'}
+          variant={TypographyVariant.PRIMARY_BOLD}
           style={{marginVertical: moderateScale(20, defaultScale)}}>
           Image with backgroundSource && height && width && onPress
         </ATypography>

@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with closeButton hidden 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.4)",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "bottom": 24.57142857142857,
+        "left": 24.57142857142857,
+        "paddingTop": 49.14285714285714,
+        "position": "absolute",
+        "right": 24.57142857142857,
+        "top": 24.57142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+    >
+       
+      Modal content!
+    </Text>
+  </View>
+</Modal>
+`;
+
+exports[`renders correctly with default props 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.4)",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "bottom": 24.57142857142857,
+        "left": 24.57142857142857,
+        "paddingTop": 49.14285714285714,
+        "position": "absolute",
+        "right": 24.57142857142857,
+        "top": 24.57142857142857,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "padding": 24.57142857142857,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="close"
+        width={20}
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+    >
+       
+      Modal content!
+    </Text>
+  </View>
+</Modal>
+`;
+
+exports[`renders correctly with transparent 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "bottom": 24.57142857142857,
+        "left": 24.57142857142857,
+        "paddingTop": 49.14285714285714,
+        "position": "absolute",
+        "right": 24.57142857142857,
+        "top": 24.57142857142857,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "padding": 24.57142857142857,
+          "position": "absolute",
+          "right": 0,
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="close"
+        width={20}
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#231F20",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+    >
+       
+      Modal content!
+    </Text>
+  </View>
+</Modal>
+`;

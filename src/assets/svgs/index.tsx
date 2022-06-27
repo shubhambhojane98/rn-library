@@ -10,6 +10,7 @@ import HidePassword from '../../assets/svgs/HidePassword.svg';
 import ShowPassword from '../../assets/svgs/ShowPassword.svg';
 import SelectedRadio from '../../assets/svgs/SelectedRadio.svg';
 import UnselectedRadio from '../../assets/svgs/UnselectedRadio.svg';
+import Close from '../../assets/svgs/Close.svg';
 
 //=====Add icon name (your preference) over here and in Switch case
 export type IconNames =
@@ -18,6 +19,7 @@ export type IconNames =
   | 'unselectedradio'
   | 'hidepassword'
   | 'showpassword'
+  | 'close'
   | 'checkboxfilled'
   | 'checkboxempty'
   | 'fullstar'
@@ -47,6 +49,8 @@ const IconSVG: React.FC<Props> = props => {
       return <SelectedRadio {...props} />;
     case 'unselectedradio':
       return <UnselectedRadio {...props} />;
+    case 'close':
+      return <Close {...props} />;
     default:
       return null;
   }
