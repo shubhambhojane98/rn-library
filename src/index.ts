@@ -9,5 +9,6 @@ export {default as ARadioButton} from './components/ARadioButton/ARadioButton';
 export {default as ARadioButtonGroup} from './components/ARadioButtonGroup/ARadioButtonGroup';
 export {default as ATextInput} from './components/ATextInput/ATextInput';
 export {default as ASwitch} from './components/ASwitch/ASwitch';
+export {default as AVirtualizedList} from './components/AVirtualizedList/AVirtualizedList'
 export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
