@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with default prop 1`] = `
+<RCTScrollView
+  ListHeaderComponent={
+    <React.Fragment>
+      <Typography
+        fontSize={12}
+      >
+        Virutalized List
+      </Typography>
+      <AButton
+        borderRadius={49}
+        color="#007BC1"
+        fontSize={22.114285714285714}
+        height={61.42857142857143}
+        onPress={[Function]}
+        title="Simple Button"
+        width={290}
+      />
+    </React.Fragment>
+  }
+  bounces={false}
+  data={Array []}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  showsVerticalScrollIndicator={false}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 14.742857142857144,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            undefined,
+          ]
+        }
+      >
+        Virutalized List
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": undefined,
+            "borderColor": undefined,
+            "borderRadius": 49,
+            "borderWidth": undefined,
+            "flex": 1,
+            "flexDirection": "row",
+            "height": 61.42857142857143,
+            "justifyContent": "center",
+            "margin": undefined,
+            "opacity": 1,
+            "textAlign": "center",
+            "width": 290,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Mulish-Bold",
+                "fontSize": 21.13142857142857,
+                "fontWeight": "bold",
+              },
+              Object {
+                "color": "#231F20",
+              },
+              Object {
+                "textAlign": "left",
+              },
+              Object {
+                "alignItems": "center",
+                "color": "#007BC1",
+                "fontFamily": undefined,
+                "fontSize": 22.114285714285714,
+                "fontWeight": undefined,
+                "padding": 12.285714285714285,
+                "textAlign": "center",
+                "textDecorationLine": undefined,
+              },
+            ]
+          }
+        >
+          Simple Button
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
