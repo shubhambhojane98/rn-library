@@ -1,3 +1,4 @@
+import {defaultScale} from './utils/Common';
 import {consoleLog, consoleWarn, consoleInfo} from './utils/Log';
 import {CheckboxStatus} from './components/ACheckbox/ACheckboxEnum';
 import {Color} from './theme';
@@ -10,12 +11,13 @@ export {default as ARadioButton} from './components/ARadioButton/ARadioButton';
 export {default as ARadioButtonGroup} from './components/ARadioButtonGroup/ARadioButtonGroup';
 export {default as ATextInput} from './components/ATextInput/ATextInput';
 export {default as ASwitch} from './components/ASwitch/ASwitch';
-export {default as AVirtualizedList} from './components/AVirtualizedList/AVirtualizedList'
+export {default as AVirtualizedList} from './components/AVirtualizedList/AVirtualizedList';
 export {default as AModal} from './components/AModal/AModal';
 export {default as ASwitchSelector} from './components/ASwitchSelector/ASwitchSelector';
 export {default as AStarRating} from './components/AStarRating/AStarRating';
 export {default as ACheckbox} from './components/ACheckbox/ACheckbox';
 export {default as AToast} from './components/AToast/AToast';
+export {default as ACard} from './components/ACard/ACard';
 export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
 export {CheckboxStatus};
