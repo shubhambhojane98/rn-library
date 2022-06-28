@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly default prop 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#353535",
+      "borderRadius": 0,
+      "flexDirection": "row",
+      "height": 9.82857142857143,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "backgroundColor": "#FAD000",
+        "borderRadius": 0,
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": "60%",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly with borderRadius & height prop 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#353535",
+      "borderRadius": 8,
+      "flexDirection": "row",
+      "height": 12,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "backgroundColor": "#FAD000",
+        "borderRadius": 8,
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": "60%",
+      }
+    }
+  />
+</View>
+`;
+
+exports[`renders correctly with completedColor & backgroundColor prop 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#D7D7D7",
+      "borderRadius": 0,
+      "flexDirection": "row",
+      "height": 9.82857142857143,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "backgroundColor": "#007BC1",
+        "borderRadius": 0,
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": "60%",
+      }
+    }
+  />
+</View>
+`;
