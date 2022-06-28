@@ -18,6 +18,7 @@ export {default as ACheckbox} from './components/ACheckbox/ACheckbox';
 export {default as AToast} from './components/AToast/AToast';
 export {default as AAlert} from './components/AAlert/AAlert';
 export {default as ADropDown} from './components/ADropDown/ADropDown';
+export {default as ATopBar} from './components/ATopBar/ATopBar';
 export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
 export {CheckboxStatus};
