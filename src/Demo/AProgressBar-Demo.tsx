@@ -11,13 +11,13 @@ const AProgressBarDemo = () => {
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
-        TextInput with default prop
+        ProgressBar with default prop
       </ATypography>
       <AProgressBar percentage={'70%'} />
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
-        {`TextInput with  completedColor & backgroundColor prop`}
+        {`ProgressBar with  completedColorß & backgroundColor prop`}
       </ATypography>
       <AProgressBar
         completedColor={Color.blue}
@@ -27,7 +27,7 @@ const AProgressBarDemo = () => {
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
-        {`TextInput with  borderRadius & height prop`}
+        {`ProgressBar with  borderRadius & height prop`}
       </ATypography>
       <AProgressBar height={15} borderRadius={8} percentage={'70%'} />
     </SafeAreaView>
