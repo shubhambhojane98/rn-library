@@ -6,7 +6,6 @@ import {
   TextStyle,
   ImageBackground,
   ImageStyle,
-  Text,
   ActivityIndicator,
 } from 'react-native';
 import FastImage, {Source} from 'react-native-fast-image';
@@ -146,7 +145,6 @@ const AButton = (props: Props) => {
 };
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
     flexDirection: 'row',
     textAlign: 'center',
