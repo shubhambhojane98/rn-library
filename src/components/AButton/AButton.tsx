@@ -7,6 +7,7 @@ import {
   ImageBackground,
   ImageStyle,
   Text,
+  ActivityIndicator,
 } from 'react-native';
 import FastImage, {Source} from 'react-native-fast-image';
 import {moderateScale} from 'react-native-size-matters';
@@ -43,6 +44,7 @@ interface Props {
   hyperlink?: boolean;
   borderWidth?: number;
   borderColor?: string;
+  isLoading?: boolean;
 }
 const AButton = (props: Props) => {
   const {
@@ -69,6 +71,7 @@ const AButton = (props: Props) => {
     hyperlink,
     borderWidth,
     borderColor,
+    isLoading = true,
   } = props;
   return (
     <TouchableOpacity
@@ -137,6 +140,7 @@ const AButton = (props: Props) => {
           resizeMode={FastImage.resizeMode.contain}
         />
       ) : null}
+      {isLoading ? <ActivityIndicator size={'small'} /> : null}
     </TouchableOpacity>
   );
 };
