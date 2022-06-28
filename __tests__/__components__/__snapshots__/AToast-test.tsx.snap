@@ -34,6 +34,11 @@ exports[`renders correctly with all props 1`] = `
       }
     }
   >
+    <SvgMock
+      height={30.187755102040814}
+      name="checkboxfilled"
+      width={30.187755102040814}
+    />
     <Text
       style={
         Array [
