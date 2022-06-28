@@ -17,7 +17,7 @@ const AProgressBarDemo = () => {
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
-        {`ProgressBar with  completedColorß & backgroundColor prop`}
+        {`ProgressBar with  completedColor & backgroundColor prop`}
       </ATypography>
       <AProgressBar
         completedColor={Color.blue}
