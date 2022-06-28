@@ -6,7 +6,6 @@ import {
   TextStyle,
   ImageBackground,
   ImageStyle,
-  Text,
 } from 'react-native';
 import FastImage, {Source} from 'react-native-fast-image';
 import {moderateScale} from 'react-native-size-matters';
@@ -142,7 +141,6 @@ const AButton = (props: Props) => {
 };
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
     flexDirection: 'row',
     textAlign: 'center',
