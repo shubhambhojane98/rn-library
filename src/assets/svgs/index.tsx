@@ -11,6 +11,7 @@ import ShowPassword from '../../assets/svgs/ShowPassword.svg';
 import SelectedRadio from '../../assets/svgs/SelectedRadio.svg';
 import UnselectedRadio from '../../assets/svgs/UnselectedRadio.svg';
 import Close from '../../assets/svgs/Close.svg';
+import DownArrow from '../svgs/DownArrow.svg';
 
 //=====Add icon name (your preference) over here and in Switch case
 export type IconNames =
@@ -24,7 +25,8 @@ export type IconNames =
   | 'checkboxempty'
   | 'fullstar'
   | 'halfstar'
-  | 'emptystar';
+  | 'emptystar'
+  | 'downarrow';
 
 type Props = SvgProps & {name: IconNames};
 const IconSVG: React.FC<Props> = props => {
@@ -51,6 +53,8 @@ const IconSVG: React.FC<Props> = props => {
       return <UnselectedRadio {...props} />;
     case 'close':
       return <Close {...props} />;
+    case 'downarrow':
+      return <DownArrow {...props} />;
     default:
       return null;
   }
