@@ -18,6 +18,7 @@ interface colors {
     background: string;
     textColor: string;
     placeholderTextColor: string;
+    backgroundColor: string;
     switchBackgroundColor: string;
     paginationDotColor: string;
     paginationDotBgColor: string;
@@ -34,6 +35,7 @@ interface colors {
     switchActiveBgColor: string;
     switchInActiveBgColor: string;
     switchKnobColor: string;
+    transparent: string;
 }
 declare let themeColors: colors;
 export default themeColors;

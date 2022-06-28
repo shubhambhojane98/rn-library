@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleProp, TextProps, TextStyle } from 'react-native';
-import { TextAlignment } from './ATypographyEnum';
+import { TextAlignment, TypographyVariant } from './ATypographyEnum';
 interface OwnProps {
-    variant?: keyof TypographyStyles;
+    variant?: TypographyVariant;
     color?: string;
     style?: StyleProp<TextStyle>;
     textAlign?: TextAlignment;
@@ -11,11 +11,3 @@ interface OwnProps {
 declare type Props = OwnProps & TextProps;
 declare const Typography: React.FC<Props>;
 export default Typography;
-interface TypographyStyles {
-    primary?: StyleProp<TextStyle>;
-    primarySemiBold?: StyleProp<TextStyle>;
-    primaryBold?: StyleProp<TextStyle>;
-    secondary?: StyleProp<TextStyle>;
-    secondaryDemi?: StyleProp<TextStyle>;
-    secondaryBold?: StyleProp<TextStyle>;
-}

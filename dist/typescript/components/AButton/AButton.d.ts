@@ -24,6 +24,8 @@ interface Props {
     fontWeight?: any;
     textDecorationLine?: any;
     hyperlink?: boolean;
+    borderWidth?: number;
+    borderColor?: string;
 }
 declare const AButton: {
     (props: Props): JSX.Element;
