@@ -16,12 +16,16 @@
     "react-native": "0.68.2"
   },
   "dependencies": {
+    "@react-navigation/material-top-tabs": "^6.2.1",
+    "@react-navigation/native": "^6.0.10",
     "react-native-fast-image": "^8.5.11",
     "react-native-mask-input": "1.2.0",
+    "react-native-pager-view": "^5.4.24",
     "react-native-restart": "^0.0.24",
     "react-native-size-matters": "^0.4.0",
     "react-native-svg": "^12.3.0",
-    "react-native-svg-transformer": "^1.0.0"
+    "react-native-svg-transformer": "^1.0.0",
+    "react-native-tab-view": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
