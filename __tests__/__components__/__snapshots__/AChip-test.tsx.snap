@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with default prop 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignSelf": "center",
+      "backgroundColor": "#fff",
+      "borderColor": "rgba(53, 53, 53, 0.2)",
+      "borderRadius": 60.2,
+      "borderWidth": 1.2285714285714286,
+      "marginHorizontal": 6.142857142857142,
+      "opacity": 1,
+      "paddingHorizontal": 19.65714285714286,
+      "paddingVertical": 4.914285714285715,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "AvenirNextLTPro-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#231F20",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "fontSize": 17.2,
+          "lineHeight": 20.885714285714286,
+          "paddingHorizontal": 19.65714285714286,
+          "paddingVertical": 8.6,
+        },
+      ]
+    }
+  >
+    Whats New
+  </Text>
+</View>
+`;
+
+exports[`renders correctly with selectedBackgroundColor & textColor & selectedTextColor prop 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignSelf": "center",
+      "backgroundColor": "#fff",
+      "borderColor": "rgba(53, 53, 53, 0.2)",
+      "borderRadius": 60.2,
+      "borderWidth": 1.2285714285714286,
+      "marginHorizontal": 6.142857142857142,
+      "opacity": 1,
+      "paddingHorizontal": 19.65714285714286,
+      "paddingVertical": 4.914285714285715,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "AvenirNextLTPro-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#231F20",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "fontSize": 17.2,
+          "lineHeight": 20.885714285714286,
+          "paddingHorizontal": 19.65714285714286,
+          "paddingVertical": 8.6,
+        },
+      ]
+    }
+  >
+    Whats New
+  </Text>
+</View>
+`;
