@@ -10,6 +10,7 @@ import {moderateScale} from 'react-native-size-matters';
 import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
+import {TypographyVariant} from '../ATypography/ATypographyEnum';
 
 interface Props {
   onPress: () => void;
@@ -48,7 +49,7 @@ const AChip: React.FC<Props> = ({
       }}>
       <ATypography
         children={label}
-        variant={'secondaryBold'}
+        variant={TypographyVariant.SECONDARY_BOLD}
         color={
           isSelected
             ? selectedTextColor
