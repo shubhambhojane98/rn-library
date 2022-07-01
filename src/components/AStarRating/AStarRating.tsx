@@ -34,55 +34,63 @@ const AStarRating: FC<Props> = ({
   };
 
   return (
-    <View style={styles.ratingBarStyle}>
-      {maxRating.map((item, i) => {
-        return (
-          <View key={i}>
-            <IconSVG
-              height={height}
-              width={width}
-              name={
-                i <= defaultStarRating
-                  ? 'fullstar'
-                  : i >= defaultStarRating && i < defaultStarRating + 1
-                  ? 'halfstar'
-                  : 'emptystar'
-              }
-            />
-            <View style={styles.wrapper}>
-              <TouchableOpacity
-                activeOpacity={0.7}
-                style={styles.starBtn}
-                onPress={() => onStarClick(i, true)}
+    <View style={styles.container}>
+      <View style={styles.ratingBarStyle}>
+        {maxRating.map((item, i) => {
+          return (
+            <View style={styles.imageStyle} key={i}>
+              <IconSVG
+                height={height}
+                width={width}
+                name={
+                  i <= defaultStarRating
+                    ? 'fullstar'
+                    : i >= defaultStarRating && i < defaultStarRating + 1
+                    ? 'halfstar'
+                    : 'emptystar'
+                }
               />
-              <TouchableOpacity
-                activeOpacity={0.7}
-                style={styles.starBtn}
-                onPress={() => onStarClick(i, false)}
-              />
+              <View style={styles.wrapper}>
+                <TouchableOpacity
+                  activeOpacity={0.7}
+                  style={styles.starBtn}
+                  onPress={() => onStarClick(i, true)}
+                />
+                <TouchableOpacity
+                  activeOpacity={0.7}
+                  style={styles.starBtn}
+                  onPress={() => onStarClick(i, false)}
+                />
+              </View>
             </View>
-          </View>
-        );
-      })}
-      {defaultStarRating !== undefined && defaultStarRating !== -1 && (
-        <ATypography style={styles.ratingCount} fontSize={20}>
-          {`${defaultStarRating + 1} / ${maxRating.length}`}
-        </ATypography>
-      )}
+          );
+        })}
+      </View>
+      <View>
+        {defaultStarRating !== undefined && defaultStarRating !== -1 && (
+          <ATypography style={styles.ratingCount} fontSize={20}>
+            {`${defaultStarRating + 1} / ${maxRating.length}`}
+          </ATypography>
+        )}
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   ratingBarStyle: {
     justifyContent: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    margin: moderateScale(10, defaultScale),
   },
   imageStyle: {
     width: moderateScale(40, defaultScale),
     height: moderateScale(40, defaultScale),
+    margin: moderateScale(2, defaultScale),
     transform: I18nManager.isRTL ? [{rotateY: '180deg'}] : [],
     resizeMode: 'cover',
   },
@@ -90,6 +98,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     position: 'absolute',
+    transform: I18nManager.isRTL ? [{rotateY: '180deg'}] : [],
   },
   starBtn: {
     width: moderateScale(20, defaultScale),
