@@ -7,7 +7,7 @@ import {defaultScale} from '../../utils/Common';
 interface Props {
   children: any;
   height: number;
-  width: number | string;
+  width: number;
   borderRadius?: number;
   borderWidth?: number;
   shadowColor?: string;
@@ -17,7 +17,6 @@ interface Props {
   shadowOpacity?: number;
   shadowRadius?: number;
 }
-
 const TCard: FC<Props> = ({
   height,
   width,
@@ -35,13 +34,12 @@ const TCard: FC<Props> = ({
     <View
       style={{
         ...styles.container,
-        height,
-        width,
-        borderRadius,
-        borderWidth,
-        borderColor,
-        elevation,
-        ...styles.shadowProp,
+        height: moderateScale(height, defaultScale),
+        width: moderateScale(width, defaultScale),
+        borderRadius: moderateScale(borderRadius || 20, defaultScale),
+        borderWidth: moderateScale(borderWidth || 0, defaultScale),
+        borderColor: borderColor,
+        elevation: moderateScale(elevation || 5, defaultScale),
         shadowColor,
         shadowOffset,
         shadowOpacity,
@@ -56,8 +54,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     alignContent: 'center',
     margin: moderateScale(5, defaultScale),
-  },
-  shadowProp: {
     shadowColor: Color.blackOpac80,
     shadowOffset: {
       width: -2,
@@ -67,11 +63,5 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
   },
 });
-TCard.defaultProps = {
-  height: moderateScale(100, defaultScale),
-  width: '100%',
-  borderColor: Color.black,
-  elevation: moderateScale(5, defaultScale),
-  borderRadius: moderateScale(10, defaultScale),
-};
+
 export default TCard;

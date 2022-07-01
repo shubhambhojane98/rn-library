@@ -25,8 +25,8 @@ const ACardDemo = () => {
               uri: 'https://blog.logrocket.com/wp-content/uploads/2020/05/setting-up-continuous-deployment-with-react-firebase-github-actions.png',
             }}></ImageBackground>
         }
-        height={moderateScale(100, defaultScale)}
-        width={moderateScale(250, defaultScale)}
+        height={100}
+        width={250}
       />
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
@@ -36,12 +36,12 @@ const ACardDemo = () => {
         shadowRadius,
       </ATypography>
       <ACard
-        width={moderateScale(300, defaultScale)}
-        height={moderateScale(120, defaultScale)}
+        width={300}
+        height={120}
         borderColor={Color.environment}
-        borderWidth={moderateScale(1, defaultScale)}
-        borderRadius={moderateScale(20, defaultScale)}
-        elevation={moderateScale(10, defaultScale)}
+        borderWidth={1}
+        borderRadius={20}
+        elevation={10}
         children={
           <View
             style={{
