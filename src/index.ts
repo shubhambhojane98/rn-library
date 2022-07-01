@@ -1,6 +1,7 @@
 import {consoleLog, consoleWarn, consoleInfo} from './utils/Log';
 import {CheckboxStatus} from './components/ACheckbox/ACheckboxEnum';
 import {Color} from './theme';
+import {TypographyVariant,TextAlignment} from './components/ATypography/ATypographyEnum';
 export {default as AButton} from './components/AButton/AButton';
 export {default as ATypography} from './components/ATypography/ATypography';
 export {default as AAvatar} from './components/AAvatar/AAvatar';
@@ -21,3 +22,4 @@ export {default as ADropDown} from './components/ADropDown/ADropDown';
 export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
 export {CheckboxStatus};
+export {TextAlignment,TypographyVariant}
