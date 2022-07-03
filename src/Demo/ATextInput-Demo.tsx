@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import {CreditCard} from '../components/ATextInput/AMask';
@@ -9,6 +9,10 @@ import {Color} from '../theme';
 
 const ATextInputDemo = () => {
   const [credit, setCredit] = useState('');
+  const refInput2 = useRef();
+  const refInput3 = useRef();
+  const refInput4 = useRef();
+  const refInput5 = useRef();
 
   const onChangeText = (masked: any) => {
     setCredit(masked); // you can use the unmasked value as well
@@ -30,6 +34,8 @@ const ATextInputDemo = () => {
         <ATextInput
           errorText={'Error text'}
           placeholder="Placeholder"
+          returnKeyType="next"
+          onSubmitEditing={() => refInput2.current?.focus()}
           marginTop={10}
         />
         <ATypography
@@ -42,6 +48,9 @@ const ATextInputDemo = () => {
           placeholder="Placeholder"
           isPassword={true}
           secureTextEntry={true}
+          returnKeyType="next"
+          onSubmitEditing={() => refInput3.current?.focus()}
+          inputRef={refInput2}
         />
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
@@ -52,10 +61,13 @@ const ATextInputDemo = () => {
           marginTop={moderateScale(10, 0.1)}
           placeholder="Placeholder"
           keyboardType="name-phone-pad"
-          rightIcon={'gifticon'}
-          iconHeight={35}
-          iconWidth={35}
+          rightIcon={'downarrow'}
+          iconHeight={20}
+          iconWidth={20}
           borderColor={Color.blue}
+          inputRef={refInput3}
+          onSubmitEditing={() => refInput4.current?.focus()}
+          returnKeyType="next"
         />
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
@@ -66,6 +78,24 @@ const ATextInputDemo = () => {
           mask={CreditCard}
           value={credit}
           onChangeText={onChangeText}
+          returnKeyType="next"
+          inputRef={refInput4}
+          onSubmitEditing={() => refInput5.current?.focus()}
+        />
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
+          {`TextInput with right icon`}
+        </ATypography>
+        <ATextInput
+          marginTop={moderateScale(10, 0.1)}
+          placeholder="Placeholder"
+          keyboardType="name-phone-pad"
+          leftIcon={'downarrow'}
+          iconHeight={20}
+          iconWidth={20}
+          inputRef={refInput5}
+          returnKeyType="next"
         />
       </ScrollView>
     </SafeAreaView>

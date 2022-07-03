@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useRef, useState} from 'react';
 import {
   View,
   TextInput,
@@ -49,11 +49,13 @@ interface Props {
   iconWidth?: number;
   editable?: boolean;
   rightIcon?: any;
+  leftIcon?: any;
   isTopText?: boolean;
   showObfuscatedValue?: boolean;
   placeholderFillCharacter?: string;
   obfuscationCharacter?: string;
   mask?: any;
+  inputRef?: any;
 }
 
 const defaultSize = 20;
@@ -89,11 +91,13 @@ const ATextInput: FC<Props> = ({
   selectionColor,
   width,
   rightIcon,
+  leftIcon,
   disable,
   showObfuscatedValue,
   obfuscationCharacter,
   placeholderFillCharacter,
   mask,
+  inputRef,
 }) => {
   const [visible, setVisible] = useState(true);
   const [isFocused, setIsFocused] = useState(false);
@@ -156,11 +160,21 @@ const ATextInput: FC<Props> = ({
                 width: width,
               },
             ]}>
+            {!isPassword && leftIcon && (
+              <View style={styles.icon}>
+                <IconSVG
+                  height={moderateScale(iconHeight)}
+                  width={moderateScale(iconWidth)}
+                  name={leftIcon}
+                />
+              </View>
+            )}
             <TextInput
               style={styles.textinput}
               placeholder={placeholder}
               onChangeText={onChangeText}
               editable={editable}
+              ref={inputRef}
               autoCorrect={autoCorrect}
               placeholderTextColor={
                 placeholderTextColor || Color.placeholderTextColor
@@ -222,6 +236,7 @@ const ATextInput: FC<Props> = ({
               placeholder={placeholder}
               style={styles.textinput}
               value={value}
+              ref={inputRef}
               showObfuscatedValue={showObfuscatedValue}
               obfuscationCharacter={obfuscationCharacter}
               placeholderFillCharacter={placeholderFillCharacter}
