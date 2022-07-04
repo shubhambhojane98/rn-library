@@ -81,7 +81,6 @@ exports[`renders correctly with default prop 1`] = `
             "borderColor": undefined,
             "borderRadius": 49,
             "borderWidth": undefined,
-            "flex": 1,
             "flexDirection": "row",
             "height": 61.42857142857143,
             "justifyContent": "center",
