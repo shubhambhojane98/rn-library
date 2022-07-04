@@ -78,7 +78,11 @@ const AAccordion: React.FC<Prop> = ({
                 variant={TypographyVariant.PRIMARY_BOLD}
                 style={stylesWithProps.titleStyle}
               />
-              <IconSVG name={expanded ? 'close' : 'downarrow'} />
+              <IconSVG
+                name={selectedItem.id === item.id ? 'uparrow' : 'downarrow'}
+                height={20}
+                width={20}
+              />
             </TouchableOpacity>
             <View style={stylesWithProps.separator} />
             {selectedItem.id === item.id && (

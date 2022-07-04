@@ -51,9 +51,11 @@ const AAccordionDemo = () => {
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{margin: 20, marginTop: 60}}>
-          Accordion with separatorColor
+          Accordion with separatorColor, color and fontSize
         </ATypography>
         <AAccordion
+          color={Color.environment}
+          fontSize={20}
           data={listData}
           marginLeft={20}
           marginRight={20}
