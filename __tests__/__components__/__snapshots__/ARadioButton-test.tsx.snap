@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with default prop 1`] = `
+<View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="unselectedradio"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#231F20",
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 6.142857142857142,
+            },
+          ]
+        }
+      >
+        First
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="unselectedradio"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#231F20",
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 6.142857142857142,
+            },
+          ]
+        }
+      >
+        Second
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="unselectedradio"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#231F20",
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 6.142857142857142,
+            },
+          ]
+        }
+      >
+        Third
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="unselectedradio"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#231F20",
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 6.142857142857142,
+            },
+          ]
+        }
+      >
+        Four
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <SvgMock
+        height={20}
+        name="unselectedradio"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "color": "#231F20",
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 6.142857142857142,
+            },
+          ]
+        }
+      >
+        Five
+      </Text>
+    </View>
+  </View>
+</View>
+`;
