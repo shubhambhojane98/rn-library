@@ -120,6 +120,9 @@ exports[`renders correctly with default prop 1`] = `
         >
           Simple Button
         </Text>
+        <ActivityIndicator
+          size="small"
+        />
       </View>
     </View>
   </View>
