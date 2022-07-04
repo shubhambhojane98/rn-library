@@ -14,7 +14,7 @@ import {TextAlignVertical, AutoCapitalize} from './ATextInputEnum';
 import ATypography from '../ATypography/ATypography';
 import MaskInput from 'react-native-mask-input';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
-import {defaultScale} from '@/src/utils/Common';
+import {defaultScale} from '../../utils/Common';
 
 interface Props {
   placeholder?: string;
@@ -162,7 +162,7 @@ const ATextInput: FC<Props> = ({
               },
             ]}>
             {!isPassword && leftIcon && (
-              <View style={styles.icon}>
+              <View style={styles.lefticon}>
                 <IconSVG
                   height={moderateScale(iconHeight)}
                   width={moderateScale(iconWidth)}
@@ -283,6 +283,10 @@ const styles = StyleSheet.create({
   icon: {
     paddingRight: moderateScale(15, defaultScale),
     paddingLeft: moderateScale(5, defaultScale),
+  },
+  lefticon: {
+    paddingRight: moderateScale(5, defaultScale),
+    paddingLeft: moderateScale(15, defaultScale),
   },
   textinput: {
     flex: 1,
