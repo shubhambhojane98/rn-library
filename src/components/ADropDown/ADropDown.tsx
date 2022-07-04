@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, FlatList, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  FlatList,
+  StyleSheet,
+  Dimensions,
+} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import ATextInput from '../ATextInput/ATextInput';
 import {Color} from '../../theme';
@@ -22,6 +29,7 @@ interface Prop {
 
 const defaultDropDownHeight = 120;
 const defaultMargin = 0;
+const windowHeight = Dimensions.get('window').height;
 
 const ADropDown: React.FC<Prop> = ({
   data,
@@ -40,7 +48,6 @@ const ADropDown: React.FC<Prop> = ({
 
   const [selectedItem, setSelectedItem] = useState<any>();
   const [showOption, setShowOption] = useState(false);
-
   const [dropDownWidth, setDropDownWidth] = React.useState(undefined);
   const [dropDownTop, setDropDownTop] = React.useState<number | undefined>(
     undefined,
@@ -83,13 +90,14 @@ const ADropDown: React.FC<Prop> = ({
   );
 
   const toggleDropdown = () => {
-    setIcon('close');
+    setIcon('uparrow');
     setShowOption(!showOption);
+    const textInputHeight = 80;
     toggleRef.current.measure(
       (_: any, __: any, width: any, ___: any, px: any, py: any) => {
-        if (py > 640) {
+        if (windowHeight < py + height + textInputHeight) {
           setDropDownWidth(width);
-          setDropDownTop(py - 150);
+          setDropDownTop(py - (height + 35));
           setDropDownLeft(px - 20);
         } else {
           setDropDownWidth(width);
