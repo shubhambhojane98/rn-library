@@ -14,6 +14,7 @@ import {TextAlignVertical, AutoCapitalize} from './ATextInputEnum';
 import ATypography from '../ATypography/ATypography';
 import MaskInput from 'react-native-mask-input';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {defaultScale} from '@/src/utils/Common';
 
 interface Props {
   placeholder?: string;
@@ -280,14 +281,14 @@ const styles = StyleSheet.create({
     backgroundColor: Color.white,
   },
   icon: {
-    paddingRight: moderateScale(15, 0.2),
-    paddingLeft: moderateScale(5, 0.2),
+    paddingRight: moderateScale(15, defaultScale),
+    paddingLeft: moderateScale(5, defaultScale),
   },
   textinput: {
     flex: 1,
-    height: moderateScale(48, 0.2),
+    height: moderateScale(48, defaultScale),
     textAlign: I18nManager.isRTL ? 'right' : 'left',
-    paddingLeft: moderateScale(15, 0.2),
+    paddingLeft: moderateScale(15, defaultScale),
     color: Color.black,
   },
   shadow: {
@@ -296,7 +297,7 @@ const styles = StyleSheet.create({
       width: 0,
       height: 0,
     },
-    shadowOpacity: 0.2,
+    shadowOpacity: defaultScale,
     shadowRadius: 3,
     elevation: 15,
   },
@@ -308,8 +309,8 @@ const styles = StyleSheet.create({
   },
   disableTextinput: {
     flex: 1,
-    height: moderateScale(48, 0.2),
-    paddingLeft: moderateScale(15, 0.2),
+    height: moderateScale(48, defaultScale),
+    paddingLeft: moderateScale(15, defaultScale),
     textAlign: I18nManager.isRTL ? 'right' : 'left',
   },
 });
