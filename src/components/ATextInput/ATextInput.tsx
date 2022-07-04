@@ -56,221 +56,224 @@ interface Props {
   placeholderFillCharacter?: string;
   obfuscationCharacter?: string;
   mask?: any;
-  inputRef?: any;
 }
 
 const defaultSize = 20;
 const defaultMargin = 5;
 
-const ATextInput: FC<Props> = ({
-  placeholder,
-  placeholderTextColor,
-  marginTop = defaultMargin,
-  marginBottom = defaultMargin,
-  marginLeft = defaultMargin,
-  marginRight = defaultMargin,
-  borderColor,
-  value,
-  underlineColorAndroid,
-  autoFocus,
-  keyboardType,
-  textContentType,
-  onChangeText,
-  autoCorrect,
-  returnKeyType,
-  iconHeight = defaultSize,
-  iconWidth = defaultSize,
-  textAlignVertical,
-  editable,
-  onSubmitEditing,
-  multiline,
-  errorText,
-  autoCapitalize,
-  maxLength,
-  isPassword,
-  onEndEditing,
-  selectionColor,
-  width,
-  rightIcon,
-  leftIcon,
-  disable,
-  showObfuscatedValue,
-  obfuscationCharacter,
-  placeholderFillCharacter,
-  mask,
-  inputRef,
-}) => {
-  const [visible, setVisible] = useState(true);
-  const [isFocused, setIsFocused] = useState(false);
-  const [secureTextEntry, setSecureTextEntry] = useState(false);
+const ATextInput: FC<Props> = React.forwardRef(
+  (
+    {
+      placeholder,
+      placeholderTextColor,
+      marginTop = defaultMargin,
+      marginBottom = defaultMargin,
+      marginLeft = defaultMargin,
+      marginRight = defaultMargin,
+      borderColor,
+      value,
+      underlineColorAndroid,
+      autoFocus,
+      keyboardType,
+      textContentType,
+      onChangeText,
+      autoCorrect,
+      returnKeyType,
+      iconHeight = defaultSize,
+      iconWidth = defaultSize,
+      textAlignVertical,
+      editable,
+      onSubmitEditing,
+      multiline,
+      errorText,
+      autoCapitalize,
+      maxLength,
+      isPassword,
+      onEndEditing,
+      selectionColor,
+      width,
+      rightIcon,
+      leftIcon,
+      disable,
+      showObfuscatedValue,
+      obfuscationCharacter,
+      placeholderFillCharacter,
+      mask,
+    },
+    ref: React.Ref<TextInput>,
+  ) => {
+    const [visible, setVisible] = useState(true);
+    const [isFocused, setIsFocused] = useState(false);
+    const [secureTextEntry, setSecureTextEntry] = useState(false);
 
-  const onFocus = () => {
-    setIsFocused(true);
-  };
+    const onFocus = () => {
+      setIsFocused(true);
+    };
 
-  const onBlur = () => {
-    setIsFocused(false);
-  };
-  const handlePassword = () => {
-    setVisible(!visible);
-    setSecureTextEntry(!secureTextEntry);
-  };
+    const onBlur = () => {
+      setIsFocused(false);
+    };
+    const handlePassword = () => {
+      setVisible(!visible);
+      setSecureTextEntry(!secureTextEntry);
+    };
 
-  return (
-    <View>
+    return (
       <View>
-        {disable && (
-          <View
-            style={{
-              ...styles.disableTextInputContainer,
-              width: width,
-              marginTop: moderateScale(marginTop),
-              marginBottom: moderateScale(marginBottom),
-              marginLeft: moderateScale(marginLeft),
-              marginRight: moderateScale(marginRight),
-            }}>
-            <TextInput
-              style={styles.disableTextinput}
-              placeholder={placeholder}
-              editable={false}
-              placeholderTextColor={
-                placeholderTextColor || Color.placeholderTextColor
-              }
-            />
-            {rightIcon ? (
-              <View style={styles.icon}>
-                <IconSVG name={rightIcon} />
-              </View>
-            ) : null}
-          </View>
-        )}
+        <View>
+          {disable && (
+            <View
+              style={{
+                ...styles.disableTextInputContainer,
+                width: width,
+                marginTop: moderateScale(marginTop),
+                marginBottom: moderateScale(marginBottom),
+                marginLeft: moderateScale(marginLeft),
+                marginRight: moderateScale(marginRight),
+              }}>
+              <TextInput
+                style={styles.disableTextinput}
+                placeholder={placeholder}
+                editable={false}
+                placeholderTextColor={
+                  placeholderTextColor || Color.placeholderTextColor
+                }
+              />
+              {rightIcon ? (
+                <View style={styles.icon}>
+                  <IconSVG name={rightIcon} />
+                </View>
+              ) : null}
+            </View>
+          )}
 
-        {!mask && !disable && (
-          <View
-            style={[
-              styles.textinputContainer,
-              isFocused && {...styles.shadow, borderColor: Color.black},
-              !isFocused && {
-                borderColor: errorText ? Color.red : borderColor,
-              },
-              {
-                marginTop: moderateScale(marginTop),
-                marginBottom: moderateScale(marginBottom),
-                marginLeft: moderateScale(marginLeft),
-                marginRight: moderateScale(marginRight),
-                width: width,
-              },
-            ]}>
-            {!isPassword && leftIcon && (
-              <View style={styles.lefticon}>
-                <IconSVG
-                  height={moderateScale(iconHeight)}
-                  width={moderateScale(iconWidth)}
-                  name={leftIcon}
-                />
-              </View>
-            )}
-            <TextInput
-              style={styles.textinput}
-              placeholder={placeholder}
-              onChangeText={onChangeText}
-              editable={editable}
-              ref={inputRef}
-              autoCorrect={autoCorrect}
-              placeholderTextColor={
-                placeholderTextColor || Color.placeholderTextColor
-              }
-              value={value}
-              autoFocus={autoFocus}
-              keyboardType={keyboardType}
-              textContentType={textContentType}
-              underlineColorAndroid={underlineColorAndroid}
-              textAlignVertical={textAlignVertical}
-              returnKeyType={returnKeyType}
-              secureTextEntry={secureTextEntry}
-              autoCapitalize={autoCapitalize}
-              multiline={multiline}
-              onSubmitEditing={onSubmitEditing}
-              onEndEditing={onEndEditing}
-              onFocus={onFocus}
-              onBlur={onBlur}
-              maxLength={maxLength}
-              selectionColor={selectionColor}
+          {!mask && !disable && (
+            <View
+              style={[
+                styles.textinputContainer,
+                isFocused && {...styles.shadow, borderColor: Color.black},
+                !isFocused && {
+                  borderColor: errorText ? Color.red : borderColor,
+                },
+                {
+                  marginTop: moderateScale(marginTop),
+                  marginBottom: moderateScale(marginBottom),
+                  marginLeft: moderateScale(marginLeft),
+                  marginRight: moderateScale(marginRight),
+                  width: width,
+                },
+              ]}>
+              {!isPassword && leftIcon && (
+                <View style={styles.lefticon}>
+                  <IconSVG
+                    height={moderateScale(iconHeight)}
+                    width={moderateScale(iconWidth)}
+                    name={leftIcon}
+                  />
+                </View>
+              )}
+              <TextInput
+                style={styles.textinput}
+                placeholder={placeholder}
+                onChangeText={onChangeText}
+                editable={editable}
+                ref={ref}
+                autoCorrect={autoCorrect}
+                placeholderTextColor={
+                  placeholderTextColor || Color.placeholderTextColor
+                }
+                value={value}
+                autoFocus={autoFocus}
+                keyboardType={keyboardType}
+                textContentType={textContentType}
+                underlineColorAndroid={underlineColorAndroid}
+                textAlignVertical={textAlignVertical}
+                returnKeyType={returnKeyType}
+                secureTextEntry={secureTextEntry}
+                autoCapitalize={autoCapitalize}
+                multiline={multiline}
+                onSubmitEditing={onSubmitEditing}
+                onEndEditing={onEndEditing}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                maxLength={maxLength}
+                selectionColor={selectionColor}
+              />
+              {isPassword && (
+                <View style={styles.icon}>
+                  <IconSVG
+                    height={iconHeight}
+                    onPress={handlePassword}
+                    name={visible ? 'showpassword' : 'hidepassword'}
+                  />
+                </View>
+              )}
+              {!isPassword && rightIcon && (
+                <View style={styles.icon}>
+                  <IconSVG
+                    height={moderateScale(iconHeight)}
+                    width={moderateScale(iconWidth)}
+                    name={rightIcon}
+                  />
+                </View>
+              )}
+            </View>
+          )}
+          {mask && (
+            <View
+              style={[
+                styles.textinputContainer,
+                isFocused && {...styles.shadow, borderColor: Color.black},
+                !isFocused && {
+                  borderColor: errorText ? Color.red : borderColor,
+                },
+                {
+                  marginTop: moderateScale(marginTop),
+                  marginBottom: moderateScale(marginBottom),
+                  marginLeft: moderateScale(marginLeft),
+                  marginRight: moderateScale(marginRight),
+                  width: width,
+                },
+              ]}>
+              <MaskInput
+                placeholder={placeholder}
+                style={styles.textinput}
+                value={value}
+                ref={ref}
+                showObfuscatedValue={showObfuscatedValue}
+                obfuscationCharacter={obfuscationCharacter}
+                placeholderFillCharacter={placeholderFillCharacter}
+                onChangeText={onChangeText}
+                onSubmitEditing={onSubmitEditing}
+                onEndEditing={onEndEditing}
+                onFocus={onFocus}
+                onBlur={onBlur}
+                keyboardType={keyboardType}
+                autoCapitalize={autoCapitalize}
+                textAlignVertical={textAlignVertical}
+                mask={mask}
+              />
+            </View>
+          )}
+        </View>
+        <View
+          style={{
+            marginLeft: moderateScale(marginLeft),
+            marginRight: moderateScale(marginRight),
+          }}>
+          {errorText && !disable && !isFocused ? (
+            <ATypography
+              children={errorText}
+              variant={TypographyVariant.PRIMARY}
+              color={Color.red}
+              fontSize={14}
             />
-            {isPassword && (
-              <View style={styles.icon}>
-                <IconSVG
-                  height={iconHeight}
-                  onPress={handlePassword}
-                  name={visible ? 'showpassword' : 'hidepassword'}
-                />
-              </View>
-            )}
-            {!isPassword && rightIcon && (
-              <View style={styles.icon}>
-                <IconSVG
-                  height={moderateScale(iconHeight)}
-                  width={moderateScale(iconWidth)}
-                  name={rightIcon}
-                />
-              </View>
-            )}
-          </View>
-        )}
-        {mask && (
-          <View
-            style={[
-              styles.textinputContainer,
-              isFocused && {...styles.shadow, borderColor: Color.black},
-              !isFocused && {
-                borderColor: errorText ? Color.red : borderColor,
-              },
-              {
-                marginTop: moderateScale(marginTop),
-                marginBottom: moderateScale(marginBottom),
-                marginLeft: moderateScale(marginLeft),
-                marginRight: moderateScale(marginRight),
-                width: width,
-              },
-            ]}>
-            <MaskInput
-              placeholder={placeholder}
-              style={styles.textinput}
-              value={value}
-              ref={inputRef}
-              showObfuscatedValue={showObfuscatedValue}
-              obfuscationCharacter={obfuscationCharacter}
-              placeholderFillCharacter={placeholderFillCharacter}
-              onChangeText={onChangeText}
-              onSubmitEditing={onSubmitEditing}
-              onEndEditing={onEndEditing}
-              onFocus={onFocus}
-              onBlur={onBlur}
-              keyboardType={keyboardType}
-              autoCapitalize={autoCapitalize}
-              textAlignVertical={textAlignVertical}
-              mask={mask}
-            />
-          </View>
-        )}
+          ) : null}
+        </View>
       </View>
-      <View
-        style={{
-          marginLeft: moderateScale(marginLeft),
-          marginRight: moderateScale(marginRight),
-        }}>
-        {errorText && !disable && !isFocused ? (
-          <ATypography
-            children={errorText}
-            variant={TypographyVariant.PRIMARY}
-            color={Color.red}
-            fontSize={14}
-          />
-        ) : null}
-      </View>
-    </View>
-  );
-};
+    );
+  },
+);
 
 const styles = StyleSheet.create({
   textinputContainer: {
