@@ -12,6 +12,7 @@ import SelectedRadio from '../../assets/svgs/SelectedRadio.svg';
 import UnselectedRadio from '../../assets/svgs/UnselectedRadio.svg';
 import Close from '../../assets/svgs/Close.svg';
 import DownArrow from '../svgs/DownArrow.svg';
+import UpArrow from '../svgs/UpArrow.svg';
 
 //=====Add icon name (your preference) over here and in Switch case
 export type IconNames =
@@ -26,7 +27,8 @@ export type IconNames =
   | 'fullstar'
   | 'halfstar'
   | 'emptystar'
-  | 'downarrow';
+  | 'downarrow'
+  | 'uparrow';
 
 type Props = SvgProps & {name: IconNames};
 const IconSVG: React.FC<Props> = props => {
@@ -55,6 +57,8 @@ const IconSVG: React.FC<Props> = props => {
       return <Close {...props} />;
     case 'downarrow':
       return <DownArrow {...props} />;
+    case 'uparrow':
+      return <UpArrow {...props} />;
     default:
       return null;
   }

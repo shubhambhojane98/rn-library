@@ -25,6 +25,8 @@ interface Prop {
   marginLeft?: number;
   marginRight?: number;
   separatorColor?: string;
+  fontSize?: number;
+  color?: string;
 }
 
 const defaultMargin = 0;
@@ -36,12 +38,15 @@ const AAccordion: React.FC<Prop> = ({
   marginLeft = defaultMargin,
   marginRight = defaultMargin,
   separatorColor = Color.greyOpac20,
+  fontSize = 16,
+  color = Color.black,
 }) => {
   if (Platform.OS === 'android') {
     UIManager.setLayoutAnimationEnabledExperimental(true);
   }
   const [expanded, setExpanded] = useState(false);
   const [selectedItem, setSelectedItem] = useState({id: ''});
+  const [icon, SetIcon] = useState('downarrow');
 
   const stylesWithProps = styles({
     marginTop,
@@ -53,7 +58,7 @@ const AAccordion: React.FC<Prop> = ({
 
   const toggleExpand = (item: any) => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-    setExpanded(!expanded);
+    setExpanded(true);
     setSelectedItem(item);
   };
 
@@ -68,11 +73,12 @@ const AAccordion: React.FC<Prop> = ({
               activeOpacity={1}>
               <ATypography
                 children={item.title}
-                fontSize={16}
+                fontSize={fontSize}
+                color={color}
                 variant={TypographyVariant.PRIMARY_BOLD}
                 style={stylesWithProps.titleStyle}
               />
-              <IconSVG name={'downarrow'} />
+              <IconSVG name={expanded ? 'close' : 'downarrow'} />
             </TouchableOpacity>
             <View style={stylesWithProps.separator} />
             {selectedItem.id === item.id && (
