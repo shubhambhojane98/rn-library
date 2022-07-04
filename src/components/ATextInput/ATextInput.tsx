@@ -141,7 +141,7 @@ const ATextInput: FC<Props> = React.forwardRef(
               />
               {rightIcon ? (
                 <View style={styles.icon}>
-                  <IconSVG name={rightIcon} />
+                  <IconSVG name={rightIcon} height={20} width={20} />
                 </View>
               ) : null}
             </View>
