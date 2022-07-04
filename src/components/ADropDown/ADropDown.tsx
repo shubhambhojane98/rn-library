@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import {View, Text, TouchableOpacity, FlatList, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  FlatList,
+  StyleSheet,
+  Dimensions,
+} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import ATextInput from '../ATextInput/ATextInput';
 import {Color} from '../../theme';
@@ -22,6 +29,7 @@ interface Prop {
 
 const defaultDropDownHeight = 120;
 const defaultMargin = 0;
+const windowHeight = Dimensions.get('window').height;
 
 const ADropDown: React.FC<Prop> = ({
   data,
@@ -40,13 +48,14 @@ const ADropDown: React.FC<Prop> = ({
 
   const [selectedItem, setSelectedItem] = useState<any>();
   const [showOption, setShowOption] = useState(false);
-
   const [dropDownWidth, setDropDownWidth] = React.useState(undefined);
-  const [dropDownTop, setDropDownTop] = React.useState(undefined);
+  const [dropDownTop, setDropDownTop] = React.useState<number | undefined>(
+    undefined,
+  );
   const [dropDownLeft, setDropDownLeft] = React.useState<number | undefined>(
     undefined,
   );
-
+  const [icon, setIcon] = useState('downarrow');
   const calculatedPadding = renderItemCustom ? 0 : 12;
 
   const stylesWithProps = styles({
@@ -67,7 +76,11 @@ const ADropDown: React.FC<Prop> = ({
   };
 
   const renderItem = (item: any) => (
-    <TouchableOpacity onPress={() => onSelect(item)}>
+    <TouchableOpacity
+      onPress={() => {
+        setIcon('downarrow');
+        onSelect(item);
+      }}>
       {renderItemCustom ? (
         <>{renderItemCustom(item)}</>
       ) : (
@@ -77,12 +90,20 @@ const ADropDown: React.FC<Prop> = ({
   );
 
   const toggleDropdown = () => {
+    setIcon('uparrow');
     setShowOption(!showOption);
+    const textInputHeight = 80;
     toggleRef.current.measure(
       (_: any, __: any, width: any, ___: any, px: any, py: any) => {
-        setDropDownWidth(width);
-        setDropDownTop(py + 35);
-        setDropDownLeft(px - 20);
+        if (windowHeight < py + height + textInputHeight) {
+          setDropDownWidth(width);
+          setDropDownTop(py - (height + 35));
+          setDropDownLeft(px - 20);
+        } else {
+          setDropDownWidth(width);
+          setDropDownTop(py + 35);
+          setDropDownLeft(px - 20);
+        }
       },
     );
   };
@@ -99,7 +120,7 @@ const ADropDown: React.FC<Prop> = ({
           value={selectedItem ? selectedItem.value : ''}
           disable={disable}
           errorText={errorText}
-          rightIcon={'downarrow'}
+          rightIcon={icon}
           borderColor={borderColor}
           marginBottom={errorText ? 5 : 0}
           marginLeft={0}
@@ -120,7 +141,10 @@ const ADropDown: React.FC<Prop> = ({
           visible={showOption}>
           <TouchableOpacity
             activeOpacity={1}
-            onPress={() => setShowOption(false)}
+            onPress={() => {
+              setShowOption(false);
+              setIcon('downarrow');
+            }}
             style={[
               stylesWithProps.dropDownContent,
               {...stylesWithProps.dropDownBackdrop},
