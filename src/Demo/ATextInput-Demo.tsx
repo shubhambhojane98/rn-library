@@ -1,4 +1,4 @@
-import React, {createRef, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {KeyboardAvoidingView, SafeAreaView, ScrollView} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import {CreditCard} from '../components/ATextInput/AMask';
@@ -9,10 +9,10 @@ import {Color} from '../theme';
 
 const ATextInputDemo = () => {
   const [credit, setCredit] = useState('');
-  const refInput2 = useRef();
-  const refInput3 = useRef();
-  const refInput4 = useRef();
-  const refInput5 = useRef();
+  const refInput2 = useRef<any>();
+  const refInput3 = useRef<any>();
+  const refInput4 = useRef<any>();
+  const refInput5 = useRef<any>();
 
   const onChangeText = (masked: any) => {
     setCredit(masked); // you can use the unmasked value as well
@@ -81,6 +81,7 @@ const ATextInputDemo = () => {
             onChangeText={onChangeText}
             returnKeyType="next"
             ref={refInput4}
+            keyboardType={'numeric'}
             onSubmitEditing={() => refInput5.current?.focus()}
           />
           <ATypography

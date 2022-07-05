@@ -26,6 +26,8 @@ export {default as AAlert} from './components/AAlert/AAlert';
 export {default as ADropDown} from './components/ADropDown/ADropDown';
 export {default as AAccordion} from './components/AAccordion/AAccordion';
 export {default as ATopBar} from './components/ATopBar/ATopBar';
+export {default as AChip} from './components/AChip/AChip';
+export {default as AProgressBar} from './components/AProgressBar/AProgressBar' 
 export {default as AAnimatedPreloader} from './components/AAnimatedPreloader/AAnimatedPreloader';
 export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
