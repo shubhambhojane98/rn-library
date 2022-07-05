@@ -1,3 +1,4 @@
+import {defaultScale} from './utils/Common';
 import {consoleLog, consoleWarn, consoleInfo} from './utils/Log';
 import {CheckboxStatus} from './components/ACheckbox/ACheckboxEnum';
 import {Color} from './theme';
@@ -20,6 +21,7 @@ export {default as ASwitchSelector} from './components/ASwitchSelector/ASwitchSe
 export {default as AStarRating} from './components/AStarRating/AStarRating';
 export {default as ACheckbox} from './components/ACheckbox/ACheckbox';
 export {default as AToast} from './components/AToast/AToast';
+export {default as ACard} from './components/ACard/ACard';
 export {default as AAlert} from './components/AAlert/AAlert';
 export {default as ADropDown} from './components/ADropDown/ADropDown';
 export {default as AAccordion} from './components/AAccordion/AAccordion';
