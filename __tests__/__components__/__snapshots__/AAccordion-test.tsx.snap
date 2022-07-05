@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with default props 1`] = `
+<View>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "minHeight": 26,
+          "opacity": 1,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Bold",
+              "fontSize": 19.65714285714286,
+              "fontWeight": "bold",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "flex": 0.95,
+            },
+          ]
+        }
+      >
+        Lorem ipsum dolor sit amet
+      </Text>
+      <SvgMock
+        name="downarrow"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(53, 53, 53, 0.2)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "minHeight": 26,
+          "opacity": 1,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Bold",
+              "fontSize": 19.65714285714286,
+              "fontWeight": "bold",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "flex": 0.95,
+            },
+          ]
+        }
+      >
+        Sed do eiusmod tempor incididunt ut labore
+      </Text>
+      <SvgMock
+        name="downarrow"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(53, 53, 53, 0.2)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "minHeight": 26,
+          "opacity": 1,
+          "paddingVertical": 12,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Bold",
+              "fontSize": 19.65714285714286,
+              "fontWeight": "bold",
+            },
+            Object {
+              "color": "#231F20",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "flex": 0.95,
+            },
+          ]
+        }
+      >
+        Lorem enim ad minim veniam
+      </Text>
+      <SvgMock
+        name="downarrow"
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(53, 53, 53, 0.2)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+</View>
+`;
