@@ -141,7 +141,11 @@ const ATextInput = React.forwardRef<TextInput, Props>(
               />
               {rightIcon ? (
                 <View style={styles.icon}>
-                  <IconSVG name={rightIcon} height={20} width={20} />
+                  <IconSVG
+                    name={rightIcon}
+                    height={iconHeight}
+                    width={iconWidth}
+                  />
                 </View>
               ) : null}
             </View>
@@ -203,6 +207,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 <View style={styles.icon}>
                   <IconSVG
                     height={iconHeight}
+                    width={iconWidth}
                     onPress={handlePassword}
                     name={visible ? 'showpassword' : 'hidepassword'}
                   />
