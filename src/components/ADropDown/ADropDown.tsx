@@ -90,7 +90,9 @@ const ADropDown: React.FC<Prop> = ({
   );
 
   const toggleDropdown = () => {
-    setIcon('uparrow');
+    if (!disable) {
+      setIcon('uparrow');
+    }
     setShowOption(!showOption);
     const textInputHeight = 80;
     toggleRef.current.measure(
@@ -138,6 +140,7 @@ const ADropDown: React.FC<Prop> = ({
           backgroundColor="transparent"
           transparentOverlay={true}
           animationType="fade"
+          onDismiss={() => setShowOption(false)}
           visible={showOption}>
           <TouchableOpacity
             activeOpacity={1}
