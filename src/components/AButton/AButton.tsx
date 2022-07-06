@@ -70,7 +70,7 @@ const AButton = (props: Props) => {
     hyperlink,
     borderWidth,
     borderColor,
-    isLoading = true,
+    isLoading = false,
   } = props;
   return (
     <TouchableOpacity
