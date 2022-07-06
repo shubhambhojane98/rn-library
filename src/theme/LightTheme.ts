@@ -12,7 +12,7 @@ LightTheme = {
     background: '#FFF',
     error: '#B00020',
     textColor: '#000',
-    shadowColor: '#000',
+    shadowColor: '#FFF',
     black: '#000',
     white: '#FFF',
   },
