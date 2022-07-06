@@ -76,6 +76,37 @@ const ARadioButtonDemo = () => {
             </>
           }
         />
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
+          Modal with loader
+        </ATypography>
+        <AButton
+          title={'Open Modal'}
+          onPress={() => setIsModalVisible(true)}
+          width={290}
+          color={'blue'}
+          borderRadius={49}
+          fontWeight={'500'}
+          textDecorationLine={'underline'}
+          isLoading={true}
+        />
+        <AModal
+          visible={isModalVisible}
+          onDismiss={() => setIsModalVisible(false)}
+          closeButton={true}
+          backgroundColor={Color.white}
+          borderRadius={8}
+          animationType={'fade'}
+          children={
+            <>
+              <ATypography variant={TypographyVariant.PRIMARY_BOLD}>
+                {' '}
+                Modal content!
+              </ATypography>
+            </>
+          }
+        />
       </ScrollView>
     </SafeAreaView>
   );
