@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
+    margin: moderateScale(5, defaultScale),
   },
   radioButtonLabel: {
     fontSize: moderateScale(16, defaultScale),
