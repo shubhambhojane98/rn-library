@@ -33,7 +33,7 @@ const ATopBar: FC<Props> = ({
   }
   return (
     <View style={styles({containerHeight}).container}>
-      <NavigationContainer>
+      <NavigationContainer independent={true}>
         <Tab.Navigator
           initialRouteName={initialRouteNameRTL || screens[0].name}
           screenOptions={{
