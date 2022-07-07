@@ -43,10 +43,13 @@ const TDate: React.FC<Prop> = ({
   const [date, setDate] = useState(getFormatedDate());
 
   const OpenCalender = () => {
-    setShow(true);
+    if (!disable) {
+      setShow(true);
+    }
   };
   const onChange = (event: any, selectedDate: any) => {
     setShow(false);
+
     const currentDate = selectedDate;
     let tempDate = new Date(currentDate);
     let fDate =
