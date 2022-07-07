@@ -1,6 +1,6 @@
 {
   "name": "@adapty/uilibrary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "First NPM Package",
   "scripts": {
     "android": "react-native run-android",

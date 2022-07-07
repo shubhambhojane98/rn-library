@@ -20,7 +20,7 @@ import type {Theme} from '../../utils/types';
 
 interface Props {
   backgroundColor?: string;
-  width?: number;
+  width: number;
   height?: number;
   title?: string;
   onPress: () => void;
@@ -120,7 +120,7 @@ const AButton = (props: Props) => {
             ...stylesWithProp.text,
             textAlign,
             fontFamily,
-            fontSize,
+            fontSize: fontSize || 18,
             fontWeight,
             textDecorationLine,
           }}
@@ -142,7 +142,7 @@ const AButton = (props: Props) => {
       )}
       {sourceImage ? (
         <FastImage
-          style={{...stylesWithProp.container, height, width}}
+          style={{...stylesWithProp.fastImage, height, width}}
           source={sourceImage ? sourceImage : 0}
           resizeMode={FastImage.resizeMode.contain}
         />
@@ -171,6 +171,9 @@ const styles = (props: {colors: any}) =>
       fontFamily: fontFamilies.Fonts.primary,
       padding: moderateScale(10, defaultScale),
       color: props.colors.textColor,
+    },
+    fastImage: {
+      flex: 1,
     },
   });
 export default withTheme(AButton);
