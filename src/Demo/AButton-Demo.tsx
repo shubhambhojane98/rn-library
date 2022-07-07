@@ -35,7 +35,7 @@ const AButtonDemo = () => {
             borderRadius && SourceImage && onPress
           </ATypography>
           <AButton
-            title={'Button with text&Image'}
+            title={'Button with text & Image'}
             borderRadius={40}
             height={50}
             width={300}
@@ -56,7 +56,7 @@ const AButtonDemo = () => {
               justifyContent: 'space-around',
             }}>
             <AButton
-              iconName={'CheckboxFilled'}
+              iconName={'checkboxfilled'}
               iconHeight={moderateScale(20, 0.1)}
               iconWidth={moderateScale(20, 0.1)}
               title={'Button with icon'}

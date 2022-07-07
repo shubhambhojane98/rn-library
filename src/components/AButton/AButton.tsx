@@ -20,7 +20,7 @@ import {TypographyVariant} from '../ATypography/ATypographyEnum';
 interface Props {
   backgroundColor?: string;
   width: number;
-  height: number;
+  height?: number;
   title?: string;
   onPress: () => void;
   borderRadius?: number;
@@ -70,15 +70,15 @@ const AButton = (props: Props) => {
     hyperlink,
     borderWidth,
     borderColor,
-    isLoading = true,
+    isLoading = false,
   } = props;
   return (
     <TouchableOpacity
       onPress={onPress}
       style={{
         ...styles.container,
-        height,
-        width,
+        height: moderateScale(height || 50, defaultScale),
+        width: moderateScale(width || 175, defaultScale),
         backgroundColor: hyperlink ? Color.background : backgroundColor,
         margin,
         borderRadius,
@@ -109,10 +109,10 @@ const AButton = (props: Props) => {
           variant={TypographyVariant.PRIMARY_BOLD}
           style={{
             ...styles.text,
-            color,
+            color: color || Color.black,
             textAlign,
             fontFamily,
-            fontSize,
+            fontSize: fontSize || 18,
             fontWeight,
             textDecorationLine,
           }}
@@ -134,7 +134,7 @@ const AButton = (props: Props) => {
       )}
       {sourceImage ? (
         <FastImage
-          style={{...styles.container, height, width}}
+          style={{...styles.fastImage, height, width}}
           source={sourceImage ? sourceImage : 0}
           resizeMode={FastImage.resizeMode.contain}
         />
@@ -163,11 +163,8 @@ const styles = StyleSheet.create({
     padding: moderateScale(10, defaultScale),
     color: Color.blue,
   },
+  fastImage: {
+    flex: 1,
+  },
 });
-AButton.defaultProps = {
-  color: Color.black,
-  width: moderateScale(175, defaultScale),
-  height: moderateScale(50, defaultScale),
-  fontSize: moderateScale(18, defaultScale),
-};
 export default AButton;

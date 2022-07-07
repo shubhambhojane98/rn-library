@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {useState} from 'react';
 import {
   View,
   TextInput,
@@ -61,7 +61,7 @@ interface Props {
 const defaultSize = 20;
 const defaultMargin = 5;
 
-const ATextInput: FC<Props> = React.forwardRef(
+const ATextInput = React.forwardRef<TextInput, Props>(
   (
     {
       placeholder,
@@ -100,7 +100,7 @@ const ATextInput: FC<Props> = React.forwardRef(
       placeholderFillCharacter,
       mask,
     },
-    ref: React.Ref<TextInput>,
+    ref,
   ) => {
     const [visible, setVisible] = useState(true);
     const [isFocused, setIsFocused] = useState(false);
@@ -141,7 +141,11 @@ const ATextInput: FC<Props> = React.forwardRef(
               />
               {rightIcon ? (
                 <View style={styles.icon}>
-                  <IconSVG name={rightIcon} height={20} width={20} />
+                  <IconSVG
+                    name={rightIcon}
+                    height={iconHeight}
+                    width={iconWidth}
+                  />
                 </View>
               ) : null}
             </View>
@@ -203,6 +207,7 @@ const ATextInput: FC<Props> = React.forwardRef(
                 <View style={styles.icon}>
                   <IconSVG
                     height={iconHeight}
+                    width={iconWidth}
                     onPress={handlePassword}
                     name={visible ? 'showpassword' : 'hidepassword'}
                   />
@@ -249,6 +254,7 @@ const ATextInput: FC<Props> = React.forwardRef(
                 onFocus={onFocus}
                 onBlur={onBlur}
                 keyboardType={keyboardType}
+                returnKeyType={returnKeyType}
                 autoCapitalize={autoCapitalize}
                 textAlignVertical={textAlignVertical}
                 mask={mask}
