@@ -21,7 +21,7 @@ interface Props {
   backgroundColor?: string;
   width: number;
   height?: number;
-  title?: string;
+  title: string;
   onPress: () => void;
   borderRadius?: number;
   margin?: number;
@@ -79,8 +79,8 @@ const AButton = (props: Props) => {
         ...styles.container,
         height: moderateScale(height || 50, defaultScale),
         width: moderateScale(width || 175, defaultScale),
-        backgroundColor: hyperlink ? Color.background : backgroundColor,
-        margin,
+        backgroundColor: backgroundColor || Color.yellow,
+        margin: moderateScale(margin || 2, defaultScale),
         borderRadius,
         borderWidth,
         borderColor,
@@ -129,12 +129,17 @@ const AButton = (props: Props) => {
             fontSize,
             fontWeight,
             textDecorationLine,
+            backgroundColor,
           }}
         />
       )}
       {sourceImage ? (
         <FastImage
-          style={{...styles.fastImage, height, width}}
+          style={{
+            ...styles.fastImage,
+            height: moderateScale(height || 50, defaultScale),
+            width: moderateScale(width || 175, defaultScale),
+          }}
           source={sourceImage ? sourceImage : 0}
           resizeMode={FastImage.resizeMode.contain}
         />
