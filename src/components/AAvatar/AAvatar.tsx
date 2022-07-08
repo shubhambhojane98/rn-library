@@ -1,11 +1,12 @@
 import React, {FC} from 'react';
 import {StyleSheet} from 'react-native';
-import {Color} from '../../theme';
 import {moderateScale} from 'react-native-size-matters';
 import {defaultScale} from '../../utils/Common';
 import AImage from '../AImage/AImage';
 import ATypography from '../ATypography/ATypography';
 import {TextAlignment, TypographyVariant} from '../ATypography/ATypographyEnum';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Prop {
   source?: object;
@@ -22,6 +23,7 @@ interface Prop {
   textVariant?: TypographyVariant;
   fontSize?: number;
   borderRadius?: number;
+  theme: Theme;
 }
 
 const defaultSize = 64;
@@ -45,6 +47,12 @@ const AAvatar: FC<Prop> = ({
 }) => {
   const radiusValue =
     borderRadius !== undefined ? borderRadius : defaultSize / 2;
+
+  const {colors} = useTheme();
+  const bgColor = backgroundColor ? backgroundColor : colors.primary;
+
+  const stylesWithProp = styles({colors});
+
   return (
     <>
       {label && (
@@ -54,12 +62,12 @@ const AAvatar: FC<Prop> = ({
           variant={textVariant}
           fontSize={fontSize}
           style={{
-            ...styles.labelStyle,
+            ...stylesWithProp.labelStyle,
             lineHeight: size || defaultSize,
             width: size || defaultSize,
             height: size || defaultSize,
             borderRadius: radiusValue,
-            backgroundColor: backgroundColor || Color.lightgrey,
+            backgroundColor: bgColor || colors.lightgrey,
             marginTop: moderateScale(marginTop || defaultMargin, defaultScale),
             marginRight: moderateScale(
               marginRight || defaultMargin,
@@ -109,10 +117,11 @@ const AAvatar: FC<Prop> = ({
   );
 };
 
-const styles = StyleSheet.create({
-  labelStyle: {
-    overflow: 'hidden',
-  },
-});
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    labelStyle: {
+      overflow: 'hidden',
+    },
+  });
 
-export default AAvatar;
+export default withTheme(AAvatar);
