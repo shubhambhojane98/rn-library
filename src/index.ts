@@ -24,6 +24,7 @@ export {default as AToast} from './components/AToast/AToast';
 export {default as ACard} from './components/ACard/ACard';
 export {default as AAlert} from './components/AAlert/AAlert';
 export {default as ADropDown} from './components/ADropDown/ADropDown';
+export {default as ADate} from './components/ADate/ADate';
 export {default as AAccordion} from './components/AAccordion/AAccordion';
 export {default as ATopBar} from './components/ATopBar/ATopBar';
 export {default as AChip} from './components/AChip/AChip';

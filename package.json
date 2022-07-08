@@ -16,9 +16,8 @@
     "react-native": "0.68.2"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-native": "0.68.2",
     "@callstack/react-theme-provider": "3.0.7",
+    "@react-native-community/datetimepicker": "^6.2.0",
     "@react-navigation/material-top-tabs": "^6.2.1",
     "@react-navigation/native": "^6.0.10",
     "lottie-ios": "^3.2.3",
