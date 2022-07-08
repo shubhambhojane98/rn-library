@@ -28,7 +28,6 @@ const Provider = (props: Props) => {
   const handleAppearanceChange = (
     preferences: Appearance.AppearancePreferences,
   ) => {
-    console.log('handleAppearanceChange ==>> ', preferences);
     const {colorScheme} = preferences;
     setColorScheme(colorScheme);
   };
