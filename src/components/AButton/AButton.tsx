@@ -22,7 +22,7 @@ interface Props {
   backgroundColor?: string;
   width: number;
   height?: number;
-  title?: string;
+  title: string;
   onPress: () => void;
   borderRadius?: number;
   margin?: number;
@@ -85,10 +85,10 @@ const AButton = (props: Props) => {
       onPress={onPress}
       style={{
         ...stylesWithProp.container,
-        height,
-        width,
         backgroundColor: hyperlink ? colors.primaryVariant : bgColor,
-        margin,
+        height: moderateScale(height || 50, defaultScale),
+        width: moderateScale(width || 175, defaultScale),
+        margin: moderateScale(margin || 2, defaultScale),
         borderRadius,
         borderWidth,
         borderColor,
@@ -137,12 +137,17 @@ const AButton = (props: Props) => {
             fontSize,
             fontWeight,
             textDecorationLine,
+            backgroundColor,
           }}
         />
       )}
       {sourceImage ? (
         <FastImage
-          style={{...stylesWithProp.fastImage, height, width}}
+          style={{
+            ...stylesWithProp.fastImage,
+            height: moderateScale(height || 50, defaultScale),
+            width: moderateScale(width || 175, defaultScale),
+          }}
           source={sourceImage ? sourceImage : 0}
           resizeMode={FastImage.resizeMode.contain}
         />
