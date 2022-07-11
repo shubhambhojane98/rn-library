@@ -51,8 +51,6 @@ const AAvatar: FC<Prop> = ({
   const {colors} = useTheme();
   const bgColor = backgroundColor ? backgroundColor : colors.primary;
 
-  const stylesWithProp = styles({colors});
-
   return (
     <>
       {label && (
@@ -62,7 +60,7 @@ const AAvatar: FC<Prop> = ({
           variant={textVariant}
           fontSize={fontSize}
           style={{
-            ...stylesWithProp.labelStyle,
+            ...styles.labelStyle,
             lineHeight: size || defaultSize,
             width: size || defaultSize,
             height: size || defaultSize,
@@ -117,11 +115,10 @@ const AAvatar: FC<Prop> = ({
   );
 };
 
-const styles = () =>
-  StyleSheet.create({
-    labelStyle: {
-      overflow: 'hidden',
-    },
-  });
+const styles = StyleSheet.create({
+  labelStyle: {
+    overflow: 'hidden',
+  },
+});
 
 export default withTheme(AAvatar);
