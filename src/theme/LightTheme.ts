@@ -15,6 +15,7 @@ LightTheme = {
     shadowColor: '#FFF',
     black: '#000',
     white: '#FFF',
+    backgroundLayout: 'rgba(0, 0, 0, 0.8)',
   },
 };
 
