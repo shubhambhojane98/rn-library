@@ -9,6 +9,7 @@ type DefaultThemColors = {
   shadowColor: string;
   black: string;
   white: string;
+  lightgrey: string;
   backgroundLayout: string;
 };
 

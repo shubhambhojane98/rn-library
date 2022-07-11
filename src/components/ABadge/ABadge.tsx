@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
 import {Text, StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   children: string | number;
@@ -15,12 +16,13 @@ interface Props {
   color?: string;
   borderRadius?: number;
   size?: number;
+  theme: Theme;
 }
 const defaultSize = moderateScale(20, defaultScale);
 const ABadge: FC<Props> = ({
   visible = true,
   children,
-  backgroundColor = Color.red,
+  backgroundColor,
   top,
   right,
   left,
@@ -29,14 +31,19 @@ const ABadge: FC<Props> = ({
   size = defaultSize,
   borderRadius = size / 2,
 }) => {
+  const {colors} = useTheme();
+  const bgColor = backgroundColor ? backgroundColor : colors.primary;
+
+  const stylesWithProp = styles({colors});
+
   return (
     <>
       {visible ? (
         <Text
           numberOfLines={1}
           style={{
-            ...styles.container,
-            backgroundColor,
+            ...stylesWithProp.container,
+            backgroundColor: bgColor,
             color,
             top,
             right,
@@ -55,13 +62,14 @@ const ABadge: FC<Props> = ({
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    textAlign: 'center',
-    textAlignVertical: 'center',
-    paddingHorizontal: moderateScale(4, defaultScale),
-    overflow: 'hidden',
-    position: 'absolute',
-  },
-});
-export default ABadge;
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    container: {
+      textAlign: 'center',
+      textAlignVertical: 'center',
+      paddingHorizontal: moderateScale(4, defaultScale),
+      overflow: 'hidden',
+      position: 'absolute',
+    },
+  });
+export default withTheme(ABadge);

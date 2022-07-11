@@ -15,6 +15,7 @@ DarkTheme = {
     shadowColor: '#D7D7D7',
     black: '#000',
     white: '#FFF',
+    lightgrey: '#D7D7D7',
     backgroundLayout: 'rgba(53, 53, 53, 0.8)',
   },
 };
