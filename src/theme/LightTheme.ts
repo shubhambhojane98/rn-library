@@ -15,6 +15,7 @@ LightTheme = {
     shadowColor: '#FFF',
     black: '#000',
     white: '#FFF',
+    lightgrey: '#D7D7D7',
   },
 };
 
