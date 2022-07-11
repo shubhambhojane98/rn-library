@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {Color} from '../../theme';
 import {moderateScale} from 'react-native-size-matters';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   children: any;
@@ -16,6 +17,7 @@ interface Props {
   shadowOffset?: {width: number; height: number};
   shadowOpacity?: number;
   shadowRadius?: number;
+  theme: Theme;
 }
 const TCard: FC<Props> = ({
   height,
@@ -30,10 +32,13 @@ const TCard: FC<Props> = ({
   shadowOpacity,
   shadowRadius,
 }) => {
+  const {colors} = useTheme();
+  const stylesWithProp = styles({colors});
+
   return (
     <View
       style={{
-        ...styles.container,
+        ...stylesWithProp.container,
         height: moderateScale(height, defaultScale),
         width: moderateScale(width, defaultScale),
         borderRadius: borderRadius || 20,
@@ -49,19 +54,20 @@ const TCard: FC<Props> = ({
     </View>
   );
 };
-const styles = StyleSheet.create({
-  container: {
-    alignSelf: 'center',
-    alignContent: 'center',
-    margin: moderateScale(5, defaultScale),
-    shadowColor: Color.blackOpac80,
-    shadowOffset: {
-      width: -2,
-      height: 4,
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    container: {
+      alignSelf: 'center',
+      alignContent: 'center',
+      margin: moderateScale(5, defaultScale),
+      // shadowColor: 'black',
+      shadowOffset: {
+        width: -2,
+        height: 4,
+      },
+      shadowOpacity: 0.2,
+      shadowRadius: 3,
     },
-    shadowOpacity: 0.2,
-    shadowRadius: 3,
-  },
-});
+  });
 
-export default TCard;
+export default withTheme(TCard);
