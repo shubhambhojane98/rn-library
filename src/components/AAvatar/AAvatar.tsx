@@ -117,7 +117,7 @@ const AAvatar: FC<Prop> = ({
   );
 };
 
-const styles = (props: {colors: any}) =>
+const styles = () =>
   StyleSheet.create({
     labelStyle: {
       overflow: 'hidden',
