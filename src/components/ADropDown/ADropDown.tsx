@@ -9,9 +9,10 @@ import {
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import ATextInput from '../ATextInput/ATextInput';
-import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
 import AModal from '../AModal/AModal';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Prop {
   data: Array<any>;
@@ -25,6 +26,7 @@ interface Prop {
   marginRight?: number;
   marginTop?: number;
   renderItemCustom?: (_: any) => void;
+  theme: Theme;
 }
 
 const defaultDropDownHeight = 120;
@@ -44,6 +46,7 @@ const ADropDown: React.FC<Prop> = ({
   marginTop = defaultMargin,
   renderItemCustom,
 }) => {
+  const {colors} = useTheme();
   const toggleRef = React.useRef<any>();
 
   const [selectedItem, setSelectedItem] = useState<any>();
@@ -68,6 +71,7 @@ const ADropDown: React.FC<Prop> = ({
     marginBottom,
     marginLeft,
     calculatedPadding,
+    colors,
   });
 
   const onSelect = (item: any) => {
@@ -182,6 +186,7 @@ const styles = (props: {
   marginBottom?: number;
   marginLeft?: number;
   calculatedPadding: number;
+  colors: any;
 }) =>
   StyleSheet.create({
     containerStyle: {
@@ -193,7 +198,7 @@ const styles = (props: {
     dropDownContent: {
       padding: moderateScale(props.calculatedPadding, defaultScale),
       justifyContent: 'center',
-      shadowColor: Color.black,
+      shadowColor: props.colors.black,
       shadowOffset: {
         width: 0,
         height: 0,
@@ -210,7 +215,6 @@ const styles = (props: {
       right: 0,
     },
     dropDownBackground: {
-      backgroundColor: Color.white,
       position: 'absolute',
       top: props.dropDownTop,
       left: props.dropDownLeft,
@@ -219,11 +223,13 @@ const styles = (props: {
         props.height || defaultDropDownHeight,
         defaultScale,
       ),
+      backgroundColor: props.colors.background,
     },
     dropDownItem: {
       textAlign: 'left',
       height: moderateScale(30, defaultScale),
       justifyContent: 'center',
+      color: props.colors.textColor,
     },
     dropDownButton: {
       position: 'absolute',
@@ -234,4 +240,4 @@ const styles = (props: {
     },
   });
 
-export default ADropDown;
+export default withTheme(ADropDown);
