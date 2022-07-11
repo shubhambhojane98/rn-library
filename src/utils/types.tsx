@@ -11,6 +11,7 @@ type DefaultThemColors = {
   white: string;
   lightgrey: string;
   backgroundLayout: string;
+  transparent: string;
 };
 
 export type ThemeBase = {
