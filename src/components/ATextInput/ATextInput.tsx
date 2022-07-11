@@ -121,7 +121,6 @@ const ATextInput = React.forwardRef<TextInput, Props>(
     };
 
     const {colors} = useTheme();
-    // const bgColor = backgroundColor ? backgroundColor : colors.primary;
 
     const stylesWithProp = styles({colors});
 
