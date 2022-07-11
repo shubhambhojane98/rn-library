@@ -34,4 +34,8 @@ export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
 export {CheckboxStatus};
 export {TextAlignment, TypographyVariant};
+export {useTheme, withTheme} from './core/theming';
+export {default as Provider} from './core/Provider';
+export {default as LightTheme} from './theme/LightTheme';
+export {default as DarkTheme} from './theme/DarkTheme';
 export {defaultScale};
