@@ -11,6 +11,7 @@ interface Props {
   option2: string;
   onSelectSwitch: any;
   width?: number;
+  isDisabled?: boolean;
 }
 
 const ASwitchSelector: FC<Props> = ({
@@ -18,16 +19,25 @@ const ASwitchSelector: FC<Props> = ({
   option2,
   onSelectSwitch,
   width,
+  isDisabled = false,
 }) => {
   const [getSelectionMode, setSelectionMode] = useState(2);
 
   const toggleSwitch = (val: any) => {
+    if (isDisabled) {
+      return;
+    }
     setSelectionMode(val);
     onSelectSwitch(val);
   };
 
   return (
-    <View style={{...styles.switchContainer, width: width}}>
+    <View
+      style={{
+        ...styles.switchContainer,
+        width: width,
+        opacity: isDisabled ? 0.5 : 1,
+      }}>
       <TouchableOpacity
         activeOpacity={1}
         onPress={() => toggleSwitch(1)}
