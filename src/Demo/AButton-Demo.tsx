@@ -25,6 +25,17 @@ const AButtonDemo = () => {
           <ATypography
             variant={TypographyVariant.PRIMARY_BOLD}
             style={{marginVertical: moderateScale(20, defaultScale)}}>
+            Button with isDisabled props
+          </ATypography>
+          <AButton
+            width={100}
+            onPress={() => Alert.alert('button Pressed')}
+            title={'Press Me'}
+            isDisabled={true}
+          />
+          <ATypography
+            variant={TypographyVariant.PRIMARY_BOLD}
+            style={{marginVertical: moderateScale(20, defaultScale)}}>
             Button with title && backgroundColor && height && width && color &&
             borderRadius && borderWidth && borderColor && onPress
           </ATypography>
