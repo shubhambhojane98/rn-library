@@ -45,6 +45,7 @@ interface Props {
   borderWidth?: number;
   borderColor?: string;
   isLoading?: boolean;
+  isDisabled?: boolean;
   theme: Theme;
 }
 const AButton = (props: Props) => {
@@ -72,6 +73,7 @@ const AButton = (props: Props) => {
     hyperlink,
     borderWidth,
     borderColor,
+    isDisabled = false,
     isLoading = false,
   } = props;
 
@@ -82,10 +84,15 @@ const AButton = (props: Props) => {
 
   return (
     <TouchableOpacity
+      disabled={isDisabled}
       onPress={onPress}
       style={{
         ...stylesWithProp.container,
-        backgroundColor: hyperlink ? colors.transparent : bgColor,
+        backgroundColor: hyperlink
+          ? colors.transparent
+          : isDisabled
+          ? colors.lightgrey
+          : bgColor,
         height: moderateScale(height || 50, defaultScale),
         width: moderateScale(width || 175, defaultScale),
         margin: moderateScale(margin || 2, defaultScale),
