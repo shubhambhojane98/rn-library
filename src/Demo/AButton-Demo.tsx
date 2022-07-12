@@ -117,7 +117,6 @@ const AButtonDemo = () => {
             onPress={() => Alert.alert('button Pressed')}
             width={moderateScale(190, 0.1)}
             height={moderateScale(50, 0.1)}
-            backgroundColor={Color.white}
             title={''}
           />
         </View>

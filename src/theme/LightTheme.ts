@@ -17,6 +17,8 @@ LightTheme = {
     white: '#FFF',
     lightgrey: '#D7D7D7',
     backgroundLayout: 'rgba(0, 0, 0, 0.8)',
+    transparent: 'transparent',
+    linkColor: '#0000EE',
   },
 };
 

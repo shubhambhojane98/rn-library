@@ -7,10 +7,11 @@ import {
   ViewStyle,
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   onPress: () => void;
@@ -21,6 +22,7 @@ interface Props {
   selectedTextColor?: string;
   textColor?: string;
   isDisabled?: boolean;
+  theme: Theme;
 }
 
 const AChip: React.FC<Props> = ({
@@ -46,6 +48,11 @@ const AChip: React.FC<Props> = ({
     setChipSelected(!isSelected);
     onPress();
   };
+  const {colors} = useTheme();
+  const bgColor = selectedBackgroundColor
+    ? selectedBackgroundColor
+    : colors.primary;
+
   return (
     <TouchableOpacity
       onPress={handleChip}
@@ -53,8 +60,8 @@ const AChip: React.FC<Props> = ({
       style={{
         ...styles.viewStyle,
         opacity: isDisabled ? 0.5 : 1,
-        backgroundColor: isSelected ? selectedBackgroundColor : Color.white,
-        borderColor: isSelected ? selectedBackgroundColor : Color.greyOpac20,
+        backgroundColor: isSelected ? bgColor : colors.white,
+        borderColor: isSelected ? bgColor : colors.lightgrey,
       }}>
       <ATypography
         children={label}
@@ -63,10 +70,10 @@ const AChip: React.FC<Props> = ({
           isSelected
             ? selectedTextColor
               ? selectedTextColor
-              : Color.white
+              : colors.white
             : textColor
             ? textColor
-            : Color.black
+            : colors.black
         }
         fontSize={moderateScale(14, defaultScale)}
         style={textStyle}
@@ -85,4 +92,4 @@ const styles = StyleSheet.create({
     paddingVertical: moderateScale(4, defaultScale),
   },
 });
-export default AChip;
+export default withTheme(AChip);
