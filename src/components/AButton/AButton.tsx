@@ -85,7 +85,7 @@ const AButton = (props: Props) => {
       onPress={onPress}
       style={{
         ...stylesWithProp.container,
-        backgroundColor: hyperlink ? colors.primaryVariant : bgColor,
+        backgroundColor: hyperlink ? colors.transparent : bgColor,
         height: moderateScale(height || 50, defaultScale),
         width: moderateScale(width || 175, defaultScale),
         margin: moderateScale(margin || 2, defaultScale),
@@ -174,8 +174,7 @@ const styles = (props: {colors: any}) =>
       alignItems: 'center',
       fontSize: moderateScale(18, defaultScale),
       fontFamily: fontFamilies.Fonts.primary,
-      padding: moderateScale(10, defaultScale),
-      color: props.colors.textColor,
+      color: props.colors.linkColor,
     },
     fastImage: {
       flex: 1,
