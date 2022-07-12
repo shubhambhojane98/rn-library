@@ -23,38 +23,22 @@ const ACheckBox: FC<CheckBoxProps> = ({
 }) => {
   return (
     <View>
-      {!disable && (
-        <TouchableOpacity onPress={onPress} activeOpacity={1}>
-          <View style={styles.container}>
-            {status === CheckboxStatus.Checked ? (
-              <IconSVG name="checkboxfilled" />
-            ) : (
-              <IconSVG name="checkboxempty" />
-            )}
-            <Typography
-              children={label}
-              variant={TypographyVariant.PRIMARY}
-              style={styles.checkboxLabel}
-            />
-          </View>
-        </TouchableOpacity>
-      )}
-      {disable && (
-        <TouchableOpacity activeOpacity={1}>
-          <View style={styles.containerDisabled}>
-            {status === CheckboxStatus.Checked ? (
-              <IconSVG name="checkboxfilled" />
-            ) : (
-              <IconSVG name="checkboxempty" />
-            )}
-            <Typography
-              children={label}
-              variant={TypographyVariant.PRIMARY}
-              style={styles.checkboxLabel}
-            />
-          </View>
-        </TouchableOpacity>
-      )}
+      <TouchableOpacity
+        onPress={disable ? () => {} : onPress}
+        activeOpacity={1}>
+        <View style={disable ? styles.containerDisabled : styles.container}>
+          {status === CheckboxStatus.Checked ? (
+            <IconSVG name="checkboxfilled" />
+          ) : (
+            <IconSVG name="checkboxempty" />
+          )}
+          <Typography
+            children={label}
+            variant={TypographyVariant.PRIMARY}
+            style={styles.checkboxLabel}
+          />
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
