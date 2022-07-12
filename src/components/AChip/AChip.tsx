@@ -21,6 +21,7 @@ interface Props {
   selectedBackgroundColor?: string;
   selectedTextColor?: string;
   textColor?: string;
+  isDisabled?: boolean;
   theme: Theme;
 }
 
@@ -30,6 +31,7 @@ const AChip: React.FC<Props> = ({
   selectedBackgroundColor,
   selectedTextColor,
   textColor,
+  isDisabled = false,
   textStyle = {
     paddingHorizontal: moderateScale(16, defaultScale),
     paddingVertical: moderateScale(7, defaultScale),
@@ -39,6 +41,13 @@ const AChip: React.FC<Props> = ({
 }) => {
   const [isSelected, setChipSelected] = useState(false);
 
+  const handleChip = () => {
+    if (isDisabled) {
+      return;
+    }
+    setChipSelected(!isSelected);
+    onPress();
+  };
   const {colors} = useTheme();
   const bgColor = selectedBackgroundColor
     ? selectedBackgroundColor
@@ -46,12 +55,11 @@ const AChip: React.FC<Props> = ({
 
   return (
     <TouchableOpacity
-      onPress={() => {
-        setChipSelected(!isSelected);
-        onPress();
-      }}
+      onPress={handleChip}
+      activeOpacity={isDisabled ? 0.5 : 1}
       style={{
         ...styles.viewStyle,
+        opacity: isDisabled ? 0.5 : 1,
         backgroundColor: isSelected ? bgColor : colors.white,
         borderColor: isSelected ? bgColor : colors.lightgrey,
       }}>
