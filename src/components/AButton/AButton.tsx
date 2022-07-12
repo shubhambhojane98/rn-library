@@ -111,7 +111,7 @@ const AButton = (props: Props) => {
         <IconSVG name={iconName} height={iconHeight} width={iconWidth} />
       ) : null}
 
-      {!hyperlink && (
+      {!hyperlink && !backgroundSource && (
         <ATypography
           children={title}
           variant={TypographyVariant.PRIMARY_BOLD}
