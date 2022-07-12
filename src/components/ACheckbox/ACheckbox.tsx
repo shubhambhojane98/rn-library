@@ -42,7 +42,11 @@ const ACheckBox: FC<CheckBoxProps> = ({
       {disable && (
         <TouchableOpacity activeOpacity={1}>
           <View style={styles.containerDisabled}>
-            <IconSVG name="checkboxfilled" />
+            {status === CheckboxStatus.Checked ? (
+              <IconSVG name="checkboxfilled" />
+            ) : (
+              <IconSVG name="checkboxempty" />
+            )}
             <Typography
               children={label}
               variant={TypographyVariant.PRIMARY}
