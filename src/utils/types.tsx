@@ -9,6 +9,10 @@ type DefaultThemColors = {
   shadowColor: string;
   black: string;
   white: string;
+  lightgrey: string;
+  backgroundLayout: string;
+  transparent: string;
+  linkColor: string;
 };
 
 export type ThemeBase = {

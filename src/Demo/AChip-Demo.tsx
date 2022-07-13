@@ -26,6 +26,16 @@ const AChipDemo = () => {
         textColor={Color.black}
         selectedTextColor={Color.healthcare}
       />
+      <ATypography
+        variant={TypographyVariant.PRIMARY_BOLD}
+        style={{marginVertical: 20}}>
+        {`Chip with disable prop`}
+      </ATypography>
+      <AChip
+        label={'Whats New'}
+        onPress={() => console.log('Whats New')}
+        isDisabled={true}
+      />
     </SafeAreaView>
   );
 };

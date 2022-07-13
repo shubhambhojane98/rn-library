@@ -1,11 +1,12 @@
 import React from 'react';
 import {StyleSheet, View, Modal, Pressable} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../../components/ATypography/ATypography';
 import AButton from '../../components/AButton/AButton';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 interface Props {
   visible: boolean;
   title: string;
@@ -17,9 +18,10 @@ interface Props {
   animationType?: 'none' | 'fade' | 'slide';
   backgroundColor?: string;
   borderRadius?: number;
+  theme: Theme;
 }
 
-const TAlert: React.FC<Props> = ({
+const AAlert: React.FC<Props> = ({
   backgroundColor,
   visible,
   borderRadius,
@@ -31,31 +33,34 @@ const TAlert: React.FC<Props> = ({
   onPressYes,
   onDismiss,
 }) => {
+  const {colors} = useTheme();
+
+  const stylesWithProp = styles({colors});
   return (
     <Modal
       transparent
       animationType={animationType ? animationType : 'fade'}
       visible={visible}>
-      <Pressable style={styles.modalOverlay} onPress={onDismiss} />
+      <Pressable style={stylesWithProp.modalOverlay} onPress={onDismiss} />
       <View
         style={{
-          ...styles.modalView,
-          backgroundColor,
+          ...stylesWithProp.modalView,
+          backgroundColor: backgroundColor || colors.background,
           borderRadius,
         }}>
         <ATypography
           fontSize={moderateScale(18, defaultScale)}
           variant={TypographyVariant.PRIMARY_BOLD}
-          color={titleColor ? titleColor : Color.red}
-          style={styles.typography}>
+          color={titleColor || colors.textColor}
+          style={stylesWithProp.typography}>
           {title}
         </ATypography>
         {subTitle ? (
           <ATypography
             fontSize={moderateScale(16, defaultScale)}
             variant={TypographyVariant.PRIMARY_SEMI_BOLD}
-            color={Color.black}
-            style={styles.typography}>
+            color={colors.textColor}
+            style={stylesWithProp.typography}>
             {subTitle}
           </ATypography>
         ) : null}
@@ -63,17 +68,17 @@ const TAlert: React.FC<Props> = ({
           <ATypography
             fontSize={moderateScale(14, defaultScale)}
             variant={TypographyVariant.SECONDARY_DEMI}
-            color={Color.grey}
-            style={styles.typography}>
+            color={colors.textColor}
+            style={stylesWithProp.typography}>
             {description}
           </ATypography>
         ) : null}
 
-        <View style={styles.Button}>
+        <View style={stylesWithProp.Button}>
           <AButton
             onPress={onPressYes}
             title={'Yes'}
-            backgroundColor={Color.yellow}
+            backgroundColor={colors.primary}
             borderRadius={moderateScale(49, defaultScale)}
             margin={moderateScale(10, defaultScale)}
             width={moderateScale(120, defaultScale)}
@@ -81,9 +86,8 @@ const TAlert: React.FC<Props> = ({
           <AButton
             title={'No'}
             onPress={onDismiss}
+            backgroundColor={colors.primary}
             borderRadius={moderateScale(49, defaultScale)}
-            borderWidth={moderateScale(1, defaultScale)}
-            borderColor={Color.black}
             margin={moderateScale(10, defaultScale)}
             width={moderateScale(120, defaultScale)}
           />
@@ -92,35 +96,33 @@ const TAlert: React.FC<Props> = ({
     </Modal>
   );
 };
-const styles = StyleSheet.create({
-  modalView: {
-    position: 'absolute',
-    alignItems: 'center',
-    borderRadius: moderateScale(16, defaultScale),
-    top: moderateScale(56, defaultScale),
-    left: moderateScale(25, defaultScale),
-    right: moderateScale(25, defaultScale),
-  },
-  modalOverlay: {
-    position: 'absolute',
-    top: moderateScale(0, defaultScale),
-    right: moderateScale(0, defaultScale),
-    bottom: moderateScale(0, defaultScale),
-    left: moderateScale(0, defaultScale),
-    backgroundColor: Color.blackOpac80,
-  },
-  typography: {
-    textAlign: 'center',
-    paddingTop: moderateScale(25, defaultScale),
-    paddingHorizontal: moderateScale(25, defaultScale),
-  },
-  Button: {
-    flex: 1,
-    flexDirection: 'row',
-    paddingVertical: moderateScale(20, defaultScale),
-  },
-});
-TAlert.defaultProps = {
-  backgroundColor: Color.white,
-};
-export default TAlert;
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    modalView: {
+      position: 'absolute',
+      alignItems: 'center',
+      borderRadius: moderateScale(16, defaultScale),
+      top: moderateScale(56, defaultScale),
+      left: moderateScale(25, defaultScale),
+      right: moderateScale(25, defaultScale),
+    },
+    modalOverlay: {
+      position: 'absolute',
+      top: moderateScale(0, defaultScale),
+      right: moderateScale(0, defaultScale),
+      bottom: moderateScale(0, defaultScale),
+      left: moderateScale(0, defaultScale),
+      backgroundColor: props.colors.backgroundLayout,
+    },
+    typography: {
+      textAlign: 'center',
+      paddingTop: moderateScale(25, defaultScale),
+      paddingHorizontal: moderateScale(25, defaultScale),
+    },
+    Button: {
+      flex: 1,
+      flexDirection: 'row',
+      paddingVertical: moderateScale(20, defaultScale),
+    },
+  });
+export default withTheme(AAlert);
