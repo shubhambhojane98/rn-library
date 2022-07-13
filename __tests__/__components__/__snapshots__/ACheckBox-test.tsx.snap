@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly default prop 1`] = `
+<View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <SvgMock
+        name="checkboxempty"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 2.4571428571428573,
+            },
+          ]
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "background": "#FFF",
+              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+              "black": "#000",
+              "error": "#B00020",
+              "lightgrey": "#D7D7D7",
+              "linkColor": "#0000EE",
+              "primary": "#6200EE",
+              "primaryVariant": "#3700B3",
+              "secondary": "#03DAC6",
+              "secondaryVariant": "#018786",
+              "shadowColor": "#FFF",
+              "textColor": "#000",
+              "transparent": "transparent",
+              "white": "#FFF",
+            },
+            "dark": false,
+          }
+        }
+      >
+        Checkbox
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with disabled prop 1`] = `
+<View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "opacity": 0.5,
+        }
+      }
+    >
+      <SvgMock
+        name="checkboxfilled"
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Mulish-Regular",
+              "fontSize": 21.13142857142857,
+              "fontWeight": "normal",
+            },
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "textAlign": "left",
+            },
+            Object {
+              "fontSize": 19.65714285714286,
+              "marginHorizontal": 2.4571428571428573,
+            },
+          ]
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "background": "#FFF",
+              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+              "black": "#000",
+              "error": "#B00020",
+              "lightgrey": "#D7D7D7",
+              "linkColor": "#0000EE",
+              "primary": "#6200EE",
+              "primaryVariant": "#3700B3",
+              "secondary": "#03DAC6",
+              "secondaryVariant": "#018786",
+              "shadowColor": "#FFF",
+              "textColor": "#000",
+              "transparent": "transparent",
+              "white": "#FFF",
+            },
+            "dark": false,
+          }
+        }
+      >
+        Checkbox
+      </Text>
+    </View>
+  </View>
+</View>
+`;
