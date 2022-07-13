@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
   },
   radioButtonLabel: {
     fontSize: moderateScale(16, defaultScale),
-    color: Color.black,
     marginHorizontal: moderateScale(5, defaultScale),
   },
 });
