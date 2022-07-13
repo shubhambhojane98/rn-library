@@ -5,6 +5,7 @@ import ARadioButton from '../ARadioButton/ARadioButton';
 interface RadioData {
   id: number;
   value: string;
+  disable?: boolean;
 }
 
 interface Props {
@@ -16,6 +17,9 @@ const ARadioButtonGroup: FC<Props> = ({data, onSelectValue}) => {
   const [selectedItem, setSelectedItem] = useState({id: -1});
 
   const selectHandler = (item: any) => {
+    if (item.disable) {
+      return;
+    }
     setSelectedItem(item);
     onSelectValue(item);
   };
@@ -31,6 +35,7 @@ const ARadioButtonGroup: FC<Props> = ({data, onSelectValue}) => {
             <ARadioButton
               label={item.value}
               selected={selectedItem.id === item.id}
+              disable={item.disable}
             />
           </TouchableOpacity>
         );

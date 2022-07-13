@@ -10,11 +10,12 @@ import {TypographyVariant} from '../ATypography/ATypographyEnum';
 interface Prop {
   label: string;
   selected: boolean;
+  disable?: boolean;
 }
 
-const ARadioButton: FC<Prop> = ({selected, label}) => {
+const ARadioButton: FC<Prop> = ({selected, label, disable}) => {
   return (
-    <View style={styles.container}>
+    <View style={disable ? styles.containerDisabled : styles.container}>
       {selected ? (
         <IconSVG height={20} name="selectedradio" />
       ) : (
@@ -34,6 +35,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     margin: moderateScale(5, defaultScale),
+  },
+  containerDisabled: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    margin: moderateScale(5, defaultScale),
+    opacity: 0.5,
   },
   radioButtonLabel: {
     fontSize: moderateScale(16, defaultScale),
