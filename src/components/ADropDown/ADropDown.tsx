@@ -103,7 +103,7 @@ const ADropDown: React.FC<Prop> = ({
       (_: any, __: any, width: any, ___: any, px: any, py: any) => {
         if (windowHeight < py + height + textInputHeight) {
           setDropDownWidth(width);
-          setDropDownTop(py - (height + 35));
+          setDropDownTop(py - (height + 27));
           setDropDownLeft(px - 20);
         } else {
           setDropDownWidth(width);
