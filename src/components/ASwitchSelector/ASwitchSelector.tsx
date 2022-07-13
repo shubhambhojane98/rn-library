@@ -13,6 +13,7 @@ interface Props {
   onSelectSwitch: any;
   width?: number;
   theme: Theme;
+  isDisabled?: boolean;
 }
 
 const ASwitchSelector: FC<Props> = ({
@@ -20,17 +21,26 @@ const ASwitchSelector: FC<Props> = ({
   option2,
   onSelectSwitch,
   width,
+  isDisabled = false,
 }) => {
   const {colors} = useTheme();
   const [getSelectionMode, setSelectionMode] = useState(2);
   const stylesWithProp = styles({colors});
   const toggleSwitch = (val: any) => {
+    if (isDisabled) {
+      return;
+    }
     setSelectionMode(val);
     onSelectSwitch(val);
   };
 
   return (
-    <View style={{...stylesWithProp.switchContainer, width: width}}>
+    <View
+      style={{
+        ...stylesWithProp.switchContainer,
+        width: width,
+        opacity: isDisabled ? 0.5 : 1,
+      }}>
       <TouchableOpacity
         activeOpacity={1}
         onPress={() => toggleSwitch(1)}

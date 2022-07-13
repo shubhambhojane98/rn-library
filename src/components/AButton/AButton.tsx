@@ -45,6 +45,7 @@ interface Props {
   borderWidth?: number;
   borderColor?: string;
   isLoading?: boolean;
+  isDisabled?: boolean;
   theme: Theme;
 }
 const AButton = (props: Props) => {
@@ -72,6 +73,7 @@ const AButton = (props: Props) => {
     hyperlink,
     borderWidth,
     borderColor,
+    isDisabled = false,
     isLoading = false,
   } = props;
 
@@ -82,10 +84,15 @@ const AButton = (props: Props) => {
 
   return (
     <TouchableOpacity
+      disabled={isDisabled}
       onPress={onPress}
       style={{
         ...stylesWithProp.container,
-        backgroundColor: hyperlink ? colors.primaryVariant : bgColor,
+        backgroundColor: hyperlink
+          ? colors.transparent
+          : isDisabled
+          ? colors.lightgrey
+          : bgColor,
         height: moderateScale(height || 50, defaultScale),
         width: moderateScale(width || 175, defaultScale),
         margin: moderateScale(margin || 2, defaultScale),
@@ -111,7 +118,7 @@ const AButton = (props: Props) => {
         <IconSVG name={iconName} height={iconHeight} width={iconWidth} />
       ) : null}
 
-      {!hyperlink && (
+      {!hyperlink && !backgroundSource && (
         <ATypography
           children={title}
           variant={TypographyVariant.PRIMARY_BOLD}
@@ -174,8 +181,7 @@ const styles = (props: {colors: any}) =>
       alignItems: 'center',
       fontSize: moderateScale(18, defaultScale),
       fontFamily: fontFamilies.Fonts.primary,
-      padding: moderateScale(10, defaultScale),
-      color: props.colors.textColor,
+      color: props.colors.linkColor,
     },
     fastImage: {
       flex: 1,
