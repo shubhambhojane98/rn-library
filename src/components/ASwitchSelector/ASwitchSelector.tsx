@@ -37,7 +37,7 @@ const ASwitchSelector: FC<Props> = ({
         style={{
           ...stylesWithProp.switchBtn,
           backgroundColor:
-            getSelectionMode === 1 ? colors.primary : colors.shadowColor,
+            getSelectionMode === 1 ? colors.primary : colors.lightgrey,
         }}>
         <ATypography
           children={option1}
@@ -52,7 +52,7 @@ const ASwitchSelector: FC<Props> = ({
         style={{
           ...stylesWithProp.switchBtn,
           backgroundColor:
-            getSelectionMode === 2 ? colors.primary : colors.shadowColor,
+            getSelectionMode === 2 ? colors.primary : colors.lightgrey,
         }}>
         <ATypography
           children={option2}
@@ -69,7 +69,7 @@ const styles = (props: {colors: any}) =>
   StyleSheet.create({
     switchContainer: {
       height: moderateScale(52, defaultScale),
-      backgroundColor: props.colors.shadowColor,
+      backgroundColor: props.colors.lightgrey,
       borderRadius: 25,
       flexDirection: 'row',
       justifyContent: 'center',
@@ -85,7 +85,7 @@ const styles = (props: {colors: any}) =>
       alignItems: 'center',
     },
     text: {
-      color: props.colors.textColor,
+      color: props.colors.black,
     },
   });
 
