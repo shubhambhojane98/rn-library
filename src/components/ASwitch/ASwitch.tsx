@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {Animated, Pressable, StyleSheet, I18nManager, View} from 'react-native';
-import {Color} from '../../theme';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface SwitchProps {
   onValueChange: () => void;
@@ -10,17 +11,19 @@ interface SwitchProps {
   inActiveColor?: string;
   knobColor?: string;
   isDisabled: boolean;
+  theme: Theme;
 }
 
 const ASwitch: React.FC<SwitchProps> = ({
   onValueChange,
   switchSize,
   isActive,
-  activeColor = Color.switchActiveBgColor,
-  inActiveColor = Color.switchInActiveBgColor,
-  knobColor = Color.switchKnobColor,
+  activeColor,
+  inActiveColor,
+  knobColor,
   isDisabled = false,
 }) => {
+  const {colors} = useTheme();
   const trackWidth = React.useMemo(() => {
     return switchSize * 2;
   }, [switchSize]);
@@ -45,7 +48,10 @@ const ASwitch: React.FC<SwitchProps> = ({
 
   const interpolatedColorAnimation = trackAnim.interpolate({
     inputRange: [-75, 75],
-    outputRange: [inActiveColor, activeColor],
+    outputRange: [
+      (inActiveColor = inActiveColor || colors.white),
+      (activeColor = activeColor || colors.primary),
+    ],
   });
 
   useEffect(() => {
@@ -79,9 +85,9 @@ const ASwitch: React.FC<SwitchProps> = ({
               width: trackWidth,
               height: trackHeight,
               borderRadius: trackHeight / 2,
-              borderColor: isDisabled ? Color.greyOpac50 : Color.black,
+              borderColor: isDisabled ? colors.greyOpac50 : colors.black,
               backgroundColor: isDisabled
-                ? Color.greyOpac10
+                ? colors.greyOpac10
                 : interpolatedColorAnimation,
             },
           ]}
@@ -101,7 +107,9 @@ const ASwitch: React.FC<SwitchProps> = ({
               width: knobSize,
               height: knobSize,
               borderRadius: knobSize / 2,
-              backgroundColor: isDisabled ? Color.greyOpac50 : knobColor,
+              backgroundColor: isDisabled
+                ? colors.greyOpac50
+                : knobColor || colors.black,
             }}
           />
         </Animated.View>
@@ -110,7 +118,7 @@ const ASwitch: React.FC<SwitchProps> = ({
   );
 };
 
-export default ASwitch;
+export default withTheme(ASwitch);
 
 const styles = (props: {switchSize: number}) =>
   StyleSheet.create({
