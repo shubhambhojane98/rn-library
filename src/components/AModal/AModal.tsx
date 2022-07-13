@@ -7,9 +7,10 @@ import {
   TouchableWithoutFeedback,
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import IconSVG from '../../assets/svgs';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   top?: number;
@@ -24,6 +25,7 @@ interface Props {
   onDismiss?: any;
   animationType?: any;
   transparentOverlay?: boolean;
+  theme: Theme;
 }
 
 const defaultMargin = 20;
@@ -42,6 +44,7 @@ const AModal: React.FC<Props> = ({
   animationType,
   transparentOverlay,
 }) => {
+  const {colors} = useTheme();
   const stylesWithProp = styles({
     top,
     right,
@@ -62,14 +65,14 @@ const AModal: React.FC<Props> = ({
             ...stylesWithProp.modalOverlay,
             backgroundColor: transparentOverlay
               ? 'transparent'
-              : Color.blackOpac40,
+              : colors.backgroundLayout,
           }}
         />
       </TouchableWithoutFeedback>
       <View
         style={{
           ...stylesWithProp.modalView,
-          backgroundColor,
+          backgroundColor: backgroundColor || colors.background,
           borderRadius,
         }}>
         {closeButton ? (
@@ -116,4 +119,4 @@ const styles = (props: {
       left: 0,
     },
   });
-export default AModal;
+export default withTheme(AModal);
