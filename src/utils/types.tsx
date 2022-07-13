@@ -12,6 +12,7 @@ type DefaultThemColors = {
   lightgrey: string;
   backgroundLayout: string;
   transparent: string;
+  linkColor: string;
 };
 
 export type ThemeBase = {

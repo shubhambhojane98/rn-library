@@ -7,10 +7,11 @@ import {
   ViewStyle,
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   onPress: () => void;
@@ -20,6 +21,8 @@ interface Props {
   selectedBackgroundColor?: string;
   selectedTextColor?: string;
   textColor?: string;
+  isDisabled?: boolean;
+  theme: Theme;
 }
 
 const AChip: React.FC<Props> = ({
@@ -28,6 +31,7 @@ const AChip: React.FC<Props> = ({
   selectedBackgroundColor,
   selectedTextColor,
   textColor,
+  isDisabled = false,
   textStyle = {
     paddingHorizontal: moderateScale(16, defaultScale),
     paddingVertical: moderateScale(7, defaultScale),
@@ -36,16 +40,28 @@ const AChip: React.FC<Props> = ({
   },
 }) => {
   const [isSelected, setChipSelected] = useState(false);
+
+  const handleChip = () => {
+    if (isDisabled) {
+      return;
+    }
+    setChipSelected(!isSelected);
+    onPress();
+  };
+  const {colors} = useTheme();
+  const bgColor = selectedBackgroundColor
+    ? selectedBackgroundColor
+    : colors.primary;
+
   return (
     <TouchableOpacity
-      onPress={() => {
-        setChipSelected(!isSelected);
-        onPress();
-      }}
+      onPress={handleChip}
+      activeOpacity={isDisabled ? 0.5 : 1}
       style={{
         ...styles.viewStyle,
-        backgroundColor: isSelected ? selectedBackgroundColor : Color.white,
-        borderColor: isSelected ? selectedBackgroundColor : Color.greyOpac20,
+        opacity: isDisabled ? 0.5 : 1,
+        backgroundColor: isSelected ? bgColor : colors.white,
+        borderColor: isSelected ? bgColor : colors.lightgrey,
       }}>
       <ATypography
         children={label}
@@ -54,10 +70,10 @@ const AChip: React.FC<Props> = ({
           isSelected
             ? selectedTextColor
               ? selectedTextColor
-              : Color.white
+              : colors.white
             : textColor
             ? textColor
-            : Color.black
+            : colors.black
         }
         fontSize={moderateScale(14, defaultScale)}
         style={textStyle}
@@ -76,4 +92,4 @@ const styles = StyleSheet.create({
     paddingVertical: moderateScale(4, defaultScale),
   },
 });
-export default AChip;
+export default withTheme(AChip);
