@@ -2,7 +2,6 @@ import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import AToast from '../../src/components/AToast/AToast';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 beforeEach(() => {
   jest.useFakeTimers();
