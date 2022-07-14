@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with  props 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Mulish-SemiBold",
+        "fontSize": 19.65714285714286,
+        "fontWeight": "600",
+      },
+      Object {
+        "color": "#231F20",
+      },
+      Object {
+        "textAlign": "left",
+      },
+      undefined,
+    ]
+  }
+>
+  Text
+</Text>
+`;
