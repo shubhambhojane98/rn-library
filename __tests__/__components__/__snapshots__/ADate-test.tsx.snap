@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with borderColor, marginBottom , marginLeft , marginRight ,marginTop , onSelectedDate, 1`] = `
+<View
+  renderToHardwareTextureAndroid={true}
+  style={
+    Object {
+      "marginBottom": 24.57142857142857,
+      "marginLeft": 24.57142857142857,
+      "marginRight": 24.57142857142857,
+      "marginTop": 24.57142857142857,
+    }
+  }
+>
+  <View>
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "borderRadius": 2,
+                "borderWidth": 1,
+                "flexDirection": "row",
+              },
+              false,
+              Object {
+                "borderColor": "#009A46",
+              },
+              Object {
+                "marginBottom": 38.61224489795918,
+                "marginLeft": 38.61224489795918,
+                "marginRight": 38.61224489795918,
+                "marginTop": 38.61224489795918,
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <TextInput
+            editable={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholderTextColor="#5D5D5D"
+            style={
+              Object {
+                "color": "#231F20",
+                "flex": 1,
+                "height": 58.971428571428575,
+                "paddingLeft": 18.428571428571427,
+                "textAlign": "left",
+              }
+            }
+            value="14/7/2022"
+          />
+          <View
+            style={
+              Object {
+                "paddingLeft": 6.142857142857142,
+                "paddingRight": 18.428571428571427,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginLeft": 38.61224489795918,
+            "marginRight": 38.61224489795918,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with default props 1`] = `
+<View
+  renderToHardwareTextureAndroid={true}
+  style={
+    Object {
+      "marginBottom": 24.57142857142857,
+      "marginLeft": 24.57142857142857,
+      "marginRight": 24.57142857142857,
+      "marginTop": 24.57142857142857,
+    }
+  }
+>
+  <View>
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "borderRadius": 2,
+                "borderWidth": 1,
+                "flexDirection": "row",
+              },
+              false,
+              Object {
+                "borderColor": undefined,
+              },
+              Object {
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <TextInput
+            editable={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholderTextColor="#5D5D5D"
+            style={
+              Object {
+                "color": "#231F20",
+                "flex": 1,
+                "height": 58.971428571428575,
+                "paddingLeft": 18.428571428571427,
+                "textAlign": "left",
+              }
+            }
+            value="14/7/2022"
+          />
+          <View
+            style={
+              Object {
+                "paddingLeft": 6.142857142857142,
+                "paddingRight": 18.428571428571427,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginLeft": 0,
+            "marginRight": 0,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with disable & error text props 1`] = `
+<View
+  renderToHardwareTextureAndroid={true}
+  style={
+    Object {
+      "marginBottom": 24.57142857142857,
+      "marginLeft": 24.57142857142857,
+      "marginRight": 24.57142857142857,
+      "marginTop": 24.57142857142857,
+    }
+  }
+>
+  <View>
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "borderRadius": 2,
+                "borderWidth": 1,
+                "flexDirection": "row",
+              },
+              false,
+              Object {
+                "borderColor": "#A81E23",
+              },
+              Object {
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <TextInput
+            editable={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholderTextColor="#5D5D5D"
+            style={
+              Object {
+                "color": "#231F20",
+                "flex": 1,
+                "height": 58.971428571428575,
+                "paddingLeft": 18.428571428571427,
+                "textAlign": "left",
+              }
+            }
+            value="14/7/2022"
+          />
+          <View
+            style={
+              Object {
+                "paddingLeft": 6.142857142857142,
+                "paddingRight": 18.428571428571427,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginLeft": 0,
+            "marginRight": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Mulish-Regular",
+                "fontSize": 17.2,
+                "fontWeight": "normal",
+              },
+              Object {
+                "color": "#A81E23",
+              },
+              Object {
+                "textAlign": "left",
+              },
+              undefined,
+            ]
+          }
+          theme={
+            Object {
+              "colors": Object {
+                "background": "#FFF",
+                "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+                "black": "#000",
+                "error": "#B00020",
+                "lightgrey": "#D7D7D7",
+                "linkColor": "#0000EE",
+                "primary": "#6200EE",
+                "primaryVariant": "#3700B3",
+                "secondary": "#03DAC6",
+                "secondaryVariant": "#018786",
+                "shadowColor": "#FFF",
+                "textColor": "#000",
+                "transparent": "transparent",
+                "white": "#FFF",
+              },
+              "dark": false,
+            }
+          }
+        >
+          wrong Date
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with disable & placeholder props 1`] = `
+<View
+  renderToHardwareTextureAndroid={true}
+  style={
+    Object {
+      "marginBottom": 24.57142857142857,
+      "marginLeft": 24.57142857142857,
+      "marginRight": 24.57142857142857,
+      "marginTop": 24.57142857142857,
+    }
+  }
+>
+  <View>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#D7D7D7",
+              "borderRadius": 2,
+              "flexDirection": "row",
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "width": undefined,
+            }
+          }
+        >
+          <TextInput
+            editable={false}
+            placeholder="placeholder"
+            placeholderTextColor="#5D5D5D"
+            style={
+              Object {
+                "flex": 1,
+                "height": 58.971428571428575,
+                "paddingLeft": 18.428571428571427,
+                "textAlign": "left",
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "paddingLeft": 6.142857142857142,
+                "paddingRight": 18.428571428571427,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginLeft": 0,
+            "marginRight": 0,
+          }
+        }
+      />
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        }
+      }
+    />
+  </View>
+</View>
+`;
