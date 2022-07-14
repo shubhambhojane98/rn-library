@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Animated, StyleSheet, View} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import ATypography from '../../components/ATypography/ATypography';
@@ -8,8 +8,10 @@ import {defaultScale} from '../../utils/Common';
 import {Color} from '../../theme';
 
 interface Props {
+  visible: boolean;
+  onDismiss: () => void;
   label: string;
-  toastTime?: number;
+  duration?: number;
   iconName?: any;
   iconHeight?: number;
   iconWidth?: number;
@@ -19,8 +21,10 @@ interface Props {
 const defaultSize = moderateScale(20, defaultScale);
 
 const AToast: React.FC<Props> = ({
+  visible,
+  onDismiss,
   label,
-  toastTime,
+  duration,
   iconName,
   iconHeight,
   iconWidth,
@@ -28,22 +32,35 @@ const AToast: React.FC<Props> = ({
   backgroundColor = Color.black,
 }) => {
   const opacity = useRef(new Animated.Value(0)).current;
+  const [hidden, setHidden] = useState<boolean>(!visible);
+  const hideTimeout = useRef<undefined>(undefined);
 
-  useEffect(() => {
-    Animated.sequence([
+  React.useLayoutEffect(() => {
+    if (visible) {
+      if (hideTimeout.current) clearTimeout(hideTimeout.current);
+      setHidden(false);
       Animated.timing(opacity, {
         toValue: 1,
-        duration: 500,
+        duration: 1000,
         useNativeDriver: true,
-      }),
-      Animated.delay(toastTime ? toastTime : 2000),
+      }).start(({finished}) => {
+        if (finished) {
+          if (finished) {
+            setTimeout(onDismiss, duration);
+          }
+        }
+      });
+    } else {
+      if (hideTimeout.current) clearTimeout(hideTimeout.current);
       Animated.timing(opacity, {
         toValue: 0,
-        duration: 500,
+        duration: 1000,
         useNativeDriver: true,
-      }),
-    ]).start();
-  }, []);
+      }).start(({finished}) => {
+        if (finished) setHidden(true);
+      });
+    }
+  }, [visible, duration, opacity, onDismiss]);
 
   return (
     <View style={styles.container}>
@@ -51,7 +68,7 @@ const AToast: React.FC<Props> = ({
         style={{
           ...styles.animatedView,
           opacity,
-          backgroundColor,
+          backgroundColor: backgroundColor || Color.black,
           transform: [
             {
               translateY: opacity.interpolate({
@@ -71,7 +88,7 @@ const AToast: React.FC<Props> = ({
         <ATypography
           children={label}
           variant={TypographyVariant.SECONDARY}
-          color={color}
+          color={color || Color.white}
           style={styles.text}
         />
       </Animated.View>
