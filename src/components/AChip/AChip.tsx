@@ -16,6 +16,8 @@ import IconSVG from '../../assets/svgs';
 
 interface Props {
   onPress: () => void;
+  onPressCloseIcon?: () => void;
+  onPressLeftIcon?: () => void;
   viewStyle?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
   label: string;
@@ -25,20 +27,24 @@ interface Props {
   isDisabled?: boolean;
   iconHeight?: number;
   iconWidth?: number;
-  rightIcon?: any;
+  closeIcon?: any;
   leftIcon?: any;
   theme: Theme;
 }
 
+const defaultSize = 20;
+
 const AChip: React.FC<Props> = ({
   label,
   onPress,
+  onPressCloseIcon,
+  onPressLeftIcon,
   selectedBackgroundColor,
   selectedTextColor,
   textColor,
-  iconHeight,
-  iconWidth,
-  rightIcon,
+  iconHeight = defaultSize,
+  iconWidth = defaultSize,
+  closeIcon,
   leftIcon,
   isDisabled = false,
   textStyle = {
@@ -72,7 +78,12 @@ const AChip: React.FC<Props> = ({
         backgroundColor: isSelected ? bgColor : colors.white,
         borderColor: isSelected ? bgColor : colors.lightgrey,
       }}>
-      <IconSVG name={leftIcon} height={iconHeight} width={iconWidth} />
+      <IconSVG
+        onPress={onPressLeftIcon}
+        name={leftIcon}
+        height={iconHeight}
+        width={iconWidth}
+      />
       <ATypography
         children={label}
         variant={TypographyVariant.SECONDARY_BOLD}
@@ -88,7 +99,12 @@ const AChip: React.FC<Props> = ({
         fontSize={moderateScale(14, defaultScale)}
         style={textStyle}
       />
-      <IconSVG name={rightIcon} height={iconHeight} width={iconWidth} />
+      <IconSVG
+        onPress={onPressCloseIcon}
+        name={closeIcon}
+        height={iconHeight}
+        width={iconWidth}
+      />
     </TouchableOpacity>
   );
 };
