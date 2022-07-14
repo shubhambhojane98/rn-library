@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 import {View, TouchableOpacity, StyleSheet} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import IconSVG from '../../assets/svgs';
-import {Color} from '../../theme';
 import {CheckboxStatus} from './ACheckboxEnum';
 import Typography from '../../components/ATypography/ATypography';
 import {defaultScale} from '../../utils/Common';
@@ -57,7 +56,6 @@ const styles = StyleSheet.create({
   },
   checkboxLabel: {
     fontSize: moderateScale(16, defaultScale),
-    color: Color.black,
     marginHorizontal: moderateScale(2, defaultScale),
   },
 });
