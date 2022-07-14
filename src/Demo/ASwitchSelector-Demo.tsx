@@ -20,7 +20,7 @@ const ASwitchSelectorDemo = () => {
         onSelectSwitch={onSelectSwitch}
       />
       <ATypography
-        children="SwitchSelector with width prop"
+        children="SwitchSelector with width and disable prop"
         style={{marginVertical: 20}}
         variant={TypographyVariant.PRIMARY_BOLD}
       />
@@ -29,6 +29,7 @@ const ASwitchSelectorDemo = () => {
         option2="Two"
         onSelectSwitch={onSelectSwitch}
         width={200}
+        isDisabled={true}
       />
     </SafeAreaView>
   );

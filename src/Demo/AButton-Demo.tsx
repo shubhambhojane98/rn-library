@@ -11,16 +11,27 @@ const AButtonDemo = () => {
   return (
     <SafeAreaView style={{marginHorizontal: moderateScale(20, defaultScale)}}>
       <ScrollView>
-        <ATypography
-          variant={TypographyVariant.PRIMARY_BOLD}
-          style={{marginVertical: moderateScale(20, defaultScale)}}>
-          Button with defauult props
-        </ATypography>
         <View style={{padding: moderateScale(10, 0.1)}}>
+          <ATypography
+            variant={TypographyVariant.PRIMARY_BOLD}
+            style={{marginVertical: moderateScale(20, defaultScale)}}>
+            Button with default props
+          </ATypography>
           <AButton
             width={100}
             onPress={() => Alert.alert('button Pressed')}
             title={'Press Me'}
+          />
+          <ATypography
+            variant={TypographyVariant.PRIMARY_BOLD}
+            style={{marginVertical: moderateScale(20, defaultScale)}}>
+            Button with isDisabled props
+          </ATypography>
+          <AButton
+            width={100}
+            onPress={() => Alert.alert('button Pressed')}
+            title={'Press Me'}
+            isDisabled={true}
           />
           <ATypography
             variant={TypographyVariant.PRIMARY_BOLD}
@@ -117,7 +128,6 @@ const AButtonDemo = () => {
             onPress={() => Alert.alert('button Pressed')}
             width={moderateScale(190, 0.1)}
             height={moderateScale(50, 0.1)}
-            backgroundColor={Color.white}
             title={''}
           />
         </View>

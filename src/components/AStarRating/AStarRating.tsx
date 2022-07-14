@@ -10,6 +10,7 @@ interface Props {
   maxStar?: number;
   height?: number;
   width?: number;
+  editable?: boolean;
   onSelectValue: (starRating: number) => void;
 }
 
@@ -20,12 +21,16 @@ const AStarRating: FC<Props> = ({
   maxStar = 5,
   height = defaultSize,
   width = defaultSize,
+  editable = true,
   onSelectValue,
 }) => {
   const [defaultStarRating, setDefaultStarRating] = useState(defaultRating - 1);
   const [maxRating, setMaxRating] = useState([...Array(maxStar)]);
 
   const onStarClick = (item: any, bool: boolean) => {
+    if (!editable) {
+      return;
+    }
     if (bool) {
       item = item - 1 + 0.5;
     }

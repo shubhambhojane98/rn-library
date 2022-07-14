@@ -25,6 +25,24 @@ const ACheckboxDemo = () => {
         label={'Checkbox'}
         onPress={handleCheckbox}
       />
+
+      <ATypography
+        variant={TypographyVariant.PRIMARY_BOLD}
+        style={{marginVertical: 20}}>
+        {`Checkbox with disabled`}
+      </ATypography>
+      <ACheckBox
+        status="checked"
+        label={'Checkbox'}
+        onPress={handleCheckbox}
+        disable={true}
+      />
+      <ACheckBox
+        status="unchecked"
+        label={'Checkbox'}
+        onPress={handleCheckbox}
+        disable={true}
+      />
     </View>
   );
 };

@@ -10,12 +10,13 @@ import {
 } from 'react-native';
 import FastImage, {Source} from 'react-native-fast-image';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import IconSVG from '../../assets/svgs';
 import {fontFamilies} from '../../constants/fontFamilies';
 import {defaultScale} from '../../utils/Common';
 import ATypography from '../ATypography/ATypography';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   backgroundColor?: string;
@@ -44,6 +45,8 @@ interface Props {
   borderWidth?: number;
   borderColor?: string;
   isLoading?: boolean;
+  isDisabled?: boolean;
+  theme: Theme;
 }
 const AButton = (props: Props) => {
   const {
@@ -70,16 +73,28 @@ const AButton = (props: Props) => {
     hyperlink,
     borderWidth,
     borderColor,
+    isDisabled = false,
     isLoading = false,
   } = props;
+
+  const {colors} = useTheme();
+  const bgColor = backgroundColor ? backgroundColor : colors.primary;
+
+  const stylesWithProp = styles({colors});
+
   return (
     <TouchableOpacity
+      disabled={isDisabled}
       onPress={onPress}
       style={{
-        ...styles.container,
+        ...stylesWithProp.container,
+        backgroundColor: hyperlink
+          ? colors.transparent
+          : isDisabled
+          ? colors.lightgrey
+          : bgColor,
         height: moderateScale(height || 50, defaultScale),
         width: moderateScale(width || 175, defaultScale),
-        backgroundColor: backgroundColor || Color.yellow,
         margin: moderateScale(margin || 2, defaultScale),
         borderRadius,
         borderWidth,
@@ -91,7 +106,7 @@ const AButton = (props: Props) => {
           resizeMode="cover"
           imageStyle={imageStyle}
           style={{
-            ...styles.container,
+            ...stylesWithProp.container,
             margin,
             flex: 1,
             height: '100%',
@@ -103,13 +118,13 @@ const AButton = (props: Props) => {
         <IconSVG name={iconName} height={iconHeight} width={iconWidth} />
       ) : null}
 
-      {!hyperlink && (
+      {!hyperlink && !backgroundSource && (
         <ATypography
           children={title}
           variant={TypographyVariant.PRIMARY_BOLD}
+          color={color || colors.textColor}
           style={{
-            ...styles.text,
-            color: color || Color.black,
+            ...stylesWithProp.text,
             textAlign,
             fontFamily,
             fontSize: fontSize || 18,
@@ -123,7 +138,7 @@ const AButton = (props: Props) => {
           children={title}
           variant={TypographyVariant.SECONDARY_DEMI}
           style={{
-            ...styles.hyperlinkText,
+            ...stylesWithProp.hyperlinkText,
             textAlign,
             fontFamily,
             fontSize,
@@ -136,7 +151,7 @@ const AButton = (props: Props) => {
       {sourceImage ? (
         <FastImage
           style={{
-            ...styles.fastImage,
+            ...stylesWithProp.fastImage,
             height: moderateScale(height || 50, defaultScale),
             width: moderateScale(width || 175, defaultScale),
           }}
@@ -148,28 +163,28 @@ const AButton = (props: Props) => {
     </TouchableOpacity>
   );
 };
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    textAlign: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    alignItems: 'center',
-    fontSize: moderateScale(18, defaultScale),
-    fontFamily: fontFamilies.Fonts.primary,
-    padding: moderateScale(10, defaultScale),
-  },
-  hyperlinkText: {
-    alignItems: 'center',
-    fontSize: moderateScale(18, defaultScale),
-    fontFamily: fontFamilies.Fonts.primary,
-    padding: moderateScale(10, defaultScale),
-    color: Color.blue,
-  },
-  fastImage: {
-    flex: 1,
-  },
-});
-export default AButton;
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    container: {
+      alignItems: 'center',
+      flexDirection: 'row',
+      textAlign: 'center',
+      justifyContent: 'center',
+    },
+    text: {
+      alignItems: 'center',
+      fontSize: moderateScale(18, defaultScale),
+      fontFamily: fontFamilies.Fonts.primary,
+      padding: moderateScale(10, defaultScale),
+    },
+    hyperlinkText: {
+      alignItems: 'center',
+      fontSize: moderateScale(18, defaultScale),
+      fontFamily: fontFamilies.Fonts.primary,
+      color: props.colors.linkColor,
+    },
+    fastImage: {
+      flex: 1,
+    },
+  });
+export default withTheme(AButton);
