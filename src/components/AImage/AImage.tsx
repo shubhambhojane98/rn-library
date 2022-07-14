@@ -1,9 +1,10 @@
 import React, {FC} from 'react';
 import {Image} from 'react-native';
 import FastImage from 'react-native-fast-image';
-import {Color} from '../../theme';
 import {moderateScale} from 'react-native-size-matters';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Prop {
   source?: object;
@@ -18,6 +19,7 @@ interface Prop {
   marginLeft?: number;
   cache?: any;
   borderRadius?: number;
+  theme: Theme;
 }
 
 const defaultSize = 64;
@@ -38,6 +40,7 @@ const AImage: FC<Prop> = ({
   cache,
   borderRadius,
 }) => {
+  const {colors} = useTheme();
   return (
     <>
       {sourceUri && (
@@ -45,7 +48,7 @@ const AImage: FC<Prop> = ({
           style={{
             width: moderateScale(width || defaultSize, defaultScale),
             height: moderateScale(height || defaultSize, defaultScale),
-            backgroundColor: backgroundColor || Color.transparent,
+            backgroundColor: backgroundColor || colors.transparent,
             marginTop: moderateScale(marginTop || defaultMargin, defaultScale),
             marginRight: moderateScale(
               marginRight || defaultMargin,
@@ -75,7 +78,7 @@ const AImage: FC<Prop> = ({
           style={{
             width: moderateScale(width || defaultSize, defaultScale),
             height: moderateScale(height || defaultSize, defaultScale),
-            backgroundColor: backgroundColor || Color.transparent,
+            backgroundColor: backgroundColor || colors.transparent,
             marginTop: moderateScale(marginTop || defaultMargin, defaultScale),
             marginRight: moderateScale(
               marginRight || defaultMargin,
@@ -98,4 +101,4 @@ const AImage: FC<Prop> = ({
   );
 };
 
-export default AImage;
+export default withTheme(AImage);
