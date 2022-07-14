@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly activeColor & inactive & knobColor  prop 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "width": 30,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "backgroundColor": "rgba(125, 181, 35, 1)",
+          "borderColor": "#231F20",
+          "borderRadius": 15,
+          "borderWidth": 1,
+          "height": 30,
+          "position": "absolute",
+          "width": 60,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 15,
+          "height": 30,
+          "justifyContent": "center",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+          "width": 30,
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          Object {
+            "backgroundColor": "#A81E23",
+            "borderRadius": 9,
+            "height": 18,
+            "width": 18,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly default prop 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "width": 30,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "backgroundColor": "rgba(253, 232, 128, 1)",
+          "borderColor": "#231F20",
+          "borderRadius": 15,
+          "borderWidth": 1,
+          "height": 30,
+          "position": "absolute",
+          "width": 60,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 15,
+          "height": 30,
+          "justifyContent": "center",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+          "width": 30,
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          Object {
+            "backgroundColor": "#231F20",
+            "borderRadius": 9,
+            "height": 18,
+            "width": 18,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly with disable 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "width": 30,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "backgroundColor": "rgba(53, 53, 53, 0.1)",
+          "borderColor": "rgba(53, 53, 53, 0.5)",
+          "borderRadius": 15,
+          "borderWidth": 1,
+          "height": 30,
+          "position": "absolute",
+          "width": 60,
+        }
+      }
+    />
+    <View
+      collapsable={false}
+      style={
+        Object {
+          "alignItems": "center",
+          "borderRadius": 15,
+          "height": 30,
+          "justifyContent": "center",
+          "transform": Array [
+            Object {
+              "translateX": 0,
+            },
+          ],
+          "width": 30,
+        }
+      }
+    >
+      <View
+        collapsable={false}
+        style={
+          Object {
+            "backgroundColor": "rgba(53, 53, 53, 0.5)",
+            "borderRadius": 9,
+            "height": 18,
+            "width": 18,
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;

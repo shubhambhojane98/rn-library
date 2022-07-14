@@ -6,6 +6,12 @@ import {
   TypographyVariant,
   TextAlignment,
 } from './components/ATypography/ATypographyEnum';
+import {
+  CreditCard,
+  PhoneNo,
+  ZipCodeMask,
+  DateMask,
+} from './components/ATextInput/AMask';
 export {default as AButton} from './components/AButton/AButton';
 export {default as ATypography} from './components/ATypography/ATypography';
 export {default as AAvatar} from './components/AAvatar/AAvatar';
@@ -34,6 +40,7 @@ export {consoleLog, consoleWarn, consoleInfo};
 export {Color};
 export {CheckboxStatus};
 export {TextAlignment, TypographyVariant};
+export {CreditCard, PhoneNo, ZipCodeMask, DateMask};
 export {useTheme, withTheme} from './core/theming';
 export {default as Provider} from './core/Provider';
 export {default as LightTheme} from './theme/LightTheme';

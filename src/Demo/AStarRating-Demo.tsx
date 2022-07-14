@@ -27,6 +27,16 @@ const AStarRatingDemo = () => {
           maxStar={6}
           defaultRating={3}
         />
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
+          {`StarRating Example with  defaultRating && editable prop`}
+        </ATypography>
+        <AStarRating
+          defaultRating={3}
+          onSelectValue={value => setStarRating(value)}
+          editable={false}
+        />
       </ScrollView>
     </SafeAreaView>
   );

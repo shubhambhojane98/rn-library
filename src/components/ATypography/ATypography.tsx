@@ -2,15 +2,17 @@ import React from 'react';
 import {StyleProp, StyleSheet, Text, TextProps, TextStyle} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import {fontFamilies} from '../../constants/fontFamilies';
-import {Color} from '../../theme';
 import {TextAlignment, TypographyVariant} from './ATypographyEnum';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 interface OwnProps {
   variant?: TypographyVariant;
   color?: string;
   style?: StyleProp<TextStyle>;
   textAlign?: TextAlignment;
   fontSize?: number;
+  theme: Theme;
 }
 
 const defaultFontSize = moderateScale(14, defaultScale);
@@ -18,23 +20,31 @@ const defaultFontSize = moderateScale(14, defaultScale);
 type Props = OwnProps & TextProps;
 const Typography: React.FC<Props> = ({
   variant = TypographyVariant.PRIMARY,
-  color = Color.black,
+  color,
   style,
   textAlign = TextAlignment.Left,
   children,
   fontSize = defaultFontSize,
   ...otherProps
 }) => {
+  const {colors} = useTheme();
   return (
     <Text
-      style={[styles({fontSize})[variant], {color}, {textAlign}, style]}
+      style={[
+        styles({
+          fontSize,
+        })[variant],
+        {color: color ? color : colors.textColor},
+        {textAlign},
+        style,
+      ]}
       {...otherProps}>
       {children}
     </Text>
   );
 };
 
-export default Typography;
+export default withTheme(Typography);
 
 const styles = (props: {fontSize: number}) =>
   StyleSheet.create({

@@ -93,6 +93,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
       isPassword,
       onEndEditing,
       selectionColor,
+      secureTextEntry,
       width,
       rightIcon,
       leftIcon,
@@ -104,9 +105,9 @@ const ATextInput = React.forwardRef<TextInput, Props>(
     },
     ref,
   ) => {
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
     const [isFocused, setIsFocused] = useState(false);
-    const [secureTextEntry, setSecureTextEntry] = useState(false);
+    const [securePassword, setSecurePassword] = useState(secureTextEntry);
 
     const onFocus = () => {
       setIsFocused(true);
@@ -117,7 +118,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
     };
     const handlePassword = () => {
       setVisible(!visible);
-      setSecureTextEntry(!secureTextEntry);
+      setSecurePassword(!securePassword);
     };
 
     const {colors} = useTheme();
@@ -198,7 +199,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 underlineColorAndroid={underlineColorAndroid}
                 textAlignVertical={textAlignVertical}
                 returnKeyType={returnKeyType}
-                secureTextEntry={secureTextEntry}
+                secureTextEntry={securePassword}
                 autoCapitalize={autoCapitalize}
                 multiline={multiline}
                 onSubmitEditing={onSubmitEditing}
