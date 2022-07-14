@@ -1,0 +1,634 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with backgroundSource, height, width, onPress 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#6200EE",
+      "borderColor": undefined,
+      "borderRadius": undefined,
+      "borderWidth": undefined,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 233.42857142857142,
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "flexDirection": "row",
+        "height": "100%",
+        "justifyContent": "center",
+        "margin": undefined,
+        "textAlign": "center",
+      }
+    }
+  >
+    <Image
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://reactjs.org/logo-og.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": "100%",
+            "width": undefined,
+          },
+          Object {
+            "borderRadius": undefined,
+            "padding": undefined,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with default props 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#6200EE",
+      "borderColor": undefined,
+      "borderRadius": undefined,
+      "borderWidth": undefined,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 122.85714285714286,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Mulish-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "alignItems": "center",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontWeight": undefined,
+          "padding": 12.285714285714285,
+          "textAlign": "center",
+          "textDecorationLine": undefined,
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#6200EE",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#FFF",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Press Me
+  </Text>
+</View>
+`;
+
+exports[`renders correctly with disable 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#D7D7D7",
+      "borderColor": undefined,
+      "borderRadius": undefined,
+      "borderWidth": undefined,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 122.85714285714286,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Mulish-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "alignItems": "center",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontWeight": undefined,
+          "padding": 12.285714285714285,
+          "textAlign": "center",
+          "textDecorationLine": undefined,
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#6200EE",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#FFF",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Press Me
+  </Text>
+</View>
+`;
+
+exports[`renders correctly with title, backgroundColor, height, width, color, borderRadius, SourceImage, onPress  1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAD000",
+      "borderColor": undefined,
+      "borderRadius": 40,
+      "borderWidth": undefined,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 368.57142857142856,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Mulish-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "alignItems": "center",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontWeight": undefined,
+          "padding": 12.285714285714285,
+          "textAlign": "center",
+          "textDecorationLine": undefined,
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#6200EE",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#FFF",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Button with text & Image
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "flex": 1,
+          "height": 61.42857142857143,
+          "width": 368.57142857142856,
+        },
+      ]
+    }
+  >
+    <FastImageView
+      resizeMode="contain"
+      source={
+        Object {
+          "uri": "https://reactnative.dev/img/tiny_logo.png",
+        }
+      }
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with title, backgroundColor, height, width, color, borderRadius, iconName, iconHeight, iconWidth, onPress  1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAD000",
+      "borderColor": undefined,
+      "borderRadius": 40,
+      "borderWidth": undefined,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 368.57142857142856,
+    }
+  }
+>
+  <SvgMock
+    height={20}
+    name="checkboxfilled"
+    width={20}
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Mulish-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "alignItems": "center",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontWeight": undefined,
+          "padding": 12.285714285714285,
+          "textAlign": "center",
+          "textDecorationLine": undefined,
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#6200EE",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#FFF",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Button with icon
+  </Text>
+</View>
+`;
+
+exports[`renders correctly with title, backgroundColor, height, width, color,borderRadius, borderWidth, borderColor, onPress  1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FAD000",
+      "borderColor": "#231F20",
+      "borderRadius": 49,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 356.2857142857143,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Mulish-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "black",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "alignItems": "center",
+          "fontFamily": undefined,
+          "fontSize": 18,
+          "fontWeight": undefined,
+          "padding": 12.285714285714285,
+          "textAlign": "center",
+          "textDecorationLine": undefined,
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#6200EE",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#FFF",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Simple Button
+  </Text>
+</View>
+`;
+
+exports[`renders correctly with title, width, hyperlink, fontWeight, textDecorationline, onPress  1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderColor": undefined,
+      "borderRadius": undefined,
+      "borderWidth": undefined,
+      "flexDirection": "row",
+      "height": 61.42857142857143,
+      "justifyContent": "center",
+      "margin": 2.4571428571428573,
+      "opacity": 1,
+      "textAlign": "center",
+      "width": 356.2857142857143,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "AvenirNextLTPro-Demi",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "600",
+        },
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "alignItems": "center",
+          "backgroundColor": undefined,
+          "color": "#0000EE",
+          "fontFamily": undefined,
+          "fontSize": undefined,
+          "fontWeight": "normal",
+          "textAlign": "center",
+          "textDecorationLine": "underline",
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#6200EE",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#FFF",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Skip for Now
+  </Text>
+</View>
+`;
