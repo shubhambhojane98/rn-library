@@ -47,7 +47,11 @@ const ASwitchSelector: FC<Props> = ({
         style={{
           ...stylesWithProp.switchBtn,
           backgroundColor:
-            getSelectionMode === 1 ? colors.primary : colors.lightgrey,
+            getSelectionMode === 1
+              ? colors.primary
+              : isDisabled
+              ? ''
+              : colors.lightgrey,
         }}>
         <ATypography
           children={option1}
