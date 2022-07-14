@@ -40,13 +40,13 @@ const AChipDemo = () => {
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
-        {`Chip with close icon prop`}
+        {`Chip with right icon prop`}
       </ATypography>
       <AChip
         label={'Whats New'}
         onPress={() => consoleLog('Whats New')}
-        closeIcon={'close'}
-        onPressCloseIcon={() => consoleLog('Close icon pressed')}
+        rightIcon={'close'}
+        onPressRightIcon={() => consoleLog('Right icon pressed')}
       />
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}

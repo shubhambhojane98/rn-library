@@ -16,7 +16,7 @@ import IconSVG from '../../assets/svgs';
 
 interface Props {
   onPress: () => void;
-  onPressCloseIcon?: () => void;
+  onPressRightIcon?: () => void;
   onPressLeftIcon?: () => void;
   viewStyle?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
@@ -27,7 +27,7 @@ interface Props {
   isDisabled?: boolean;
   iconHeight?: number;
   iconWidth?: number;
-  closeIcon?: any;
+  rightIcon?: any;
   leftIcon?: any;
   theme: Theme;
 }
@@ -37,14 +37,14 @@ const defaultSize = 20;
 const AChip: React.FC<Props> = ({
   label,
   onPress,
-  onPressCloseIcon,
+  onPressRightIcon,
   onPressLeftIcon,
   selectedBackgroundColor,
   selectedTextColor,
   textColor,
   iconHeight = defaultSize,
   iconWidth = defaultSize,
-  closeIcon,
+  rightIcon,
   leftIcon,
   isDisabled = false,
   textStyle = {
@@ -100,8 +100,8 @@ const AChip: React.FC<Props> = ({
         style={textStyle}
       />
       <IconSVG
-        onPress={onPressCloseIcon}
-        name={closeIcon}
+        onPress={onPressRightIcon}
+        name={rightIcon}
         height={iconHeight}
         width={iconWidth}
       />
