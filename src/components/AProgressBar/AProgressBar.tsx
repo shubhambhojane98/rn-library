@@ -28,7 +28,7 @@ const AProgressBar: FC<Props> = ({
       style={{
         ...styles.container,
         height: height ? height : moderateScale(8, defaultScale),
-        backgroundColor: backgroundColor ? backgroundColor : colors.secondary,
+        backgroundColor: backgroundColor ? backgroundColor : colors.lightgrey,
         borderRadius: borderRadius ? borderRadius : 0,
       }}>
       <Animated.View
