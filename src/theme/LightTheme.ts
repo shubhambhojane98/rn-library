@@ -19,6 +19,8 @@ LightTheme = {
     backgroundLayout: 'rgba(0, 0, 0, 0.8)',
     transparent: 'transparent',
     linkColor: '#0000EE',
+    greyOpac50: 'rgba(53, 53, 53, 0.5)',
+    greyOpac10: 'rgba(53, 53, 53, 0.1)',
   },
 };
 
