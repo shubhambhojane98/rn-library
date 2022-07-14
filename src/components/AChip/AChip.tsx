@@ -12,6 +12,7 @@ import ATypography from '../ATypography/ATypography';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
+import IconSVG from '../../assets/svgs';
 
 interface Props {
   onPress: () => void;
@@ -22,6 +23,10 @@ interface Props {
   selectedTextColor?: string;
   textColor?: string;
   isDisabled?: boolean;
+  iconHeight?: number;
+  iconWidth?: number;
+  rightIcon?: any;
+  leftIcon?: any;
   theme: Theme;
 }
 
@@ -31,6 +36,10 @@ const AChip: React.FC<Props> = ({
   selectedBackgroundColor,
   selectedTextColor,
   textColor,
+  iconHeight,
+  iconWidth,
+  rightIcon,
+  leftIcon,
   isDisabled = false,
   textStyle = {
     paddingHorizontal: moderateScale(16, defaultScale),
@@ -63,6 +72,7 @@ const AChip: React.FC<Props> = ({
         backgroundColor: isSelected ? bgColor : colors.white,
         borderColor: isSelected ? bgColor : colors.lightgrey,
       }}>
+      <IconSVG name={leftIcon} height={iconHeight} width={iconWidth} />
       <ATypography
         children={label}
         variant={TypographyVariant.SECONDARY_BOLD}
@@ -78,12 +88,15 @@ const AChip: React.FC<Props> = ({
         fontSize={moderateScale(14, defaultScale)}
         style={textStyle}
       />
+      <IconSVG name={rightIcon} height={iconHeight} width={iconWidth} />
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   viewStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
     borderWidth: moderateScale(1, defaultScale),
     borderRadius: moderateScale(49, defaultScale),
     alignSelf: 'center',

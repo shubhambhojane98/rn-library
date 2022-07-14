@@ -13,7 +13,13 @@ const AChipDemo = () => {
         style={{marginVertical: 20}}>
         Chip with default prop
       </ATypography>
-      <AChip label={'Whats New'} onPress={() => console.log('Whats New')} />
+      <AChip
+        label={'Whats New'}
+        iconHeight={20}
+        iconWidth={20}
+        rightIcon={'close'}
+        onPress={() => console.log('Whats New')}
+      />
       <ATypography
         variant={TypographyVariant.PRIMARY_BOLD}
         style={{marginVertical: 20}}>
