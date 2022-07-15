@@ -32,8 +32,6 @@ const AToast: React.FC<Props> = ({
   const {colors} = useTheme();
   const opacity = useRef(new Animated.Value(0)).current;
 
-  const stylesWithProp = styles({colors});
-
   useEffect(() => {
     Animated.sequence([
       Animated.timing(opacity, {
@@ -51,10 +49,10 @@ const AToast: React.FC<Props> = ({
   }, []);
 
   return (
-    <View style={stylesWithProp.container}>
+    <View style={styles.container}>
       <Animated.View
         style={{
-          ...stylesWithProp.animatedView,
+          ...styles.animatedView,
           opacity,
           backgroundColor: backgroundColor || colors.background,
           transform: [
@@ -77,7 +75,7 @@ const AToast: React.FC<Props> = ({
           children={label}
           variant={TypographyVariant.SECONDARY}
           color={color || colors.textColor}
-          style={stylesWithProp.text}
+          style={styles.text}
         />
       </Animated.View>
     </View>
@@ -86,35 +84,26 @@ const AToast: React.FC<Props> = ({
 
 export default withTheme(AToast);
 
-const styles = (props: {colors: any}) =>
-  StyleSheet.create({
-    container: {
-      bottom: moderateScale(20, defaultScale),
-      position: 'absolute',
-      zIndex: 1,
-      left: moderateScale(10, defaultScale),
-      right: moderateScale(10, defaultScale),
-      shadowColor: props.colors.shadowColor,
-      shadowOffset: {
-        width: 0,
-        height: 0,
-      },
-      shadowOpacity: defaultScale,
-      shadowRadius: 3,
-      elevation: 3,
-    },
-    animatedView: {
-      flexDirection: 'row',
-      padding: moderateScale(10, defaultScale),
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'black',
-      borderRadius: moderateScale(4, defaultScale),
-      height: moderateScale(64, defaultScale),
-      width: moderateScale(320, defaultScale),
-      alignSelf: 'center',
-    },
-    text: {
-      paddingHorizontal: moderateScale(10, defaultScale),
-    },
-  });
+const styles = StyleSheet.create({
+  container: {
+    bottom: moderateScale(20, defaultScale),
+    position: 'absolute',
+    zIndex: 1,
+    left: moderateScale(10, defaultScale),
+    right: moderateScale(10, defaultScale),
+  },
+  animatedView: {
+    flexDirection: 'row',
+    padding: moderateScale(10, defaultScale),
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'black',
+    borderRadius: moderateScale(4, defaultScale),
+    height: moderateScale(64, defaultScale),
+    width: moderateScale(320, defaultScale),
+    alignSelf: 'center',
+  },
+  text: {
+    paddingHorizontal: moderateScale(10, defaultScale),
+  },
+});
