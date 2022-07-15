@@ -21,7 +21,7 @@ const AProgressBarDemo = () => {
       </ATypography>
       <AProgressBar
         completedColor={Color.blue}
-        backgroundColor={Color.lightgrey}
+        backgroundColor={Color.black}
         percentage={'70%'}
       />
       <ATypography

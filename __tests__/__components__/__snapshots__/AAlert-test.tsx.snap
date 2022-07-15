@@ -1,0 +1,638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with   Alert with backgroundColor, visible, borderRadius, animationType, title, titleColor, subTitle, description, onPressYes, onDismiss, 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.8)",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#00ABBE",
+        "borderRadius": 8,
+        "left": 30.714285714285715,
+        "position": "absolute",
+        "right": 30.714285714285715,
+        "top": 68.8,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 27.168979591836734,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "red",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "paddingHorizontal": 30.714285714285715,
+            "paddingTop": 30.714285714285715,
+            "textAlign": "center",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Title
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-SemiBold",
+            "fontSize": 24.150204081632655,
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "paddingHorizontal": 30.714285714285715,
+            "paddingTop": 30.714285714285715,
+            "textAlign": "center",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Sub_Title
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "AvenirNextLTPro-Demi",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "paddingHorizontal": 30.714285714285715,
+            "paddingTop": 30.714285714285715,
+            "textAlign": "center",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Description
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingVertical": 24.57142857142857,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#6200EE",
+            "borderColor": undefined,
+            "borderRadius": 60.2,
+            "borderWidth": undefined,
+            "flexDirection": "row",
+            "height": 61.42857142857143,
+            "justifyContent": "center",
+            "margin": 15.093877551020407,
+            "opacity": 1,
+            "textAlign": "center",
+            "width": 181.1265306122449,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Mulish-Bold",
+                "fontSize": 21.13142857142857,
+                "fontWeight": "bold",
+              },
+              Object {
+                "color": "#000",
+              },
+              Object {
+                "textAlign": "left",
+              },
+              Object {
+                "alignItems": "center",
+                "fontFamily": undefined,
+                "fontSize": 18,
+                "fontWeight": undefined,
+                "padding": 12.285714285714285,
+                "textAlign": "center",
+                "textDecorationLine": undefined,
+              },
+            ]
+          }
+          theme={
+            Object {
+              "colors": Object {
+                "background": "#FFF",
+                "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+                "black": "#000",
+                "error": "#B00020",
+                "lightgrey": "#D7D7D7",
+                "linkColor": "#0000EE",
+                "primary": "#6200EE",
+                "primaryVariant": "#3700B3",
+                "secondary": "#03DAC6",
+                "secondaryVariant": "#018786",
+                "shadowColor": "#FFF",
+                "textColor": "#000",
+                "transparent": "transparent",
+                "white": "#FFF",
+              },
+              "dark": false,
+            }
+          }
+        >
+          Yes
+        </Text>
+      </View>
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#6200EE",
+            "borderColor": undefined,
+            "borderRadius": 60.2,
+            "borderWidth": undefined,
+            "flexDirection": "row",
+            "height": 61.42857142857143,
+            "justifyContent": "center",
+            "margin": 15.093877551020407,
+            "opacity": 1,
+            "textAlign": "center",
+            "width": 181.1265306122449,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Mulish-Bold",
+                "fontSize": 21.13142857142857,
+                "fontWeight": "bold",
+              },
+              Object {
+                "color": "#000",
+              },
+              Object {
+                "textAlign": "left",
+              },
+              Object {
+                "alignItems": "center",
+                "fontFamily": undefined,
+                "fontSize": 18,
+                "fontWeight": undefined,
+                "padding": 12.285714285714285,
+                "textAlign": "center",
+                "textDecorationLine": undefined,
+              },
+            ]
+          }
+          theme={
+            Object {
+              "colors": Object {
+                "background": "#FFF",
+                "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+                "black": "#000",
+                "error": "#B00020",
+                "lightgrey": "#D7D7D7",
+                "linkColor": "#0000EE",
+                "primary": "#6200EE",
+                "primaryVariant": "#3700B3",
+                "secondary": "#03DAC6",
+                "secondaryVariant": "#018786",
+                "shadowColor": "#FFF",
+                "textColor": "#000",
+                "transparent": "transparent",
+                "white": "#FFF",
+              },
+              "dark": false,
+            }
+          }
+        >
+          No
+        </Text>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`renders correctly with default props 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.8)",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFF",
+        "borderRadius": undefined,
+        "left": 30.714285714285715,
+        "position": "absolute",
+        "right": 30.714285714285715,
+        "top": 68.8,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 27.168979591836734,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "paddingHorizontal": 30.714285714285715,
+            "paddingTop": 30.714285714285715,
+            "textAlign": "center",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Title
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+          "paddingVertical": 24.57142857142857,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#6200EE",
+            "borderColor": undefined,
+            "borderRadius": 60.2,
+            "borderWidth": undefined,
+            "flexDirection": "row",
+            "height": 61.42857142857143,
+            "justifyContent": "center",
+            "margin": 15.093877551020407,
+            "opacity": 1,
+            "textAlign": "center",
+            "width": 181.1265306122449,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Mulish-Bold",
+                "fontSize": 21.13142857142857,
+                "fontWeight": "bold",
+              },
+              Object {
+                "color": "#000",
+              },
+              Object {
+                "textAlign": "left",
+              },
+              Object {
+                "alignItems": "center",
+                "fontFamily": undefined,
+                "fontSize": 18,
+                "fontWeight": undefined,
+                "padding": 12.285714285714285,
+                "textAlign": "center",
+                "textDecorationLine": undefined,
+              },
+            ]
+          }
+          theme={
+            Object {
+              "colors": Object {
+                "background": "#FFF",
+                "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+                "black": "#000",
+                "error": "#B00020",
+                "lightgrey": "#D7D7D7",
+                "linkColor": "#0000EE",
+                "primary": "#6200EE",
+                "primaryVariant": "#3700B3",
+                "secondary": "#03DAC6",
+                "secondaryVariant": "#018786",
+                "shadowColor": "#FFF",
+                "textColor": "#000",
+                "transparent": "transparent",
+                "white": "#FFF",
+              },
+              "dark": false,
+            }
+          }
+        >
+          Yes
+        </Text>
+      </View>
+      <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#6200EE",
+            "borderColor": undefined,
+            "borderRadius": 60.2,
+            "borderWidth": undefined,
+            "flexDirection": "row",
+            "height": 61.42857142857143,
+            "justifyContent": "center",
+            "margin": 15.093877551020407,
+            "opacity": 1,
+            "textAlign": "center",
+            "width": 181.1265306122449,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Mulish-Bold",
+                "fontSize": 21.13142857142857,
+                "fontWeight": "bold",
+              },
+              Object {
+                "color": "#000",
+              },
+              Object {
+                "textAlign": "left",
+              },
+              Object {
+                "alignItems": "center",
+                "fontFamily": undefined,
+                "fontSize": 18,
+                "fontWeight": undefined,
+                "padding": 12.285714285714285,
+                "textAlign": "center",
+                "textDecorationLine": undefined,
+              },
+            ]
+          }
+          theme={
+            Object {
+              "colors": Object {
+                "background": "#FFF",
+                "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+                "black": "#000",
+                "error": "#B00020",
+                "lightgrey": "#D7D7D7",
+                "linkColor": "#0000EE",
+                "primary": "#6200EE",
+                "primaryVariant": "#3700B3",
+                "secondary": "#03DAC6",
+                "secondaryVariant": "#018786",
+                "shadowColor": "#FFF",
+                "textColor": "#000",
+                "transparent": "transparent",
+                "white": "#FFF",
+              },
+              "dark": false,
+            }
+          }
+        >
+          No
+        </Text>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`renders correctly with visible false 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  transparent={true}
+  visible={false}
+/>
+`;

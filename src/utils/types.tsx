@@ -13,6 +13,8 @@ type DefaultThemColors = {
   backgroundLayout: string;
   transparent: string;
   linkColor: string;
+  greyOpac50: string;
+  greyOpac10: string;
 };
 
 export type ThemeBase = {

@@ -1,16 +1,18 @@
 import React, {FC, useState} from 'react';
 import {StyleSheet, View, TouchableOpacity} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import ATypography from '../ATypography/ATypography';
 import {defaultScale} from '../../utils/Common';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   option1: string;
   option2: string;
   onSelectSwitch: any;
   width?: number;
+  theme: Theme;
   isDisabled?: boolean;
 }
 
@@ -21,8 +23,9 @@ const ASwitchSelector: FC<Props> = ({
   width,
   isDisabled = false,
 }) => {
+  const {colors} = useTheme();
   const [getSelectionMode, setSelectionMode] = useState(2);
-
+  const stylesWithProp = styles({colors});
   const toggleSwitch = (val: any) => {
     if (isDisabled) {
       return;
@@ -34,7 +37,7 @@ const ASwitchSelector: FC<Props> = ({
   return (
     <View
       style={{
-        ...styles.switchContainer,
+        ...stylesWithProp.switchContainer,
         width: width,
         opacity: isDisabled ? 0.5 : 1,
       }}>
@@ -42,57 +45,62 @@ const ASwitchSelector: FC<Props> = ({
         activeOpacity={1}
         onPress={() => toggleSwitch(1)}
         style={{
-          ...styles.switchBtn,
+          ...stylesWithProp.switchBtn,
           backgroundColor:
-            getSelectionMode === 1 ? Color.yellow : Color.switchBackgroundColor,
+            getSelectionMode === 1
+              ? colors.primary
+              : isDisabled
+              ? ''
+              : colors.lightgrey,
         }}>
         <ATypography
           children={option1}
           fontSize={16}
           variant={TypographyVariant.PRIMARY_BOLD}
-          style={{...styles.text}}
+          style={{...stylesWithProp.text}}
         />
       </TouchableOpacity>
       <TouchableOpacity
         activeOpacity={1}
         onPress={() => toggleSwitch(2)}
         style={{
-          ...styles.switchBtn,
+          ...stylesWithProp.switchBtn,
           backgroundColor:
-            getSelectionMode === 2 ? Color.yellow : Color.switchBackgroundColor,
+            getSelectionMode === 2 ? colors.primary : colors.lightgrey,
         }}>
         <ATypography
           children={option2}
           fontSize={16}
           variant={TypographyVariant.PRIMARY_BOLD}
-          style={{...styles.text}}
+          style={{...stylesWithProp.text}}
         />
       </TouchableOpacity>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  switchContainer: {
-    height: moderateScale(52, defaultScale),
-    backgroundColor: Color.switchBackgroundColor,
-    borderRadius: 25,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    padding: moderateScale(2, defaultScale),
-  },
-  switchBtn: {
-    flex: 1,
-    margin: moderateScale(5, defaultScale),
-    width: moderateScale(109, defaultScale),
-    height: moderateScale(40, defaultScale),
-    borderRadius: 25,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    color: Color.textColor,
-  },
-});
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    switchContainer: {
+      height: moderateScale(52, defaultScale),
+      backgroundColor: props.colors.lightgrey,
+      borderRadius: 25,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      padding: moderateScale(2, defaultScale),
+    },
+    switchBtn: {
+      flex: 1,
+      margin: moderateScale(5, defaultScale),
+      width: moderateScale(109, defaultScale),
+      height: moderateScale(40, defaultScale),
+      borderRadius: 25,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    text: {
+      color: props.colors.black,
+    },
+  });
 
-export default ASwitchSelector;
+export default withTheme(ASwitchSelector);

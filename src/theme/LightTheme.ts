@@ -12,13 +12,15 @@ LightTheme = {
     background: '#FFF',
     error: '#B00020',
     textColor: '#000',
-    shadowColor: '#FFF',
+    shadowColor: '#222',
     black: '#000',
     white: '#FFF',
     lightgrey: '#D7D7D7',
     backgroundLayout: 'rgba(0, 0, 0, 0.8)',
     transparent: 'transparent',
     linkColor: '#0000EE',
+    greyOpac50: 'rgba(53, 53, 53, 0.5)',
+    greyOpac10: 'rgba(53, 53, 53, 0.1)',
   },
 };
 

@@ -5,7 +5,8 @@ import ATypography from '../../components/ATypography/ATypography';
 import {TypographyVariant} from '../../components/ATypography/ATypographyEnum';
 import IconSVG from '../../assets/svgs';
 import {defaultScale} from '../../utils/Common';
-import {Color} from '../../theme';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   visible: boolean;
@@ -17,6 +18,7 @@ interface Props {
   iconWidth?: number;
   color?: string;
   backgroundColor?: string;
+  theme: Theme;
 }
 const defaultSize = moderateScale(20, defaultScale);
 
@@ -28,9 +30,10 @@ const AToast: React.FC<Props> = ({
   iconName,
   iconHeight,
   iconWidth,
-  color = Color.white,
-  backgroundColor = Color.black,
+  color,
+  backgroundColor,
 }) => {
+  const {colors} = useTheme();
   const opacity = useRef(new Animated.Value(0)).current;
   const [hidden, setHidden] = useState<boolean>(!visible);
   const hideTimeout = useRef<undefined>(undefined);
@@ -68,7 +71,7 @@ const AToast: React.FC<Props> = ({
         style={{
           ...styles.animatedView,
           opacity,
-          backgroundColor: backgroundColor || Color.black,
+          backgroundColor: backgroundColor || colors.background,
           transform: [
             {
               translateY: opacity.interpolate({
@@ -88,7 +91,7 @@ const AToast: React.FC<Props> = ({
         <ATypography
           children={label}
           variant={TypographyVariant.SECONDARY}
-          color={color || Color.white}
+          color={color || colors.textColor}
           style={styles.text}
         />
       </Animated.View>
@@ -96,7 +99,7 @@ const AToast: React.FC<Props> = ({
   );
 };
 
-export default AToast;
+export default withTheme(AToast);
 
 const styles = StyleSheet.create({
   container: {

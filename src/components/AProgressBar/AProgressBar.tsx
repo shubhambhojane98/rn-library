@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
 import {View, StyleSheet, Animated} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
-import {Color} from '../../theme';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   percentage: string;
@@ -10,6 +11,7 @@ interface Props {
   backgroundColor?: string;
   height?: number;
   borderRadius?: number;
+  theme: Theme;
 }
 
 const AProgressBar: FC<Props> = ({
@@ -19,12 +21,14 @@ const AProgressBar: FC<Props> = ({
   height,
   borderRadius,
 }) => {
+  const {colors} = useTheme();
+
   return (
     <View
       style={{
         ...styles.container,
         height: height ? height : moderateScale(8, defaultScale),
-        backgroundColor: backgroundColor ? backgroundColor : Color.grey,
+        backgroundColor: backgroundColor ? backgroundColor : colors.lightgrey,
         borderRadius: borderRadius ? borderRadius : 0,
       }}>
       <Animated.View
@@ -32,7 +36,7 @@ const AProgressBar: FC<Props> = ({
           styles.progressBar,
           {
             width: percentage ? percentage : 0,
-            backgroundColor: completedColor ? completedColor : Color.yellow,
+            backgroundColor: completedColor ? completedColor : colors.primary,
             borderRadius: borderRadius ? borderRadius : 0,
           },
         ]}
@@ -55,4 +59,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AProgressBar;
+export default withTheme(AProgressBar);
