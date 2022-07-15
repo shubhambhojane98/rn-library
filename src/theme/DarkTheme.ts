@@ -5,7 +5,7 @@ let DarkTheme: Theme;
 DarkTheme = {
   dark: true,
   colors: {
-    primary: '#BB86FC',
+    primary: '#bfa002',
     primaryVariant: '#3700B3',
     secondary: '#03DAC6',
     secondaryVariant: '#018786',

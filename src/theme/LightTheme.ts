@@ -5,7 +5,7 @@ let LightTheme: Theme;
 LightTheme = {
   dark: false,
   colors: {
-    primary: '#6200EE',
+    primary: '#FAD000',
     primaryVariant: '#3700B3',
     secondary: '#03DAC6',
     secondaryVariant: '#018786',
