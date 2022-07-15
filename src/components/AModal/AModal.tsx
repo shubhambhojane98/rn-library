@@ -1,16 +1,11 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  TouchableOpacity,
-  Modal,
-  TouchableWithoutFeedback,
-} from 'react-native';
+import {StyleSheet, View, TouchableOpacity} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import IconSVG from '../../assets/svgs';
 import {defaultScale} from '../../utils/Common';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
+import Modal from 'react-native-modal';
 
 interface Props {
   top?: number;
@@ -23,8 +18,12 @@ interface Props {
   visible?: boolean;
   borderRadius?: number;
   onDismiss?: any;
-  animationType?: any;
-  transparentOverlay?: boolean;
+  animationIn?: any;
+  animationOut?: any;
+  style?: any;
+  backdropColor?: string;
+  backdropOpacity?: number;
+  hasBackdrop?: boolean;
   theme: Theme;
 }
 
@@ -41,8 +40,12 @@ const AModal: React.FC<Props> = ({
   visible,
   borderRadius,
   onDismiss,
-  animationType,
-  transparentOverlay,
+  animationIn,
+  animationOut,
+  style,
+  backdropColor,
+  backdropOpacity,
+  hasBackdrop,
 }) => {
   const {colors} = useTheme();
   const stylesWithProp = styles({
@@ -53,22 +56,17 @@ const AModal: React.FC<Props> = ({
   });
   return (
     <Modal
-      transparent
-      animationType={animationType ? animationType : 'fade'}
-      visible={visible}>
-      <TouchableWithoutFeedback
-        onPress={() => {
-          onDismiss();
-        }}>
-        <View
-          style={{
-            ...stylesWithProp.modalOverlay,
-            backgroundColor: transparentOverlay
-              ? 'transparent'
-              : colors.backgroundLayout,
-          }}
-        />
-      </TouchableWithoutFeedback>
+      animationIn={animationIn ? animationIn : 'slideInUp'}
+      animationOut={animationOut ? animationOut : 'slideOutDown'}
+      style={style}
+      backdropColor={backdropColor}
+      backdropOpacity={backdropOpacity}
+      hideModalContentWhileAnimating={true}
+      hasBackdrop={hasBackdrop}
+      onBackdropPress={() => {
+        onDismiss();
+      }}
+      isVisible={visible}>
       <View
         style={{
           ...stylesWithProp.modalView,

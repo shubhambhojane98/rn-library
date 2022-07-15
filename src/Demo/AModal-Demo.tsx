@@ -1,4 +1,4 @@
-import {SafeAreaView, ScrollView} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet} from 'react-native';
 import React from 'react';
 import AModal from '../components/AModal/AModal';
 import AButton from '../components/AButton/AButton';
@@ -9,6 +9,8 @@ import {Color} from '../theme';
 const ARadioButtonDemo = () => {
   const [isModalVisible, setIsModalVisible] = React.useState(false);
   const [isModalVisible2, setIsModalVisible2] = React.useState(false);
+  const [isModalVisible3, setIsModalVisible3] = React.useState(false);
+
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
       <ScrollView>
@@ -21,7 +23,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible(true)}
           width={290}
-          color={'blue'}
+          color={'white'}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -32,7 +34,6 @@ const ARadioButtonDemo = () => {
           closeButton={true}
           backgroundColor={Color.white}
           borderRadius={8}
-          animationType={'fade'}
           children={
             <>
               <ATypography variant={TypographyVariant.PRIMARY_BOLD}>
@@ -51,7 +52,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible2(true)}
           width={290}
-          color={'blue'}
+          color={'white'}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -62,7 +63,6 @@ const ARadioButtonDemo = () => {
           closeButton={true}
           backgroundColor={Color.white}
           borderRadius={8}
-          animationType={'fade'}
           top={100}
           left={50}
           bottom={100}
@@ -85,7 +85,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible(true)}
           width={290}
-          color={'blue'}
+          color={'white'}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -97,7 +97,42 @@ const ARadioButtonDemo = () => {
           closeButton={true}
           backgroundColor={Color.white}
           borderRadius={8}
-          animationType={'fade'}
+          children={
+            <>
+              <ATypography variant={TypographyVariant.PRIMARY_BOLD}>
+                {' '}
+                Modal content!
+              </ATypography>
+            </>
+          }
+        />
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: 20}}>
+          Bottom Modal
+        </ATypography>
+        <AButton
+          title={'Open Modal'}
+          onPress={() => setIsModalVisible3(true)}
+          width={290}
+          color={'white'}
+          borderRadius={49}
+          fontWeight={'500'}
+          textDecorationLine={'underline'}
+        />
+        <AModal
+          visible={isModalVisible3}
+          onDismiss={() => setIsModalVisible3(false)}
+          closeButton={true}
+          backgroundColor={Color.white}
+          animationIn={'slideInUp'}
+          animationOut={'slideOutDown'}
+          borderRadius={8}
+          top={350}
+          left={1}
+          right={1}
+          bottom={1}
+          style={styles.bottomModalView}
           children={
             <>
               <ATypography variant={TypographyVariant.PRIMARY_BOLD}>
@@ -111,5 +146,12 @@ const ARadioButtonDemo = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  bottomModalView: {
+    justifyContent: 'flex-end',
+    margin: 0,
+  },
+});
 
 export default ARadioButtonDemo;
