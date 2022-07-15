@@ -9,12 +9,13 @@ import {
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import IconSVG from '../../assets/svgs';
-import {Color} from '../../theme';
 import {TextAlignVertical, AutoCapitalize} from './ATextInputEnum';
 import ATypography from '../ATypography/ATypography';
 import MaskInput from 'react-native-mask-input';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
 import {defaultScale} from '../../utils/Common';
+import {withTheme, useTheme} from '../../core/theming';
+import type {Theme} from '../../utils/types';
 
 interface Props {
   placeholder?: string;
@@ -56,6 +57,7 @@ interface Props {
   placeholderFillCharacter?: string;
   obfuscationCharacter?: string;
   mask?: any;
+  theme: Theme;
 }
 
 const defaultSize = 20;
@@ -118,14 +120,18 @@ const ATextInput = React.forwardRef<TextInput, Props>(
       setVisible(!visible);
       setSecurePassword(!securePassword);
     };
-    console.log(securePassword);
+
+    const {colors} = useTheme();
+
+    const stylesWithProp = styles({colors});
+
     return (
       <View>
         <View>
           {disable && (
             <View
               style={{
-                ...styles.disableTextInputContainer,
+                ...stylesWithProp.disableTextInputContainer,
                 width: width,
                 marginTop: moderateScale(marginTop),
                 marginBottom: moderateScale(marginBottom),
@@ -133,15 +139,13 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 marginRight: moderateScale(marginRight),
               }}>
               <TextInput
-                style={styles.disableTextinput}
+                style={stylesWithProp.disableTextinput}
                 placeholder={placeholder}
                 editable={false}
-                placeholderTextColor={
-                  placeholderTextColor || Color.placeholderTextColor
-                }
+                placeholderTextColor={placeholderTextColor || colors.lightgrey}
               />
               {rightIcon ? (
-                <View style={styles.icon}>
+                <View style={stylesWithProp.icon}>
                   <IconSVG
                     name={rightIcon}
                     height={iconHeight}
@@ -155,10 +159,13 @@ const ATextInput = React.forwardRef<TextInput, Props>(
           {!mask && !disable && (
             <View
               style={[
-                styles.textinputContainer,
-                isFocused && {...styles.shadow, borderColor: Color.black},
+                stylesWithProp.textinputContainer,
+                isFocused && {
+                  ...stylesWithProp.shadow,
+                  borderColor: colors.black,
+                },
                 !isFocused && {
-                  borderColor: errorText ? Color.red : borderColor,
+                  borderColor: errorText ? colors.error : borderColor,
                 },
                 {
                   marginTop: moderateScale(marginTop),
@@ -169,7 +176,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 },
               ]}>
               {!isPassword && leftIcon && (
-                <View style={styles.lefticon}>
+                <View style={stylesWithProp.lefticon}>
                   <IconSVG
                     height={moderateScale(iconHeight)}
                     width={moderateScale(iconWidth)}
@@ -178,15 +185,13 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 </View>
               )}
               <TextInput
-                style={styles.textinput}
+                style={stylesWithProp.textinput}
                 placeholder={placeholder}
                 onChangeText={onChangeText}
                 editable={editable}
                 ref={ref}
                 autoCorrect={autoCorrect}
-                placeholderTextColor={
-                  placeholderTextColor || Color.placeholderTextColor
-                }
+                placeholderTextColor={placeholderTextColor || colors.lightgrey}
                 value={value}
                 autoFocus={autoFocus}
                 keyboardType={keyboardType}
@@ -205,7 +210,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 selectionColor={selectionColor}
               />
               {isPassword && (
-                <View style={styles.icon}>
+                <View style={stylesWithProp.icon}>
                   <IconSVG
                     height={iconHeight}
                     width={iconWidth}
@@ -215,7 +220,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 </View>
               )}
               {!isPassword && rightIcon && (
-                <View style={styles.icon}>
+                <View style={stylesWithProp.icon}>
                   <IconSVG
                     height={moderateScale(iconHeight)}
                     width={moderateScale(iconWidth)}
@@ -228,10 +233,13 @@ const ATextInput = React.forwardRef<TextInput, Props>(
           {mask && (
             <View
               style={[
-                styles.textinputContainer,
-                isFocused && {...styles.shadow, borderColor: Color.black},
+                stylesWithProp.textinputContainer,
+                isFocused && {
+                  ...stylesWithProp.shadow,
+                  borderColor: colors.black,
+                },
                 !isFocused && {
-                  borderColor: errorText ? Color.red : borderColor,
+                  borderColor: errorText ? colors.error : borderColor,
                 },
                 {
                   marginTop: moderateScale(marginTop),
@@ -243,7 +251,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
               ]}>
               <MaskInput
                 placeholder={placeholder}
-                style={styles.textinput}
+                style={stylesWithProp.textinput}
                 value={value}
                 ref={ref}
                 showObfuscatedValue={showObfuscatedValue}
@@ -272,7 +280,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
             <ATypography
               children={errorText}
               variant={TypographyVariant.PRIMARY}
-              color={Color.red}
+              color={colors.error}
               fontSize={14}
             />
           ) : null}
@@ -282,51 +290,52 @@ const ATextInput = React.forwardRef<TextInput, Props>(
   },
 );
 
-const styles = StyleSheet.create({
-  textinputContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderRadius: 2,
-    borderWidth: 1,
-    backgroundColor: Color.white,
-  },
-  icon: {
-    paddingRight: moderateScale(15, defaultScale),
-    paddingLeft: moderateScale(5, defaultScale),
-  },
-  lefticon: {
-    paddingRight: moderateScale(5, defaultScale),
-    paddingLeft: moderateScale(15, defaultScale),
-  },
-  textinput: {
-    flex: 1,
-    height: moderateScale(48, defaultScale),
-    textAlign: I18nManager.isRTL ? 'right' : 'left',
-    paddingLeft: moderateScale(15, defaultScale),
-    color: Color.black,
-  },
-  shadow: {
-    shadowColor: Color.yellow,
-    shadowOffset: {
-      width: 0,
-      height: 0,
+const styles = (props: {colors: any}) =>
+  StyleSheet.create({
+    textinputContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      borderRadius: 2,
+      borderWidth: 1,
+      backgroundColor: props.colors.white,
     },
-    shadowOpacity: defaultScale,
-    shadowRadius: 3,
-    elevation: 15,
-  },
-  disableTextInputContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: Color.lightgrey,
-    borderRadius: 2,
-  },
-  disableTextinput: {
-    flex: 1,
-    height: moderateScale(48, defaultScale),
-    paddingLeft: moderateScale(15, defaultScale),
-    textAlign: I18nManager.isRTL ? 'right' : 'left',
-  },
-});
+    icon: {
+      paddingRight: moderateScale(15, defaultScale),
+      paddingLeft: moderateScale(5, defaultScale),
+    },
+    lefticon: {
+      paddingRight: moderateScale(5, defaultScale),
+      paddingLeft: moderateScale(15, defaultScale),
+    },
+    textinput: {
+      flex: 1,
+      height: moderateScale(48, defaultScale),
+      textAlign: I18nManager.isRTL ? 'right' : 'left',
+      paddingLeft: moderateScale(15, defaultScale),
+      color: props.colors.black,
+    },
+    shadow: {
+      shadowColor: props.colors.shadowColor,
+      shadowOffset: {
+        width: 0,
+        height: 0,
+      },
+      shadowOpacity: defaultScale,
+      shadowRadius: 3,
+      elevation: 15,
+    },
+    disableTextInputContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: props.colors.lightgrey,
+      borderRadius: 2,
+    },
+    disableTextinput: {
+      flex: 1,
+      height: moderateScale(48, defaultScale),
+      paddingLeft: moderateScale(15, defaultScale),
+      textAlign: I18nManager.isRTL ? 'right' : 'left',
+    },
+  });
 
-export default ATextInput;
+export default withTheme(ATextInput);
