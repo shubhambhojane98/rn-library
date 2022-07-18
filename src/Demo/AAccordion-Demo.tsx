@@ -1,66 +1,60 @@
 import React from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
-import {Color} from '../theme';
 import ATypography from '../components/ATypography/ATypography';
 import AAccordion from '../components/AAccordion/AAccordion';
 import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
+import {moderateScale} from 'react-native-size-matters';
+import {defaultScale} from '../utils/Common';
 
-const listData = [
-  {
-    id: '1',
-    title: 'Lorem ipsum dolor sit amet',
-    component: (
-      <ATypography>
-        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam.
-      </ATypography>
-    ),
-  },
-  {
-    id: '2',
-    title: 'Sed do eiusmod tempor incididunt ut labore',
-    component: (
-      <ATypography>
-        Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim.
-      </ATypography>
-    ),
-  },
-  {
-    id: '3',
-    title: 'Lorem enim ad minim veniam',
-    component: (
-      <ATypography>
-        Do eiusmod tempor incididunt ut labor dolore magna aliqua. Ut enim minim
-        veniam.
-      </ATypography>
-    ),
-  },
-];
+const line1 =
+  'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.';
+
+const line2 =
+  'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Consectetur adipiscing elit.';
 
 const AAccordionDemo = () => {
+  const [selected, setSelected] = React.useState('1');
   return (
-    <SafeAreaView>
-      <ScrollView>
+    <SafeAreaView style={{flex: 1}}>
+      <ScrollView style={{marginHorizontal: 20}}>
         <ATypography
           variant={TypographyVariant.PRIMARY_BOLD}
-          style={{margin: 20}}>
-          Accordion with default props
-        </ATypography>
-        <AAccordion data={listData} marginLeft={20} marginRight={20} />
-        <ATypography
-          variant={TypographyVariant.PRIMARY_BOLD}
-          style={{margin: 20, marginTop: 60}}>
-          Accordion with separatorColor, color and fontSize
+          style={{marginVertical: moderateScale(20, defaultScale)}}>
+          List Accordion
         </ATypography>
         <AAccordion
-          color={Color.environment}
-          fontSize={20}
-          data={listData}
-          marginLeft={20}
-          marginRight={20}
-          separatorColor={Color.red}
-        />
+          id="1"
+          title="Uncontrolled Accordion"
+          leftIconName="fullstar">
+          <ATypography>{line1}</ATypography>
+        </AAccordion>
+
+        <AAccordion id="2" title="Controlled Accordion" leftIconName="gifticon">
+          <ATypography>{line2}</ATypography>
+        </AAccordion>
+
+        <ATypography
+          variant={TypographyVariant.PRIMARY_BOLD}
+          style={{marginVertical: moderateScale(20, defaultScale)}}>
+          List Accordion handled
+        </ATypography>
+        <AAccordion
+          id="1"
+          title="Uncontrolled Accordion"
+          expanded={selected === '1'}
+          onPress={() => setSelected('1')}
+          leftIconName="fullstar">
+          <ATypography>{line1}</ATypography>
+        </AAccordion>
+
+        <AAccordion
+          id="2"
+          title="Controlled Accordion"
+          expanded={selected === '2'}
+          onPress={() => setSelected('2')}
+          leftIconName="gifticon">
+          <ATypography>{line2}</ATypography>
+        </AAccordion>
       </ScrollView>
     </SafeAreaView>
   );
