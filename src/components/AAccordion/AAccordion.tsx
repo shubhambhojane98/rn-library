@@ -8,13 +8,14 @@ import {
   GestureResponderEvent,
   TouchableOpacity,
 } from 'react-native';
-// import TouchableRipple from '../TouchableRipple/TouchableRipple';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
 import {ListAccordionGroupContext} from './AAccordionGroup';
 import IconSVG from '../../assets/svgs';
 import ATypography from '../ATypography/ATypography';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
+import {moderateScale} from 'react-native-size-matters';
+import {defaultScale} from '../../utils/Common';
 
 type Props = {
   /**
@@ -175,7 +176,7 @@ ListAccordion.displayName = 'List.Accordion';
 
 const styles = StyleSheet.create({
   container: {
-    height: 44,
+    height: moderateScale(44, defaultScale),
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -183,18 +184,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  item: {
-    margin: 0,
-  },
-  child: {
-    paddingLeft: 64,
-  },
   content: {
     flex: 1,
     justifyContent: 'center',
   },
   left: {
-    marginHorizontal: 10,
+    marginHorizontal: moderateScale(10, defaultScale),
   },
 });
 
