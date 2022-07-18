@@ -9,6 +9,7 @@ exports[`renders correctly default prop 1`] = `
       "flexDirection": "row",
       "height": 63.885714285714286,
       "justifyContent": "center",
+      "opacity": 1,
       "padding": 2.4571428571428573,
       "width": undefined,
     }
@@ -48,15 +49,38 @@ exports[`renders correctly default prop 1`] = `
             "fontWeight": "bold",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
           Object {
             "textAlign": "left",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
         ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
       }
     >
       one
@@ -96,18 +120,201 @@ exports[`renders correctly default prop 1`] = `
             "fontWeight": "bold",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
           Object {
             "textAlign": "left",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
         ]
       }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
     >
       2
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly isDisabled prop 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#D7D7D7",
+      "borderRadius": 25,
+      "flexDirection": "row",
+      "height": 63.885714285714286,
+      "justifyContent": "center",
+      "opacity": 0.5,
+      "padding": 2.4571428571428573,
+      "width": 200,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "",
+        "borderRadius": 25,
+        "flex": 1,
+        "height": 49.14285714285714,
+        "justifyContent": "center",
+        "margin": 6.142857142857142,
+        "opacity": 1,
+        "width": 133.9142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 19.65714285714286,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#000",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      One
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FAD000",
+        "borderRadius": 25,
+        "flex": 1,
+        "height": 49.14285714285714,
+        "justifyContent": "center",
+        "margin": 6.142857142857142,
+        "opacity": 1,
+        "width": 133.9142857142857,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 19.65714285714286,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "color": "#000",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Two
     </Text>
   </View>
 </View>
@@ -122,6 +329,7 @@ exports[`renders correctly with width prop 1`] = `
       "flexDirection": "row",
       "height": 63.885714285714286,
       "justifyContent": "center",
+      "opacity": 1,
       "padding": 2.4571428571428573,
       "width": 200,
     }
@@ -161,15 +369,38 @@ exports[`renders correctly with width prop 1`] = `
             "fontWeight": "bold",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
           Object {
             "textAlign": "left",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
         ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
       }
     >
       one
@@ -209,15 +440,38 @@ exports[`renders correctly with width prop 1`] = `
             "fontWeight": "bold",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
           Object {
             "textAlign": "left",
           },
           Object {
-            "color": "#231F20",
+            "color": "#000",
           },
         ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
       }
     >
       2

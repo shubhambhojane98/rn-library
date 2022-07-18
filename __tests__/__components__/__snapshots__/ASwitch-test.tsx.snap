@@ -33,7 +33,7 @@ exports[`renders correctly activeColor & inactive & knobColor  prop 1`] = `
       style={
         Object {
           "backgroundColor": "rgba(125, 181, 35, 1)",
-          "borderColor": "#231F20",
+          "borderColor": "#000",
           "borderRadius": 15,
           "borderWidth": 1,
           "height": 30,
@@ -108,7 +108,7 @@ exports[`renders correctly default prop 1`] = `
       style={
         Object {
           "backgroundColor": "rgba(253, 232, 128, 1)",
-          "borderColor": "#231F20",
+          "borderColor": "#000",
           "borderRadius": 15,
           "borderWidth": 1,
           "height": 30,
@@ -138,7 +138,7 @@ exports[`renders correctly default prop 1`] = `
         collapsable={false}
         style={
           Object {
-            "backgroundColor": "#231F20",
+            "backgroundColor": "#000",
             "borderRadius": 9,
             "height": 18,
             "width": 18,

@@ -6,285 +6,749 @@ exports[`renders correctly default prop 1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "justifyContent": "center",
-      "margin": 12.285714285714285,
     }
   }
 >
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View />
+</View>
+`;
+
+exports[`renders correctly editable prop 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
   <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
+    <Text
       style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Regular",
+            "fontSize": 24.57142857142857,
+            "fontWeight": "normal",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "margin": 12.285714285714285,
+            "textAlign": "left",
+          },
+        ]
+      }
+      theme={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
+      3 / 5
+    </Text>
   </View>
 </View>
 `;
@@ -295,309 +759,397 @@ exports[`renders correctly with defaultRating Prop  1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "justifyContent": "center",
-      "margin": 12.285714285714285,
     }
   }
 >
-  <View>
-    <SvgMock
-      height={40}
-      name="fullstar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="fullstar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="halfstar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <Text
+  <View
     style={
-      Array [
-        Object {
-          "fontFamily": "Mulish-Regular",
-          "fontSize": 24.57142857142857,
-          "fontWeight": "normal",
-        },
-        Object {
-          "color": "#231F20",
-        },
-        Object {
-          "textAlign": "left",
-        },
-        Object {
-          "margin": 12.285714285714285,
-          "textAlign": "left",
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
     }
   >
-    2.5 / 5
-  </Text>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="halfstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Regular",
+            "fontSize": 24.57142857142857,
+            "fontWeight": "normal",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "margin": 12.285714285714285,
+            "textAlign": "left",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      2.5 / 5
+    </Text>
+  </View>
 </View>
 `;
 
@@ -607,309 +1159,397 @@ exports[`renders correctly with defaultRating with fraction value  1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "justifyContent": "center",
-      "margin": 12.285714285714285,
     }
   }
 >
-  <View>
-    <SvgMock
-      height={40}
-      name="fullstar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="fullstar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="halfstar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
-      />
-    </View>
-  </View>
-  <Text
+  <View
     style={
-      Array [
-        Object {
-          "fontFamily": "Mulish-Regular",
-          "fontSize": 24.57142857142857,
-          "fontWeight": "normal",
-        },
-        Object {
-          "color": "#231F20",
-        },
-        Object {
-          "textAlign": "left",
-        },
-        Object {
-          "margin": 12.285714285714285,
-          "textAlign": "left",
-        },
-      ]
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
     }
   >
-    2.5 / 5
-  </Text>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="fullstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="halfstar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
+        }
+      }
+    >
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Regular",
+            "fontSize": 24.57142857142857,
+            "fontWeight": "normal",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          Object {
+            "margin": 12.285714285714285,
+            "textAlign": "left",
+          },
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "greyOpac10": "rgba(53, 53, 53, 0.1)",
+            "greyOpac50": "rgba(53, 53, 53, 0.5)",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#FAD000",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#222",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      2.5 / 5
+    </Text>
+  </View>
 </View>
 `;
 
@@ -919,340 +1559,415 @@ exports[`renders correctly with height & width & maxStar Prop  1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "justifyContent": "center",
-      "margin": 12.285714285714285,
     }
   }
 >
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
-      />
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
-      />
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
-      />
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
-      />
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
-      />
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
-  </View>
-  <View>
-    <SvgMock
-      height={40}
-      name="emptystar"
-      width={40}
-    />
     <View
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "position": "absolute",
+          "height": 49.14285714285714,
+          "margin": 2.4571428571428573,
+          "resizeMode": "cover",
+          "transform": Array [],
+          "width": 49.14285714285714,
         }
       }
     >
-      <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
-          }
-        }
+      <SvgMock
+        height={40}
+        name="emptystar"
+        width={40}
       />
       <View
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
         style={
           Object {
-            "height": 49.14285714285714,
-            "opacity": 1,
-            "width": 24.57142857142857,
+            "flex": 1,
+            "flexDirection": "row",
+            "position": "absolute",
+            "transform": Array [],
           }
         }
-      />
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 49.14285714285714,
+              "opacity": 1,
+              "width": 24.57142857142857,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
+  <View />
 </View>
 `;

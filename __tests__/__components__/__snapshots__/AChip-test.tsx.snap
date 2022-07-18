@@ -14,11 +14,13 @@ exports[`renders correctly with default prop 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignItems": "center",
       "alignSelf": "center",
-      "backgroundColor": "#fff",
-      "borderColor": "rgba(53, 53, 53, 0.2)",
+      "backgroundColor": "#FFF",
+      "borderColor": "#D7D7D7",
       "borderRadius": 60.2,
       "borderWidth": 1.2285714285714286,
+      "flexDirection": "row",
       "marginHorizontal": 6.142857142857142,
       "opacity": 1,
       "paddingHorizontal": 19.65714285714286,
@@ -35,7 +37,7 @@ exports[`renders correctly with default prop 1`] = `
           "fontWeight": "bold",
         },
         Object {
-          "color": "#231F20",
+          "color": "#000",
         },
         Object {
           "textAlign": "left",
@@ -47,6 +49,108 @@ exports[`renders correctly with default prop 1`] = `
           "paddingVertical": 8.6,
         },
       ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "greyOpac10": "rgba(53, 53, 53, 0.1)",
+          "greyOpac50": "rgba(53, 53, 53, 0.5)",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#FAD000",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#222",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
+    }
+  >
+    Whats New
+  </Text>
+</View>
+`;
+
+exports[`renders correctly with isDisabled prop 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "center",
+      "backgroundColor": "#FFF",
+      "borderColor": "#D7D7D7",
+      "borderRadius": 60.2,
+      "borderWidth": 1.2285714285714286,
+      "flexDirection": "row",
+      "marginHorizontal": 6.142857142857142,
+      "opacity": 0.5,
+      "paddingHorizontal": 19.65714285714286,
+      "paddingVertical": 4.914285714285715,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "AvenirNextLTPro-Bold",
+          "fontSize": 21.13142857142857,
+          "fontWeight": "bold",
+        },
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "textAlign": "left",
+        },
+        Object {
+          "fontSize": 17.2,
+          "lineHeight": 20.885714285714286,
+          "paddingHorizontal": 19.65714285714286,
+          "paddingVertical": 8.6,
+        },
+      ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "greyOpac10": "rgba(53, 53, 53, 0.1)",
+          "greyOpac50": "rgba(53, 53, 53, 0.5)",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#FAD000",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#222",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
     }
   >
     Whats New
@@ -68,11 +172,13 @@ exports[`renders correctly with selectedBackgroundColor & textColor & selectedTe
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "alignItems": "center",
       "alignSelf": "center",
-      "backgroundColor": "#fff",
-      "borderColor": "rgba(53, 53, 53, 0.2)",
+      "backgroundColor": "#FFF",
+      "borderColor": "#D7D7D7",
       "borderRadius": 60.2,
       "borderWidth": 1.2285714285714286,
+      "flexDirection": "row",
       "marginHorizontal": 6.142857142857142,
       "opacity": 1,
       "paddingHorizontal": 19.65714285714286,
@@ -101,6 +207,29 @@ exports[`renders correctly with selectedBackgroundColor & textColor & selectedTe
           "paddingVertical": 8.6,
         },
       ]
+    }
+    theme={
+      Object {
+        "colors": Object {
+          "background": "#FFF",
+          "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+          "black": "#000",
+          "error": "#B00020",
+          "greyOpac10": "rgba(53, 53, 53, 0.1)",
+          "greyOpac50": "rgba(53, 53, 53, 0.5)",
+          "lightgrey": "#D7D7D7",
+          "linkColor": "#0000EE",
+          "primary": "#FAD000",
+          "primaryVariant": "#3700B3",
+          "secondary": "#03DAC6",
+          "secondaryVariant": "#018786",
+          "shadowColor": "#222",
+          "textColor": "#000",
+          "transparent": "transparent",
+          "white": "#FFF",
+        },
+        "dark": false,
+      }
     }
   >
     Whats New

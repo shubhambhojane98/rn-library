@@ -10,13 +10,13 @@ exports[`renders correctly with label 1`] = `
         "fontWeight": "normal",
       },
       Object {
-        "color": "#231F20",
+        "color": "#000",
       },
       Object {
         "textAlign": "center",
       },
       Object {
-        "backgroundColor": "#D7D7D7",
+        "backgroundColor": "#FAD000",
         "borderRadius": 32,
         "height": 64,
         "lineHeight": 64,
@@ -28,6 +28,29 @@ exports[`renders correctly with label 1`] = `
         "width": 64,
       },
     ]
+  }
+  theme={
+    Object {
+      "colors": Object {
+        "background": "#FFF",
+        "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+        "black": "#000",
+        "error": "#B00020",
+        "greyOpac10": "rgba(53, 53, 53, 0.1)",
+        "greyOpac50": "rgba(53, 53, 53, 0.5)",
+        "lightgrey": "#D7D7D7",
+        "linkColor": "#0000EE",
+        "primary": "#FAD000",
+        "primaryVariant": "#3700B3",
+        "secondary": "#03DAC6",
+        "secondaryVariant": "#018786",
+        "shadowColor": "#222",
+        "textColor": "#000",
+        "transparent": "transparent",
+        "white": "#FFF",
+      },
+      "dark": false,
+    }
   }
 >
   AA
@@ -44,13 +67,13 @@ exports[`renders correctly with label, fontSize & radius 1`] = `
         "fontWeight": "normal",
       },
       Object {
-        "color": "#231F20",
+        "color": "#000",
       },
       Object {
         "textAlign": "center",
       },
       Object {
-        "backgroundColor": "#D7D7D7",
+        "backgroundColor": "#FAD000",
         "borderRadius": 36,
         "height": 72,
         "lineHeight": 72,
@@ -62,6 +85,29 @@ exports[`renders correctly with label, fontSize & radius 1`] = `
         "width": 72,
       },
     ]
+  }
+  theme={
+    Object {
+      "colors": Object {
+        "background": "#FFF",
+        "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+        "black": "#000",
+        "error": "#B00020",
+        "greyOpac10": "rgba(53, 53, 53, 0.1)",
+        "greyOpac50": "rgba(53, 53, 53, 0.5)",
+        "lightgrey": "#D7D7D7",
+        "linkColor": "#0000EE",
+        "primary": "#FAD000",
+        "primaryVariant": "#3700B3",
+        "secondary": "#03DAC6",
+        "secondaryVariant": "#018786",
+        "shadowColor": "#222",
+        "textColor": "#000",
+        "transparent": "transparent",
+        "white": "#FFF",
+      },
+      "dark": false,
+    }
   }
 >
   AA

@@ -4,7 +4,7 @@ exports[`renders correctly default prop 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#353535",
+      "backgroundColor": "#D7D7D7",
       "borderRadius": 0,
       "flexDirection": "row",
       "height": 9.82857142857143,
@@ -34,7 +34,7 @@ exports[`renders correctly with borderRadius & height prop 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#353535",
+      "backgroundColor": "#D7D7D7",
       "borderRadius": 8,
       "flexDirection": "row",
       "height": 12,

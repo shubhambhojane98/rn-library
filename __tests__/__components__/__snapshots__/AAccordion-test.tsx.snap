@@ -50,11 +50,36 @@ exports[`renders correctly with default props 1`] = `
             },
           ]
         }
+        theme={
+          Object {
+            "colors": Object {
+              "background": "#FFF",
+              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+              "black": "#000",
+              "error": "#B00020",
+              "greyOpac10": "rgba(53, 53, 53, 0.1)",
+              "greyOpac50": "rgba(53, 53, 53, 0.5)",
+              "lightgrey": "#D7D7D7",
+              "linkColor": "#0000EE",
+              "primary": "#FAD000",
+              "primaryVariant": "#3700B3",
+              "secondary": "#03DAC6",
+              "secondaryVariant": "#018786",
+              "shadowColor": "#222",
+              "textColor": "#000",
+              "transparent": "transparent",
+              "white": "#FFF",
+            },
+            "dark": false,
+          }
+        }
       >
         Lorem ipsum dolor sit amet
       </Text>
       <SvgMock
+        height={20}
         name="downarrow"
+        width={20}
       />
     </View>
     <View
@@ -113,12 +138,37 @@ exports[`renders correctly with default props 1`] = `
               "flex": 0.95,
             },
           ]
+        }
+        theme={
+          Object {
+            "colors": Object {
+              "background": "#FFF",
+              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+              "black": "#000",
+              "error": "#B00020",
+              "greyOpac10": "rgba(53, 53, 53, 0.1)",
+              "greyOpac50": "rgba(53, 53, 53, 0.5)",
+              "lightgrey": "#D7D7D7",
+              "linkColor": "#0000EE",
+              "primary": "#FAD000",
+              "primaryVariant": "#3700B3",
+              "secondary": "#03DAC6",
+              "secondaryVariant": "#018786",
+              "shadowColor": "#222",
+              "textColor": "#000",
+              "transparent": "transparent",
+              "white": "#FFF",
+            },
+            "dark": false,
+          }
         }
       >
         Sed do eiusmod tempor incididunt ut labore
       </Text>
       <SvgMock
+        height={20}
         name="downarrow"
+        width={20}
       />
     </View>
     <View
@@ -178,11 +228,36 @@ exports[`renders correctly with default props 1`] = `
             },
           ]
         }
+        theme={
+          Object {
+            "colors": Object {
+              "background": "#FFF",
+              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+              "black": "#000",
+              "error": "#B00020",
+              "greyOpac10": "rgba(53, 53, 53, 0.1)",
+              "greyOpac50": "rgba(53, 53, 53, 0.5)",
+              "lightgrey": "#D7D7D7",
+              "linkColor": "#0000EE",
+              "primary": "#FAD000",
+              "primaryVariant": "#3700B3",
+              "secondary": "#03DAC6",
+              "secondaryVariant": "#018786",
+              "shadowColor": "#222",
+              "textColor": "#000",
+              "transparent": "transparent",
+              "white": "#FFF",
+            },
+            "dark": false,
+          }
+        }
       >
         Lorem enim ad minim veniam
       </Text>
       <SvgMock
+        height={20}
         name="downarrow"
+        width={20}
       />
     </View>
     <View

@@ -20,7 +20,7 @@ exports[`renders correctly with borderColor, marginBottom , marginLeft , marginR
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#fff",
+                "backgroundColor": "#FFF",
                 "borderRadius": 2,
                 "borderWidth": 1,
                 "flexDirection": "row",
@@ -43,17 +43,17 @@ exports[`renders correctly with borderColor, marginBottom , marginLeft , marginR
             editable={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholderTextColor="#5D5D5D"
+            placeholderTextColor="#D7D7D7"
             style={
               Object {
-                "color": "#231F20",
+                "color": "#000",
                 "flex": 1,
                 "height": 58.971428571428575,
                 "paddingLeft": 18.428571428571427,
                 "textAlign": "left",
               }
             }
-            value="14/7/2022"
+            value="18/7/2022"
           />
           <View
             style={
@@ -120,7 +120,7 @@ exports[`renders correctly with default props 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#fff",
+                "backgroundColor": "#FFF",
                 "borderRadius": 2,
                 "borderWidth": 1,
                 "flexDirection": "row",
@@ -143,17 +143,17 @@ exports[`renders correctly with default props 1`] = `
             editable={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholderTextColor="#5D5D5D"
+            placeholderTextColor="#D7D7D7"
             style={
               Object {
-                "color": "#231F20",
+                "color": "#000",
                 "flex": 1,
                 "height": 58.971428571428575,
                 "paddingLeft": 18.428571428571427,
                 "textAlign": "left",
               }
             }
-            value="14/7/2022"
+            value="18/7/2022"
           />
           <View
             style={
@@ -220,14 +220,14 @@ exports[`renders correctly with disable & error text props 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#fff",
+                "backgroundColor": "#FFF",
                 "borderRadius": 2,
                 "borderWidth": 1,
                 "flexDirection": "row",
               },
               false,
               Object {
-                "borderColor": "#A81E23",
+                "borderColor": "#B00020",
               },
               Object {
                 "marginBottom": 0,
@@ -243,17 +243,17 @@ exports[`renders correctly with disable & error text props 1`] = `
             editable={false}
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholderTextColor="#5D5D5D"
+            placeholderTextColor="#D7D7D7"
             style={
               Object {
-                "color": "#231F20",
+                "color": "#000",
                 "flex": 1,
                 "height": 58.971428571428575,
                 "paddingLeft": 18.428571428571427,
                 "textAlign": "left",
               }
             }
-            value="14/7/2022"
+            value="18/7/2022"
           />
           <View
             style={
@@ -282,7 +282,7 @@ exports[`renders correctly with disable & error text props 1`] = `
                 "fontWeight": "normal",
               },
               Object {
-                "color": "#A81E23",
+                "color": "#B00020",
               },
               Object {
                 "textAlign": "left",
@@ -297,13 +297,15 @@ exports[`renders correctly with disable & error text props 1`] = `
                 "backgroundLayout": "rgba(0, 0, 0, 0.8)",
                 "black": "#000",
                 "error": "#B00020",
+                "greyOpac10": "rgba(53, 53, 53, 0.1)",
+                "greyOpac50": "rgba(53, 53, 53, 0.5)",
                 "lightgrey": "#D7D7D7",
                 "linkColor": "#0000EE",
-                "primary": "#6200EE",
+                "primary": "#FAD000",
                 "primaryVariant": "#3700B3",
                 "secondary": "#03DAC6",
                 "secondaryVariant": "#018786",
-                "shadowColor": "#FFF",
+                "shadowColor": "#222",
                 "textColor": "#000",
                 "transparent": "transparent",
                 "white": "#FFF",
@@ -375,7 +377,7 @@ exports[`renders correctly with disable & placeholder props 1`] = `
           <TextInput
             editable={false}
             placeholder="placeholder"
-            placeholderTextColor="#5D5D5D"
+            placeholderTextColor="#D7D7D7"
             style={
               Object {
                 "flex": 1,
