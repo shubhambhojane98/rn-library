@@ -210,7 +210,7 @@ exports[`renders correctly with disable 1`] = `
           "fontWeight": "bold",
         },
         Object {
-          "color": "#000",
+          "color": "rgba(53, 53, 53, 0.5)",
         },
         Object {
           "textAlign": "left",

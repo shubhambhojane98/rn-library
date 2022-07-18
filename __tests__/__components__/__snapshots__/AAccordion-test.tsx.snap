@@ -29,7 +29,7 @@ exports[`renders correctly with default props 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "height": 44,
+          "height": 54.05714285714286,
           "justifyContent": "center",
           "opacity": 1,
         }
@@ -41,29 +41,6 @@ exports[`renders correctly with default props 1`] = `
           Object {
             "alignItems": "center",
             "flexDirection": "row",
-          }
-        }
-        theme={
-          Object {
-            "colors": Object {
-              "background": "#FFF",
-              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
-              "black": "#000",
-              "error": "#B00020",
-              "greyOpac10": "rgba(53, 53, 53, 0.1)",
-              "greyOpac50": "rgba(53, 53, 53, 0.5)",
-              "lightgrey": "#D7D7D7",
-              "linkColor": "#0000EE",
-              "primary": "#FAD000",
-              "primaryVariant": "#3700B3",
-              "secondary": "#03DAC6",
-              "secondaryVariant": "#018786",
-              "shadowColor": "#222",
-              "textColor": "#000",
-              "transparent": "transparent",
-              "white": "#FFF",
-            },
-            "dark": false,
           }
         }
       >
@@ -166,7 +143,7 @@ exports[`renders correctly with icon & expanded 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "height": 44,
+          "height": 54.05714285714286,
           "justifyContent": "center",
           "opacity": 1,
         }
@@ -180,35 +157,12 @@ exports[`renders correctly with icon & expanded 1`] = `
             "flexDirection": "row",
           }
         }
-        theme={
-          Object {
-            "colors": Object {
-              "background": "#FFF",
-              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
-              "black": "#000",
-              "error": "#B00020",
-              "greyOpac10": "rgba(53, 53, 53, 0.1)",
-              "greyOpac50": "rgba(53, 53, 53, 0.5)",
-              "lightgrey": "#D7D7D7",
-              "linkColor": "#0000EE",
-              "primary": "#FAD000",
-              "primaryVariant": "#3700B3",
-              "secondary": "#03DAC6",
-              "secondaryVariant": "#018786",
-              "shadowColor": "#222",
-              "textColor": "#000",
-              "transparent": "transparent",
-              "white": "#FFF",
-            },
-            "dark": false,
-          }
-        }
       >
         <View
           style={
             Array [
               Object {
-                "marginHorizontal": 10,
+                "marginHorizontal": 12.285714285714285,
               },
               undefined,
             ]
