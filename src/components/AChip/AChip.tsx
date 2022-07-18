@@ -78,12 +78,9 @@ const AChip: React.FC<Props> = ({
         backgroundColor: isSelected ? bgColor : colors.white,
         borderColor: isSelected ? bgColor : colors.lightgrey,
       }}>
-      <IconSVG
-        onPress={onPressLeftIcon}
-        name={leftIcon}
-        height={iconHeight}
-        width={iconWidth}
-      />
+      <TouchableOpacity onPress={onPressLeftIcon}>
+        <IconSVG name={leftIcon} height={iconHeight} width={iconWidth} />
+      </TouchableOpacity>
       <ATypography
         children={label}
         variant={TypographyVariant.SECONDARY_BOLD}
@@ -99,12 +96,9 @@ const AChip: React.FC<Props> = ({
         fontSize={moderateScale(14, defaultScale)}
         style={textStyle}
       />
-      <IconSVG
-        onPress={onPressRightIcon}
-        name={rightIcon}
-        height={iconHeight}
-        width={iconWidth}
-      />
+      <TouchableOpacity onPress={onPressRightIcon}>
+        <IconSVG name={rightIcon} height={iconHeight} width={iconWidth} />
+      </TouchableOpacity>
     </TouchableOpacity>
   );
 };
