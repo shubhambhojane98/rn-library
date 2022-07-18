@@ -122,7 +122,9 @@ const AButton = (props: Props) => {
         <ATypography
           children={title}
           variant={TypographyVariant.PRIMARY_BOLD}
-          color={color || colors.textColor}
+          color={
+            color ? color : isDisabled ? colors.greyOpac50 : colors.textColor
+          }
           style={{
             ...stylesWithProp.text,
             textAlign,
