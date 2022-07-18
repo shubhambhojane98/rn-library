@@ -20,6 +20,8 @@ interface Props {
   borderRadius?: number;
   yesButtonColor?: string;
   noButtonColor?: string;
+  yesText?: string;
+  noText?: string;
   theme: Theme;
 }
 
@@ -36,6 +38,8 @@ const AAlert: React.FC<Props> = ({
   onDismiss,
   yesButtonColor,
   noButtonColor,
+  yesText,
+  noText,
 }) => {
   const {colors} = useTheme();
 
@@ -81,14 +85,14 @@ const AAlert: React.FC<Props> = ({
         <View style={stylesWithProp.Button}>
           <AButton
             onPress={onPressYes}
-            title={'Yes'}
+            title={yesText || 'Yes'}
             backgroundColor={yesButtonColor || colors.primary}
             borderRadius={moderateScale(49, defaultScale)}
             margin={moderateScale(10, defaultScale)}
             width={moderateScale(120, defaultScale)}
           />
           <AButton
-            title={'No'}
+            title={noText || 'No'}
             onPress={onDismiss}
             backgroundColor={noButtonColor || colors.greyOpac10}
             borderRadius={moderateScale(49, defaultScale)}
