@@ -28,10 +28,6 @@ type Props = {
   leftIconSize?: number;
   leftIconStyle?: StyleProp<ViewStyle>;
   /**
-   * Callback which returns a React element to display on the right side.
-   */
-  right?: (props: {isExpanded: boolean}) => any;
-  /**
    * Whether the accordion is expanded
    * If this prop is provided, the accordion will behave as a "controlled component".
    * You'll need to update this prop when you want to toggle the component or on `onPress`.
@@ -85,7 +81,6 @@ const ListAccordion = ({
   leftIconName,
   leftIconSize,
   leftIconStyle,
-  right,
   title,
   children,
   titleTextStyle,
@@ -162,17 +157,11 @@ const ListAccordion = ({
               </ATypography>
             </View>
             <View>
-              {right ? (
-                right({
-                  isExpanded: isExpanded,
-                })
-              ) : (
-                <IconSVG
-                  name={isExpanded ? 'uparrow' : 'downarrow'}
-                  height={24}
-                  width={24}
-                />
-              )}
+              <IconSVG
+                name={isExpanded ? 'uparrow' : 'downarrow'}
+                height={24}
+                width={24}
+              />
             </View>
           </View>
         </TouchableOpacity>
