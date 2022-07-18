@@ -4,16 +4,14 @@ exports[`renders correctly with default prop 1`] = `
 <RCTScrollView
   ListHeaderComponent={
     <React.Fragment>
-      <Typography
+      <withTheme(Typography)
         fontSize={12}
       >
         Virutalized List
-      </Typography>
-      <AButton
+      </withTheme(Typography)>
+      <withTheme(AButton)
         borderRadius={49}
         color="#007BC1"
-        fontSize={22.114285714285714}
-        height={61.42857142857143}
         onPress={[Function]}
         title="Simple Button"
         width={290}
@@ -52,7 +50,7 @@ exports[`renders correctly with default prop 1`] = `
               "fontWeight": "normal",
             },
             Object {
-              "color": "#231F20",
+              "color": "#000",
             },
             Object {
               "textAlign": "left",
@@ -60,10 +58,38 @@ exports[`renders correctly with default prop 1`] = `
             undefined,
           ]
         }
+        theme={
+          Object {
+            "colors": Object {
+              "background": "#FFF",
+              "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+              "black": "#000",
+              "error": "#B00020",
+              "greyOpac10": "rgba(53, 53, 53, 0.1)",
+              "greyOpac50": "rgba(53, 53, 53, 0.5)",
+              "lightgrey": "#D7D7D7",
+              "linkColor": "#0000EE",
+              "primary": "#FAD000",
+              "primaryVariant": "#3700B3",
+              "secondary": "#03DAC6",
+              "secondaryVariant": "#018786",
+              "shadowColor": "#222",
+              "textColor": "#000",
+              "transparent": "transparent",
+              "white": "#FFF",
+            },
+            "dark": false,
+          }
+        }
       >
         Virutalized List
       </Text>
       <View
+        accessibilityState={
+          Object {
+            "disabled": false,
+          }
+        }
         accessible={true}
         collapsable={false}
         focusable={true}
@@ -77,17 +103,17 @@ exports[`renders correctly with default prop 1`] = `
         style={
           Object {
             "alignItems": "center",
-            "backgroundColor": undefined,
+            "backgroundColor": "#FAD000",
             "borderColor": undefined,
             "borderRadius": 49,
             "borderWidth": undefined,
             "flexDirection": "row",
             "height": 61.42857142857143,
             "justifyContent": "center",
-            "margin": undefined,
+            "margin": 2.4571428571428573,
             "opacity": 1,
             "textAlign": "center",
-            "width": 290,
+            "width": 356.2857142857143,
           }
         }
       >
@@ -100,16 +126,15 @@ exports[`renders correctly with default prop 1`] = `
                 "fontWeight": "bold",
               },
               Object {
-                "color": "#231F20",
+                "color": "#007BC1",
               },
               Object {
                 "textAlign": "left",
               },
               Object {
                 "alignItems": "center",
-                "color": "#007BC1",
                 "fontFamily": undefined,
-                "fontSize": 22.114285714285714,
+                "fontSize": 18,
                 "fontWeight": undefined,
                 "padding": 12.285714285714285,
                 "textAlign": "center",
@@ -117,12 +142,32 @@ exports[`renders correctly with default prop 1`] = `
               },
             ]
           }
+          theme={
+            Object {
+              "colors": Object {
+                "background": "#FFF",
+                "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+                "black": "#000",
+                "error": "#B00020",
+                "greyOpac10": "rgba(53, 53, 53, 0.1)",
+                "greyOpac50": "rgba(53, 53, 53, 0.5)",
+                "lightgrey": "#D7D7D7",
+                "linkColor": "#0000EE",
+                "primary": "#FAD000",
+                "primaryVariant": "#3700B3",
+                "secondary": "#03DAC6",
+                "secondaryVariant": "#018786",
+                "shadowColor": "#222",
+                "textColor": "#000",
+                "transparent": "transparent",
+                "white": "#FFF",
+              },
+              "dark": false,
+            }
+          }
         >
           Simple Button
         </Text>
-        <ActivityIndicator
-          size="small"
-        />
       </View>
     </View>
   </View>

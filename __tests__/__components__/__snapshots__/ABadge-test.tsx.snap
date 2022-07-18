@@ -5,7 +5,7 @@ exports[`renders correctly with label 1`] = `
   numberOfLines={1}
   style={
     Object {
-      "backgroundColor": "#A81E23",
+      "backgroundColor": "#FAD000",
       "borderRadius": 12.285714285714285,
       "bottom": undefined,
       "color": undefined,

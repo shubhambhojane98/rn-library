@@ -12,6 +12,21 @@ it('renders correctly default prop', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders correctly isDisabled prop', () => {
+  const tree = renderer
+    .create(
+      <ASwitchSelector
+        option1="One"
+        option2="Two"
+        onSelectSwitch={jest.fn()}
+        width={200}
+        isDisabled={true}
+      />,
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders correctly with width prop', () => {
   const tree = renderer
     .create(
@@ -19,7 +34,7 @@ it('renders correctly with width prop', () => {
         option1="one"
         option2="2"
         width={200}
-        onSelectSwitch={jest.fn}
+        onSelectSwitch={jest.fn()}
       />,
     )
     .toJSON();

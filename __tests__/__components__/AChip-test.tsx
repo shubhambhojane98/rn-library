@@ -11,6 +11,13 @@ it('renders correctly with default prop', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders correctly with isDisabled prop', () => {
+  const tree = renderer
+    .create(<AChip label={'Whats New'} onPress={jest.fn} isDisabled={true} />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders correctly with selectedBackgroundColor & textColor & selectedTextColor prop', () => {
   const tree = renderer
     .create(

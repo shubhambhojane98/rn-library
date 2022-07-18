@@ -29,7 +29,7 @@ exports[`renders correctly with default props 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "height": 44,
+          "height": 54.05714285714286,
           "justifyContent": "center",
           "opacity": 1,
         }
@@ -143,7 +143,7 @@ exports[`renders correctly with icon & expanded 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "height": 44,
+          "height": 54.05714285714286,
           "justifyContent": "center",
           "opacity": 1,
         }
@@ -162,7 +162,7 @@ exports[`renders correctly with icon & expanded 1`] = `
           style={
             Array [
               Object {
-                "marginHorizontal": 10,
+                "marginHorizontal": 12.285714285714285,
               },
               undefined,
             ]

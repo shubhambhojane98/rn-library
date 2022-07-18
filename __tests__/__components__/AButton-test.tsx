@@ -1,8 +1,8 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import AButton from '../src/components/AButton/AButton';
-import {Color} from '../src/theme';
+import AButton from '../../src/components/AButton/AButton';
+import {Color} from '../../src/theme';
 
 it('renders correctly with default props', () => {
   const tree = renderer

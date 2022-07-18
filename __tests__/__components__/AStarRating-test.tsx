@@ -10,6 +10,19 @@ it('renders correctly default prop', () => {
   expect(tree).toMatchSnapshot();
 });
 
+it('renders correctly editable prop', () => {
+  const tree = renderer
+    .create(
+      <AStarRating
+        defaultRating={3}
+        onSelectValue={jest.fn}
+        editable={false}
+      />,
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
 it('renders correctly with defaultRating with fraction value ', () => {
   const tree = renderer
     .create(<AStarRating defaultRating={2.5} onSelectValue={jest.fn()} />)
