@@ -1,4 +1,5 @@
 import type {Theme} from '../utils/types';
+import configureFonts from './font';
 
 let LightTheme: Theme;
 
@@ -22,6 +23,7 @@ LightTheme = {
     greyOpac50: 'rgba(53, 53, 53, 0.5)',
     greyOpac10: 'rgba(53, 53, 53, 0.1)',
   },
+  fonts: configureFonts(),
 };
 
 export default LightTheme;
