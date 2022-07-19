@@ -6,11 +6,11 @@ import {
   FlatList,
   StyleSheet,
   Dimensions,
+  Modal,
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import ATextInput from '../ATextInput/ATextInput';
 import {defaultScale} from '../../utils/Common';
-import AModal from '../AModal/AModal';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
 
@@ -140,9 +140,8 @@ const ADropDown: React.FC<Prop> = ({
         />
       </View>
       {!disable && dropDownTop && (
-        <AModal
-          backgroundColor="transparent"
-          transparentOverlay={true}
+        <Modal
+          transparent
           animationType="fade"
           onDismiss={() => setShowOption(false)}
           visible={showOption}>
@@ -170,7 +169,7 @@ const ADropDown: React.FC<Prop> = ({
               />
             </View>
           </TouchableOpacity>
-        </AModal>
+        </Modal>
       )}
     </View>
   );
@@ -209,8 +208,8 @@ const styles = (props: {
     },
     dropDownBackdrop: {
       position: 'absolute',
-      top: 0,
-      left: 0,
+      top: moderateScale(20, defaultScale),
+      left: moderateScale(20, defaultScale),
       bottom: 0,
       right: 0,
     },
