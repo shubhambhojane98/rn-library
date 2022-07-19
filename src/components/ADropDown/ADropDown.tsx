@@ -11,7 +11,6 @@ import {
 import {moderateScale} from 'react-native-size-matters';
 import ATextInput from '../ATextInput/ATextInput';
 import {defaultScale} from '../../utils/Common';
-import AModal from '../AModal/AModal';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
 
@@ -209,8 +208,8 @@ const styles = (props: {
     },
     dropDownBackdrop: {
       position: 'absolute',
-      top: 20,
-      left: 20,
+      top: moderateScale(20, defaultScale),
+      left: moderateScale(20, defaultScale),
       bottom: 0,
       right: 0,
     },

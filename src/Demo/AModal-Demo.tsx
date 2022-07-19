@@ -4,12 +4,13 @@ import AModal from '../components/AModal/AModal';
 import AButton from '../components/AButton/AButton';
 import ATypography from '../components/ATypography/ATypography';
 import {TypographyVariant} from '../components/ATypography/ATypographyEnum';
-import {Color} from '../theme';
+import {useTheme} from '../core/theming';
 
-const ARadioButtonDemo = () => {
+const AModalDemo = () => {
   const [isModalVisible, setIsModalVisible] = React.useState(false);
   const [isModalVisible2, setIsModalVisible2] = React.useState(false);
   const [isModalVisible3, setIsModalVisible3] = React.useState(false);
+  const {colors} = useTheme();
 
   return (
     <SafeAreaView style={{marginHorizontal: 20}}>
@@ -23,7 +24,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible(true)}
           width={290}
-          color={'white'}
+          color={colors.white}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -32,7 +33,7 @@ const ARadioButtonDemo = () => {
           visible={isModalVisible}
           onDismiss={() => setIsModalVisible(false)}
           closeButton={true}
-          backgroundColor={Color.white}
+          backgroundColor={colors.white}
           borderRadius={8}
           children={
             <>
@@ -52,7 +53,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible2(true)}
           width={290}
-          color={'white'}
+          color={colors.white}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -61,7 +62,7 @@ const ARadioButtonDemo = () => {
           visible={isModalVisible2}
           onDismiss={() => setIsModalVisible2(false)}
           closeButton={true}
-          backgroundColor={Color.white}
+          backgroundColor={colors.white}
           borderRadius={8}
           top={100}
           left={50}
@@ -85,7 +86,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible(true)}
           width={290}
-          color={'white'}
+          color={colors.white}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -95,7 +96,7 @@ const ARadioButtonDemo = () => {
           visible={isModalVisible}
           onDismiss={() => setIsModalVisible(false)}
           closeButton={true}
-          backgroundColor={Color.white}
+          backgroundColor={colors.white}
           borderRadius={8}
           children={
             <>
@@ -115,7 +116,7 @@ const ARadioButtonDemo = () => {
           title={'Open Modal'}
           onPress={() => setIsModalVisible3(true)}
           width={290}
-          color={'white'}
+          color={colors.white}
           borderRadius={49}
           fontWeight={'500'}
           textDecorationLine={'underline'}
@@ -124,7 +125,7 @@ const ARadioButtonDemo = () => {
           visible={isModalVisible3}
           onDismiss={() => setIsModalVisible3(false)}
           closeButton={true}
-          backgroundColor={Color.white}
+          backgroundColor={colors.white}
           animationIn={'slideInUp'}
           animationOut={'slideOutDown'}
           borderRadius={8}
@@ -154,4 +155,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ARadioButtonDemo;
+export default AModalDemo;
