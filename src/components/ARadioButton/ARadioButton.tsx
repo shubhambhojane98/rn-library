@@ -75,7 +75,6 @@ const styles = (props: {colors: any}) =>
       flexDirection: 'row',
       alignItems: 'center',
       margin: moderateScale(5, defaultScale),
-      backgroundColor: props.colors.background,
     },
     containerDisabled: {
       flexDirection: 'row',
