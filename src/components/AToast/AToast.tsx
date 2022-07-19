@@ -21,7 +21,7 @@ interface Props {
   theme: Theme;
 }
 const defaultSize = moderateScale(20, defaultScale);
-
+const toastTime = 1000;
 const AToast: React.FC<Props> = ({
   visible,
   onDismiss,
@@ -44,7 +44,7 @@ const AToast: React.FC<Props> = ({
       setHidden(false);
       Animated.timing(opacity, {
         toValue: 1,
-        duration: 1000,
+        duration: toastTime,
         useNativeDriver: true,
       }).start(({finished}) => {
         if (finished) {
@@ -57,7 +57,7 @@ const AToast: React.FC<Props> = ({
       if (hideTimeout.current) clearTimeout(hideTimeout.current);
       Animated.timing(opacity, {
         toValue: 0,
-        duration: 1000,
+        duration: toastTime,
         useNativeDriver: true,
       }).start(({finished}) => {
         if (finished) setHidden(true);
