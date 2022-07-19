@@ -7,6 +7,7 @@ import AButton from '../../components/AButton/AButton';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
+import {AlertButtons} from './AAlertEnum';
 interface Props {
   visible: boolean;
   title: string;
@@ -85,14 +86,14 @@ const AAlert: React.FC<Props> = ({
         <View style={stylesWithProp.Button}>
           <AButton
             onPress={onPressYes}
-            title={yesText || 'Yes'}
+            title={yesText || AlertButtons.Yes}
             backgroundColor={yesButtonColor || colors.primary}
             borderRadius={moderateScale(49, defaultScale)}
             margin={moderateScale(10, defaultScale)}
             width={moderateScale(120, defaultScale)}
           />
           <AButton
-            title={noText || 'No'}
+            title={noText || AlertButtons.No}
             onPress={onDismiss}
             backgroundColor={noButtonColor || colors.greyOpac10}
             borderRadius={moderateScale(49, defaultScale)}
