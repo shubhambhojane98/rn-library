@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with default prop 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignSelf": "center",
+      "borderColor": undefined,
+      "borderRadius": 20,
+      "borderWidth": 0,
+      "elevation": 5,
+      "height": 122.85714285714286,
+      "margin": 6.142857142857142,
+      "shadowColor": undefined,
+      "shadowOffset": undefined,
+      "shadowOpacity": undefined,
+      "shadowRadius": undefined,
+      "width": 307.1428571428571,
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <Image
+      borderRadius={24.57142857142857}
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "https://blog.logrocket.com/wp-content/uploads/2020/05/setting-up-continuous-deployment-with-react-firebase-github-actions.png",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": undefined,
+            "width": undefined,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with height, width, borderRadius, borderWidth, shadowColor,borderColor, children, elevation, shadowOffset, shadowOpacity,shadowRadius, 1`] = `
+<View
+  style={
+    Object {
+      "alignContent": "center",
+      "alignSelf": "center",
+      "borderColor": "#6200EE",
+      "borderRadius": 20,
+      "borderWidth": 1,
+      "elevation": 10,
+      "height": 147.42857142857142,
+      "margin": 6.142857142857142,
+      "shadowColor": undefined,
+      "shadowOffset": undefined,
+      "shadowOpacity": undefined,
+      "shadowRadius": undefined,
+      "width": 368.57142857142856,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFF",
+        "borderRadius": 24.57142857142857,
+        "elevation": 12.285714285714285,
+        "flex": 1,
+        "justifyContent": "center",
+        "shadowColor": "blue",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-Bold",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "bold",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Title 1
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Mulish-SemiBold",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      Title 2
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "AvenirNextLTPro-Demi",
+            "fontSize": 21.13142857142857,
+            "fontWeight": "600",
+          },
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "textAlign": "left",
+          },
+          undefined,
+        ]
+      }
+      theme={
+        Object {
+          "colors": Object {
+            "background": "#FFF",
+            "backgroundLayout": "rgba(0, 0, 0, 0.8)",
+            "black": "#000",
+            "error": "#B00020",
+            "lightgrey": "#D7D7D7",
+            "linkColor": "#0000EE",
+            "primary": "#6200EE",
+            "primaryVariant": "#3700B3",
+            "secondary": "#03DAC6",
+            "secondaryVariant": "#018786",
+            "shadowColor": "#FFF",
+            "textColor": "#000",
+            "transparent": "transparent",
+            "white": "#FFF",
+          },
+          "dark": false,
+        }
+      }
+    >
+      description
+    </Text>
+  </View>
+</View>
+`;
