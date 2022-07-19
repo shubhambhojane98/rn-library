@@ -7,7 +7,7 @@ import {TypographyVariant} from '../../src/components/ATypography/ATypographyEnu
 import {ImageBackground, View} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import {defaultScale} from '../../src/utils/Common';
-import {Color} from '../../src/theme';
+import LightTheme from '../../src/theme/LightTheme';
 
 it('renders correctly with default prop', () => {
   const tree = renderer
@@ -36,7 +36,7 @@ it('renders correctly with height, width, borderRadius, borderWidth, shadowColor
       <ACard
         width={300}
         height={120}
-        borderColor={Color.environment}
+        borderColor={LightTheme.colors.primary}
         borderWidth={1}
         borderRadius={20}
         elevation={10}
@@ -47,7 +47,7 @@ it('renders correctly with height, width, borderRadius, borderWidth, shadowColor
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: moderateScale(20, defaultScale),
-              backgroundColor: Color.environment,
+              backgroundColor: LightTheme.colors.white,
               shadowColor: 'blue',
               elevation: moderateScale(10, defaultScale),
             }}>
