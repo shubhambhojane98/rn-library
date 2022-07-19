@@ -31,7 +31,7 @@ const ARadioButton: FC<Prop> = ({
   unselectedIconColor,
 }) => {
   const {colors} = useTheme();
-  const stylesWithProp = styles({colors});
+  const stylesWithProp = styles();
   return (
     <View
       style={
@@ -69,7 +69,7 @@ const ARadioButton: FC<Prop> = ({
   );
 };
 
-const styles = (props: {colors: any}) =>
+const styles = () =>
   StyleSheet.create({
     container: {
       flexDirection: 'row',
