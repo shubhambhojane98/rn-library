@@ -7,6 +7,7 @@ import AButton from '../../components/AButton/AButton';
 import {TypographyVariant} from '../ATypography/ATypographyEnum';
 import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
+import {AlertButtons} from './AAlertEnum';
 interface Props {
   visible: boolean;
   title: string;
@@ -18,6 +19,10 @@ interface Props {
   animationType?: 'none' | 'fade' | 'slide';
   backgroundColor?: string;
   borderRadius?: number;
+  yesButtonColor?: string;
+  noButtonColor?: string;
+  yesText?: string;
+  noText?: string;
   theme: Theme;
 }
 
@@ -32,6 +37,10 @@ const AAlert: React.FC<Props> = ({
   description,
   onPressYes,
   onDismiss,
+  yesButtonColor,
+  noButtonColor,
+  yesText,
+  noText,
 }) => {
   const {colors} = useTheme();
 
@@ -77,16 +86,16 @@ const AAlert: React.FC<Props> = ({
         <View style={stylesWithProp.Button}>
           <AButton
             onPress={onPressYes}
-            title={'Yes'}
-            backgroundColor={colors.primary}
+            title={yesText || AlertButtons.Yes}
+            backgroundColor={yesButtonColor || colors.primary}
             borderRadius={moderateScale(49, defaultScale)}
             margin={moderateScale(10, defaultScale)}
             width={moderateScale(120, defaultScale)}
           />
           <AButton
-            title={'No'}
+            title={noText || AlertButtons.No}
             onPress={onDismiss}
-            backgroundColor={colors.primary}
+            backgroundColor={noButtonColor || colors.greyOpac10}
             borderRadius={moderateScale(49, defaultScale)}
             margin={moderateScale(10, defaultScale)}
             width={moderateScale(120, defaultScale)}
