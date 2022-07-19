@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Animated, StyleSheet, View} from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import ATypography from '../../components/ATypography/ATypography';
@@ -9,8 +9,10 @@ import {withTheme, useTheme} from '../../core/theming';
 import type {Theme} from '../../utils/types';
 
 interface Props {
+  visible: boolean;
+  onDismiss: () => void;
   label: string;
-  toastTime?: number;
+  duration?: number;
   iconName?: any;
   iconHeight?: number;
   iconWidth?: number;
@@ -19,10 +21,12 @@ interface Props {
   theme: Theme;
 }
 const defaultSize = moderateScale(20, defaultScale);
-
+const toastTime = 1000;
 const AToast: React.FC<Props> = ({
+  visible,
+  onDismiss,
   label,
-  toastTime,
+  duration,
   iconName,
   iconHeight,
   iconWidth,
@@ -31,22 +35,35 @@ const AToast: React.FC<Props> = ({
 }) => {
   const {colors} = useTheme();
   const opacity = useRef(new Animated.Value(0)).current;
+  const [hidden, setHidden] = useState<boolean>(!visible);
+  const hideTimeout = useRef<undefined>(undefined);
 
-  useEffect(() => {
-    Animated.sequence([
+  React.useLayoutEffect(() => {
+    if (visible) {
+      if (hideTimeout.current) clearTimeout(hideTimeout.current);
+      setHidden(false);
       Animated.timing(opacity, {
         toValue: 1,
-        duration: 500,
+        duration: toastTime,
         useNativeDriver: true,
-      }),
-      Animated.delay(toastTime ? toastTime : 2000),
+      }).start(({finished}) => {
+        if (finished) {
+          if (finished) {
+            setTimeout(onDismiss, duration);
+          }
+        }
+      });
+    } else {
+      if (hideTimeout.current) clearTimeout(hideTimeout.current);
       Animated.timing(opacity, {
         toValue: 0,
-        duration: 500,
+        duration: toastTime,
         useNativeDriver: true,
-      }),
-    ]).start();
-  }, []);
+      }).start(({finished}) => {
+        if (finished) setHidden(true);
+      });
+    }
+  }, [visible, duration, opacity, onDismiss]);
 
   return (
     <View style={styles.container}>
