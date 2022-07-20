@@ -126,17 +126,19 @@ const ATextInput = React.forwardRef<TextInput, Props>(
     const stylesWithProp = styles({colors});
 
     return (
-      <View>
-        <View>
+      <View style={stylesWithProp.container}>
+        <View
+          style={{
+            marginTop: moderateScale(marginTop, defaultScale),
+            marginBottom: moderateScale(marginBottom, defaultScale),
+            marginLeft: moderateScale(marginLeft, defaultScale),
+            marginRight: moderateScale(marginRight, defaultScale),
+          }}>
           {disable && (
             <View
               style={{
                 ...stylesWithProp.disableTextInputContainer,
                 width: width,
-                marginTop: moderateScale(marginTop),
-                marginBottom: moderateScale(marginBottom),
-                marginLeft: moderateScale(marginLeft),
-                marginRight: moderateScale(marginRight),
               }}>
               <TextInput
                 style={stylesWithProp.disableTextinput}
@@ -168,18 +170,14 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                   borderColor: errorText ? colors.error : borderColor,
                 },
                 {
-                  marginTop: moderateScale(marginTop),
-                  marginBottom: moderateScale(marginBottom),
-                  marginLeft: moderateScale(marginLeft),
-                  marginRight: moderateScale(marginRight),
                   width: width,
                 },
               ]}>
               {!isPassword && leftIcon && (
                 <View style={stylesWithProp.lefticon}>
                   <IconSVG
-                    height={moderateScale(iconHeight)}
-                    width={moderateScale(iconWidth)}
+                    height={moderateScale(iconHeight, defaultScale)}
+                    width={moderateScale(iconWidth, defaultScale)}
                     name={leftIcon}
                   />
                 </View>
@@ -222,8 +220,8 @@ const ATextInput = React.forwardRef<TextInput, Props>(
               {!isPassword && rightIcon && (
                 <View style={stylesWithProp.icon}>
                   <IconSVG
-                    height={moderateScale(iconHeight)}
-                    width={moderateScale(iconWidth)}
+                    height={moderateScale(iconHeight, defaultScale)}
+                    width={moderateScale(iconWidth, defaultScale)}
                     name={rightIcon}
                   />
                 </View>
@@ -242,10 +240,10 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                   borderColor: errorText ? colors.error : borderColor,
                 },
                 {
-                  marginTop: moderateScale(marginTop),
-                  marginBottom: moderateScale(marginBottom),
-                  marginLeft: moderateScale(marginLeft),
-                  marginRight: moderateScale(marginRight),
+                  marginTop: moderateScale(marginTop, defaultScale),
+                  marginBottom: moderateScale(marginBottom, defaultScale),
+                  marginLeft: moderateScale(marginLeft, defaultScale),
+                  marginRight: moderateScale(marginRight, defaultScale),
                   width: width,
                 },
               ]}>
@@ -270,18 +268,13 @@ const ATextInput = React.forwardRef<TextInput, Props>(
               />
             </View>
           )}
-        </View>
-        <View
-          style={{
-            marginLeft: moderateScale(marginLeft),
-            marginRight: moderateScale(marginRight),
-          }}>
           {errorText && !disable && !isFocused ? (
             <ATypography
               children={errorText}
               variant={TypographyVariant.PRIMARY}
               color={colors.error}
               fontSize={14}
+              style={stylesWithProp.errorTextStyle}
             />
           ) : null}
         </View>
@@ -292,6 +285,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
 
 const styles = (props: {colors: any}) =>
   StyleSheet.create({
+    container: {width: '100%'},
     textinputContainer: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -335,6 +329,9 @@ const styles = (props: {colors: any}) =>
       height: moderateScale(48, defaultScale),
       paddingLeft: moderateScale(15, defaultScale),
       textAlign: I18nManager.isRTL ? 'right' : 'left',
+    },
+    errorTextStyle: {
+      marginTop: moderateScale(5, defaultScale),
     },
   });
 
