@@ -48,7 +48,6 @@ const ATextInputDemo = () => {
             marginTop={10}
             placeholder="Placeholder"
             isPassword={true}
-            secureTextEntry={true}
             returnKeyType="next"
             onSubmitEditing={() => refInput3.current?.focus()}
             ref={refInput2}

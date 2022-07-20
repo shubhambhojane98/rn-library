@@ -6,6 +6,7 @@ import {
   KeyboardTypeOptions,
   ReturnKeyTypeOptions,
   I18nManager,
+  TouchableOpacity,
 } from 'react-native';
 import {moderateScale} from 'react-native-size-matters';
 import IconSVG from '../../assets/svgs';
@@ -105,7 +106,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
   ) => {
     const [visible, setVisible] = useState(false);
     const [isFocused, setIsFocused] = useState(false);
-    const [securePassword, setSecurePassword] = useState(false);
+    const [securePassword, setSecurePassword] = useState(isPassword);
 
     const onFocus = () => {
       setIsFocused(true);
@@ -195,7 +196,7 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 underlineColorAndroid={underlineColorAndroid}
                 textAlignVertical={textAlignVertical}
                 returnKeyType={returnKeyType}
-                secureTextEntry={isPassword}
+                secureTextEntry={securePassword}
                 autoCapitalize={autoCapitalize}
                 multiline={multiline}
                 onSubmitEditing={onSubmitEditing}
@@ -206,14 +207,17 @@ const ATextInput = React.forwardRef<TextInput, Props>(
                 selectionColor={selectionColor}
               />
               {isPassword && (
-                <View style={stylesWithProp.icon}>
+                <TouchableOpacity
+                  style={stylesWithProp.icon}
+                  onPress={handlePassword}
+                  activeOpacity={1}
+                  hitSlop={{top: 10, bottom: 10, left: 5, right: 5}}>
                   <IconSVG
                     height={iconHeight}
                     width={iconWidth}
-                    onPress={handlePassword}
                     name={visible ? 'showpassword' : 'hidepassword'}
                   />
-                </View>
+                </TouchableOpacity>
               )}
               {!isPassword && rightIcon && (
                 <View style={stylesWithProp.icon}>
