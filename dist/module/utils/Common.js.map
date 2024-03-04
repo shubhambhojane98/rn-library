@@ -1,1 +1,1 @@
-{"version":3,"names":["defaultScale"],"sources":["Common.ts"],"sourcesContent":["export const defaultScale = 0.2;\n"],"mappings":"AAAA,MAAO,IAAMA,aAAY,CAAG,GAArB"}
+{"version":3,"names":["defaultScale"],"sources":["Common.ts"],"sourcesContent":["export const defaultScale = 0.2;\r\n"],"mappings":"AAAA,MAAO,IAAMA,aAAY,CAAG,GAArB"}

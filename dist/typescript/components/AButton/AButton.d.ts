@@ -1,10 +1,12 @@
+import React from 'react';
 import { StyleProp, TextStyle, ImageStyle } from 'react-native';
 import { Source } from 'react-native-fast-image';
+import type { Theme } from '../../utils/types';
 interface Props {
     backgroundColor?: string;
     width: number;
-    height: number;
-    title?: string;
+    height?: number;
+    title: string;
     onPress: () => void;
     borderRadius?: number;
     margin?: number;
@@ -26,14 +28,11 @@ interface Props {
     hyperlink?: boolean;
     borderWidth?: number;
     borderColor?: string;
+    isLoading?: boolean;
+    isDisabled?: boolean;
+    theme: Theme;
 }
-declare const AButton: {
-    (props: Props): JSX.Element;
-    defaultProps: {
-        color: string;
-        width: number;
-        height: number;
-        fontSize: number;
-    };
-};
-export default AButton;
+declare const _default: React.ComponentType<Pick<Props, "title" | "width" | "color" | "textAlign" | "fontSize" | "onPress" | "fontWeight" | "fontFamily" | "textDecorationLine" | "backgroundColor" | "borderColor" | "borderRadius" | "borderWidth" | "height" | "margin" | "padding" | "imageStyle" | "backgroundSource" | "iconName" | "iconHeight" | "iconWidth" | "sourceImage" | "disabled" | "textStyle" | "hyperlink" | "isLoading" | "isDisabled"> & {
+    theme?: import("@callstack/react-theme-provider").$DeepPartial<import("../../utils/types").ThemeBase> | undefined;
+}> & import("@callstack/react-theme-provider/typings/hoist-non-react-statics").NonReactStatics<React.ComponentType<Props> & ((props: Props) => JSX.Element), {}>;
+export default _default;

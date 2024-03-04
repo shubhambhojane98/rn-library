@@ -1,6 +1,6 @@
 import React from 'react';
 import { SvgProps } from 'react-native-svg';
-export declare type IconNames = 'gifticon' | 'selectedradio' | 'unselectedradio' | 'hidepassword' | 'showpassword' | 'close' | 'checkboxfilled' | 'checkboxempty' | 'fullstar' | 'halfstar' | 'emptystar';
+export declare type IconNames = 'gifticon' | 'selectedradio' | 'unselectedradio' | 'hidepassword' | 'showpassword' | 'close' | 'checkboxfilled' | 'checkboxempty' | 'fullstar' | 'halfstar' | 'emptystar' | 'downarrow' | 'uparrow';
 declare type Props = SvgProps & {
     name: IconNames;
 };
